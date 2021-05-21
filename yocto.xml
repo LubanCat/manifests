@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="yocto/meta-browser" name="linux/poky" revision="gatesgarth/meta-browser"/>
+  <project path="yocto/meta-clang" name="linux/poky" revision="gatesgarth/meta-clang"/>
+  <project path="yocto/meta-openembedded" name="linux/poky" revision="gatesgarth/meta-openembedded"/>
+  <project path="yocto/meta-python2" name="linux/poky" revision="gatesgarth/meta-python2"/>
+  <project path="yocto/meta-qt5" name="linux/poky" revision="gatesgarth/meta-qt5"/>
+  <project path="yocto/meta-rockchip" name="linux/yocto/meta-rockchip" revision="yocto-next"/>
+  <project path="yocto/meta-rust" name="linux/poky" revision="gatesgarth/meta-rust"/>
+  <project path="yocto/poky" name="linux/poky" revision="gatesgarth/poky">
+    <linkfile dest="yocto/scripts" src="scripts"/>
+    <linkfile dest="yocto/bitbake" src="bitbake"/>
+    <linkfile dest="yocto/meta-poky" src="meta-poky"/>
+    <linkfile dest="yocto/.templateconf" src=".templateconf"/>
+    <linkfile dest="yocto/oe-init-build-env" src="oe-init-build-env"/>
+  </project>
+  <project path="yocto/build/conf" name="linux/build" revision="yocto-next"/>
+</manifest>
