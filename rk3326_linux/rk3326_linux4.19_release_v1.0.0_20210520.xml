@@ -28,7 +28,7 @@
   <project dest-branch="master" name="linux/bsp/external/bluetooth_bsa" path="external/bluetooth_bsa" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master"/>
   <project dest-branch="master" name="linux/bsp/external/broadcom_bsa" path="external/broadcom_bsa" revision="46234ce7a904794754bba79cb7c9f26d39605311" upstream="master"/>
   <project dest-branch="master" name="linux/debian" path="debian" revision="master"/>
-  <project dest-branch="master" name="linux/device/rockchip" path="device/rockchip" revision="95d7e1b708817e691b665d7cb6420b07df765653" upstream="master">
+  <project dest-branch="master" name="linux/device/rockchip" path="device/rockchip" revision="f3095636017bd7cb92e3e362199f7aa261b7b1c0" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
