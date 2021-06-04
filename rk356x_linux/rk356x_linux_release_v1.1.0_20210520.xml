@@ -34,7 +34,7 @@
   <project dest-branch="master" name="linux/app/web-new/ipcweb-ng" path="app/ipcweb-ng" revision="ca9ad4f24bb46568dbbb80ac216a6e2b5f872d23" upstream="master"/>
   <project dest-branch="master" name="linux/bsp/external/bluetooth_bsa" path="external/bluetooth_bsa" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master"/>
   <project dest-branch="master" name="linux/bsp/external/broadcom_bsa" path="external/broadcom_bsa" revision="46234ce7a904794754bba79cb7c9f26d39605311" upstream="master"/>
-  <project dest-branch="rockchip/2018.02-rc3" name="linux/buildroot" path="buildroot" revision="b738468c426899b6f50e218e1ac5b407ce65fd51" upstream="rockchip/2018.02-rc3">
+  <project dest-branch="rockchip/2018.02-rc3" name="linux/buildroot" path="buildroot" revision="94742b3b973a302dbb8bb3c416497828fb824f0b" upstream="rockchip/2018.02-rc3">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
