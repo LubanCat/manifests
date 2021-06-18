@@ -7,6 +7,98 @@
 [TOC]
 
 ---
+## rk356x_linux_release_v1.1.1_20210618.xml Note
+
+**app**:
+
+```
+- remove the unused camera project
+```
+
+**external**:
+
+```
+- Remove the unused libdrm project
+- Switch isp2-ipc to rk356x_dev branch
+- gstreamer-rockchip: Update encoder size limits and buffer is allocated
+- update mpp
+```
+
+**Buildroot (2018.02-rc3)**:
+
+```
+- gst1-plugins-bad: waylandsink: Use create_immed to create dmabuf
+- Fix the UVC issues
+```
+
+**Debian10 (buster)**:
+
+```
+- overlay: add partition with by-name
+- overlay-debug: QT player with xvimagesink by default
+- packages: update some packages fixing issues
+- overlay-debug: Update modetest
+- Revert "overlay: drm-hotplug.sh: Fix DP hotplug error"
+- packages: update debs for the better compatible
+- overlay: update adbd and xterm environment
+```
+
+**Kernel (4.19)**:
+
+```
+- Fixes vop some bugs
+- Update rk356x-evb dts
+- Update isp
+```
+
+**rkbin**:
+
+```
+- rk356x: loader: update version to v1.09
+- rk3568: bl31 ultra: update version to v2.05
+- rk3568: bl31: update version to v1.25
+- rk3568: bl31: update version to v1.24
+```
+
+## rk356x_linux_release_v1.1.0_20210520.xml Note
+
+**Buildroot (2018.02-rc3)**:
+
+```
+- Adjust the new buildroot project
+- Support buildroot 32 bits for rk356x
+- Support RKNN SDK 1.0.0 Version
+```
+
+**Debian10 (buster)**:
+
+```
+- Use the new debian project
+```
+
+**Kernel (4.19)**:
+
+```
+- Enable optee by default
+- Update USB/DRM/Wireless/Media/Video/Clock driver
+```
+
+**docs/tools**:
+
+```
+- Use the new docs project
+```
+
+**rkbin**:
+
+```
+- rk3568/rk3566: bl31: update version to v1.22
+- rk3568/rk3566: bl32: update version to v1.05
+- rk3568/rk3566: ddr: update ddr bin to v1.07
+- rk3568/rk3566: spl: update version to v1.11
+- rk356x: loader: update version to v1.08
+```
+
 ## rk356x_linux_release_v1.0.0_20210410.xml Note
 
 **Buildroot (2018.02-rc3)**:
