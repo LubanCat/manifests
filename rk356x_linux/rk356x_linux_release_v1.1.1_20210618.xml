@@ -32,7 +32,7 @@
   <project dest-branch="master" name="linux/app/web-new/ipcweb-ng" path="app/ipcweb-ng" revision="ca9ad4f24bb46568dbbb80ac216a6e2b5f872d23" upstream="master"/>
   <project dest-branch="master" name="linux/bsp/external/bluetooth_bsa" path="external/bluetooth_bsa" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master"/>
   <project dest-branch="master" name="linux/bsp/external/broadcom_bsa" path="external/broadcom_bsa" revision="46234ce7a904794754bba79cb7c9f26d39605311" upstream="master"/>
-  <project dest-branch="rockchip/2018.02-rc3" name="linux/buildroot" path="buildroot" revision="d3e40074183a8e300e1e23a8aa770c53e2795128" upstream="rockchip/2018.02-rc3">
+  <project dest-branch="rockchip/2018.02-rc3" name="linux/buildroot" path="buildroot" revision="38d86c500cbce7ce4adc7e9addffb5f162cdbd57" upstream="rockchip/2018.02-rc3">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
@@ -89,7 +89,7 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
   <project dest-branch="stable-4.19-rk356x" name="rk/kernel" path="kernel" revision="96ec87171827bf678ce283d53e3d9ac1c26686e1" upstream="stable-4.19-rk356x"/>
-  <project dest-branch="develop" name="rk/mpp" path="external/mpp" revision="0383d8258dad4988aee1df304359e1226fb58959" upstream="develop"/>
+  <project dest-branch="develop" name="rk/mpp" path="external/mpp" revision="ad3d2bb69680b423ae52888bc8fc94ed073af099" upstream="develop"/>
   <project dest-branch="master" name="rk/prebuilts/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="2edfa6dde1f73c5b3c6de980e3450443e35c0a0f" upstream="master"/>
   <project dest-branch="master" name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project dest-branch="master" name="rk/rkbin" path="rkbin" revision="b3cdf972c0788fe9c77b8b132bba2c693d88f2ee" upstream="master"/>
