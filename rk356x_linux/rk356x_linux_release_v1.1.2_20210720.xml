@@ -53,7 +53,7 @@
   <project dest-branch="master" name="linux/external/bluez-alsa" path="external/bluez-alsa" revision="e383251a22fef7213b7e5a804e4c7a7ca621c80d" upstream="master"/>
   <project dest-branch="rk356x" name="linux/external/camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="e3528a287b44c363682f5f7f7e05600f3e79b90b" upstream="rk356x"/>
   <project dest-branch="master" name="linux/external/chromium" path="external/chromium" revision="bba90aee6a986fca85e8cf79c2917ebf5a2b6e17" upstream="master"/>
-  <project dest-branch="master" name="linux/external/common_algorithm" path="external/common_algorithm" revision="f56023f25c823fdaf4cf849f66c68ff664d27f83" upstream="master"/>
+  <project dest-branch="master" name="linux/external/common_algorithm" path="external/common_algorithm" revision="d16dec658614b7468275ed049b29a9e3d6e9fafe" upstream="master"/>
   <project dest-branch="master" name="linux/external/deviceio_release" path="external/deviceio_release" revision="4ba88e8ac3eebb6c3b3933e85898ebebd48b2a13" upstream="master"/>
   <project dest-branch="master" name="linux/external/eq_drc_process" path="external/eq_drc_process" revision="6fe472aa76ed71922742863c8f94222dab3dbf3c" upstream="master"/>
   <project dest-branch="rk356x_dev" name="linux/external/isp2-ipc" path="external/isp2-ipc" revision="d650a7b13d0cef15958b85948feceed1c3b67fa2" upstream="rk356x_dev"/>
@@ -94,7 +94,7 @@
   <project dest-branch="develop" name="rk/mpp" path="external/mpp" revision="0c43069763cd3cd9f58d8841e1c29115b07d7f61" upstream="develop"/>
   <project dest-branch="master" name="rk/prebuilts/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="2edfa6dde1f73c5b3c6de980e3450443e35c0a0f" upstream="master"/>
   <project dest-branch="master" name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
-  <project dest-branch="master" name="rk/rkbin" path="rkbin" revision="d623a225f7a7321186af48f065f8e98f82da3077" upstream="master"/>
+  <project dest-branch="master" name="rk/rkbin" path="rkbin" revision="7f4f78fbf20ddcd4a25e5c921ca633494d1a3be6" upstream="master"/>
   <project dest-branch="master" name="rk/rknn-toolkit2" path="external/rknn-toolkit2" revision="44b64209e8fd37daa2184667c58c90f6e31b6b54" upstream="master"/>
   <project dest-branch="master" name="rk/rknpu2" path="external/rknpu2" revision="1346f9660029469373da634aa7a1b4dc8a4ce70c" upstream="master"/>
   <project dest-branch="master" name="rk/rockface" path="external/rockface" revision="c15e36566c5bf07e1f8449e9087d73533b4ff420" upstream="master"/>
