@@ -10,7 +10,7 @@
 
   <project dest-branch="rk33/mid/8.1/develop" name="android/RKNPUTool" path="external/RKNPUTools" revision="b8c0e77c1a5c8e886c3ebf3483557e8755485e6e" upstream="rk33/mid/8.1/develop"/>
   <project dest-branch="develop-next" name="android/rk/platform/system/rk_tee_user" path="external/security/rk_tee_user" revision="3f953515576dab722325a5cb10b551adb52c77b4" upstream="develop-next"/>
-  <project dest-branch="next-dev" name="android/rk/u-boot" path="u-boot" revision="803aaca66ead097438d0fc650ea53e9ec082295d" upstream="next-dev"/>
+  <project dest-branch="next-dev" name="android/rk/u-boot" path="u-boot" revision="7952efb81a13d5d5fe3921e3b87b036a97bc536e" upstream="next-dev"/>
   <project dest-branch="master" name="linux/app-new/LibIPCProtocol" path="app/libIPCProtocol" revision="45cdd16d137929a06ad6231eca4d17eed5a967d6" upstream="master"/>
   <project dest-branch="master" name="linux/app-new/mediaserver" path="app/mediaserver" revision="18cf53291d0f12ec228505cc85b7ac88b58f107c" upstream="master"/>
   <project dest-branch="master" name="linux/app-new/qfm" path="app/qfm" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/>
@@ -51,7 +51,7 @@
   <project dest-branch="master" name="linux/external/avb" path="external/avb" revision="64b5ea0130d7440084796f6a23d7cd91fac988b8" upstream="master"/>
   <project dest-branch="master" name="linux/external/ble_wificonfig" path="external/ble_wificonfig" revision="3b56e0e268634216df1f992d944bb30158e86786" upstream="master"/>
   <project dest-branch="master" name="linux/external/bluez-alsa" path="external/bluez-alsa" revision="e383251a22fef7213b7e5a804e4c7a7ca621c80d" upstream="master"/>
-  <project dest-branch="rk356x" name="linux/external/camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="e3528a287b44c363682f5f7f7e05600f3e79b90b" upstream="rk356x"/>
+  <project dest-branch="rk356x" name="linux/external/camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="2fd04041b630650098b2ced9a9f29d00613a2e68" upstream="rk356x"/>
   <project dest-branch="master" name="linux/external/chromium" path="external/chromium" revision="bba90aee6a986fca85e8cf79c2917ebf5a2b6e17" upstream="master"/>
   <project dest-branch="master" name="linux/external/common_algorithm" path="external/common_algorithm" revision="d16dec658614b7468275ed049b29a9e3d6e9fafe" upstream="master"/>
   <project dest-branch="master" name="linux/external/deviceio_release" path="external/deviceio_release" revision="4ba88e8ac3eebb6c3b3933e85898ebebd48b2a13" upstream="master"/>
@@ -94,7 +94,7 @@
   <project dest-branch="develop" name="rk/mpp" path="external/mpp" revision="0c43069763cd3cd9f58d8841e1c29115b07d7f61" upstream="develop"/>
   <project dest-branch="master" name="rk/prebuilts/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="2edfa6dde1f73c5b3c6de980e3450443e35c0a0f" upstream="master"/>
   <project dest-branch="master" name="rk/prebuilts/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
-  <project dest-branch="master" name="rk/rkbin" path="rkbin" revision="7f4f78fbf20ddcd4a25e5c921ca633494d1a3be6" upstream="master"/>
+  <project dest-branch="master" name="rk/rkbin" path="rkbin" revision="810457655e3507fb1f91eb22c1671e38ba66649b" upstream="master"/>
   <project dest-branch="master" name="rk/rknn-toolkit2" path="external/rknn-toolkit2" revision="44b64209e8fd37daa2184667c58c90f6e31b6b54" upstream="master"/>
   <project dest-branch="master" name="rk/rknpu2" path="external/rknpu2" revision="1346f9660029469373da634aa7a1b4dc8a4ce70c" upstream="master"/>
   <project dest-branch="master" name="rk/rockface" path="external/rockface" revision="c15e36566c5bf07e1f8449e9087d73533b4ff420" upstream="master"/>
