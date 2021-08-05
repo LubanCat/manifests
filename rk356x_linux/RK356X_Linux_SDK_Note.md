@@ -7,6 +7,175 @@
 [TOC]
 
 ---
+## rk356x_linux_release_v1.1.3_20210805.xml Note
+
+**app**:
+
+```
+- update aiserver
+	* - eptz parameter adjustment.
+	* - [aiserver/vendor/eptz] File name correction.
+	* - [aiserver/vendor/eptz] fix compile error in lastest commit.
+
+- update rkaiq_tool_server
+	* - d702dc1 raw capture: fix multi-frame add overflow issue
+	* - 86a01ba Linux: simply remove link librkaiq
+	* - 4f432e0 Linux: do not kill rkaiq_3A_server or app
+	* - efffa5c tcp server: do not handle signal on its own thread
+```
+
+**external**:
+
+```
+
+- update gstreamer-rockchip
+	* - rockchipmpp: Use gint and gchar
+	* - mppenc: Handle keyframe requests
+	* - rkximage: Use "zpos" property as well
+	* - mppallocator: Drop custom mmap
+	* - mppenc: Report error when input buffer is too small
+	* - rockchipmpp: Fix RGA error when src buf is not dma buf
+	* - rockchipmpp: Workaround pixel stride error
+	* - mpph264enc: Fix memory leak in set_src_caps
+	* - mppjpegdec: Support setting output format
+	* - rockchipmpp: Fix MPP format endian error
+	* - rockchipmpp: Use height as vstride in RGA conversion
+
+- update mpp
+	* - [drm]: Add mmap flag detection
+	* - [misc]: chmod some files to 644
+	* - [h264d_parse]: skip sp/si slice
+	* - [drm]: stop using drm_mmap and drm_munmap
+	* - [mpp_enc]: Fix qp delta_ip & delta_vi check issue
+	* - [h264d]: matching macro MAX_NUM_DPB_LAYERS with code
+	* - [h265d]: Reduce  malloc/free frequency of sps/pps
+
+- libmali
+	* - 08e7448 (HEAD, rk/master, m/master) meson: Force MESA_EGL_NO_X11_HEADER for non-x11 winsys
+	* - cd3d4f7 meson: Add required packages in pkgconfig
+
+- linux-rga
+	* - Update version.
+	* - im2d_api: revert some config of crop mode in improcess
+	* - Fix an error.
+	* - Correct some information in the document.
+	* - Fix "unknown type name ‘int16_t’" in rga.h
+	* - Support BGR565/BGRA5551/BGRA4444.
+	* - Optimize libgra.
+
+- update common_algorithm/libglCompositor/recovery/rkfacial/rkwifibt
+```
+
+
+**U-boot**:
+
+```
+- drm/rockchip: vop2: add adjust cursor plane
+- cmd: rockusb: convert return vlaue from block layer
+- clk: rockchip: rk3568: add i2s3 clk
+- rockchip: dts: rk3568: Resync from kernel-4.19
+```
+
+**Buildroot (2018.02-rc3)**:
+
+```
+- configs/rockchip: Use new custom local kernel option
+- glibc: Support auto detecting kernel headers version
+- {linux,package/linux-headers}: Support custom local kernel
+- {linux,package/linux-headers}: Support virtual linux
+- {linux,package/linux-headers}: Bump to buildroot upstream
+- gcc: Bump default version to 9.x
+- rockchip/wifibt: Stop caring about kernel versions
+- configs/rockchip: Enable BR2_PACKAGE_GLIBC_GEN_LD_CACHE by default
+- glibc: Allow error when generating ld cache
+- glibc: Drop 2.22
+- bind: Support min-cache-ttl
+- bind: Run named as root
+- dnsmasq: Bump to buildroot upstream's 2.85
+- bind: Bump to buildroot upstream's 9.11.31
+- package: rockchip: camera_engine_rkaiq: remove dependence on host-camera_engine_rkaiq
+- qt5wayland: Update patches for 5.9 and 5.12
+- unscd: Add BR2_PACKAGE_UNSCD_HOSTS_CACHE
+- unscd: Bump to buildroot upstream 0.54
+- qt5wayland: Update patches
+- qt5wayland: Disable wayland-server when not wanted
+- gst1-plugins-good: v4l2: Do not renegotiate if only framerate changed
+- config: rockchip: add alexa config
+- package: rockchip: add alexa-smart-screen-sdk
+- package: rockchip: add apl-core-library
+- package: rockchip: add avs-device-sdk
+- package: doxygen: add config for host build
+- websocketpp: new package
+- package: add libasio
+- wampcc: needs atomic
+- wampcc: needs C++
+- wampcc: new package
+- toolchain: add BR2_TOOLCHAIN_SUPPORTS_ALWAYS_LOCKFREE_ATOMIC_INTS hidden option
+- package: rockchip: camera_engine_rkaiq: symbol link to target IQFILE for FakeCamera.xml/bin
+- package: alsa-lib: pcm: Fix two bugs in snd_pcm_area_silence()
+- libdrm-cursor: Add package
+```
+
+**Debian10 (buster)**:
+
+```
+- packages: add mpv/ffmpeg for hardware accelerator
+- rkscripts: Don't remove the build dir
+- packages: update rga/mpp/gstreamer-rockchip
+- packages: fixes moving cursor or hotplug issues
+- overlay: udev: Run drm-hotplug.sh as daemon
+```
+
+**Kernel (4.19)**:
+
+```
+- video/rockchip: rga2: Fix rga2_dma_flush_page warnning
+- arm64: dts: rockchip: rk3568-nvr: enabled rknpu_mmu
+- drm/rockchip: analogix_dp: clear the eDP flag in output_if
+- drm/rockchip: dw_hdmi: Add property to show whether sink is DVI
+- drm/rockchip: dw_hdmi: Add property to switch HDMI/DVI mode
+- drm/rockchip: dw_hdmi: Support set quant range take effect immediately
+- drm/bridge: dw-hdmi: Make sure to output full range RGB in DVI mode
+- serial: 8250_port: fix UART DL check when setting divisor.
+- video/rockchip: rga2: Remove the useless code about the src1 channel
+- media: i2c: ov7251 support 640x480@120fps mode
+- media: i2c: support os08a20 sensor driver
+- media: i2c: support sc5239 sensor driver
+- media: i2c: gc032a: set default stream off state
+- media: rockchip: ispp: reset at frame end
+- media: rockchip: ispp: frame buffer done early
+- media: rockchip: ispp: frame buffer done early
+- media: rockchip: isp: frame buffer done early
+- drm/rockchip: vop2: output error info when cluster use non afbc format
+- media: i2c: gc2375h: fix vblank set issue
+- misc: add driver for rk803.
+- media: i2c: add strobe control & fix expsoure for ov9281.
+- media: i2c: modify ov9281 driver for thunderboot.
+- drivers: rk_flash: set dma mask to 32bits
+- PCI: rockchip: fix subsys_irq_handler logic
+- arm64: dts: rockchip: rk3568: disable receiver detection in P3 for usb
+- drm/rockchip: vop: Deal with display area out of display mode
+- phy: rockchip: inno-usb2: support usb wakeup for rk3568
+- drm/rockchip/rk628: combtxphy: reducing DUAL LVDS power consumption
+- media: rockchip: ispp: fix bug that ispp register isn't included in SEI
+- mmc: sdhci-of-dwcmshc: Adjust DLL_TXCLK_TAPNUM_DEFAULT to 0x10
+- video/rockchip: rga2: Fix MMU base not shift forward.
+- video/rockchip: rga2: adapt to kernel 5.10
+- drivers: rkflash: Ajudst the dll strategy
+- drm/rockchip: vop2: enable dither up when input rgb565
+- drm/bridge: synopsys: dw-hdmi: Remove dw_hdmi_setup when atomic_check
+- media: rockchip: isp1: fix buf done state
+- ASoC: rockchip: rk817-codec: Solve pop problems
+- Revert "drm/rockchip: gem: fix dma_free_attrs() parameter error"
+- media: rockchip: isp/ispp: declare slab.h for kmalloc/kfree
+- media: rockchip: isp: dmarx support yuv format
+- media: videobuf2-v4l2: copy user image sequence for output video
+- media: rockchip: isp1: clean list when stream failed
+- arm64: dts: rockchip: rk356x-evb: fix pcie supply to regulator-fixed
+- ASoC: rockchip: i2s-tdm: Add support for 16ch tdm mode
+
+```
+
 ## rk356x_linux_release_v1.1.2_20210720.xml Note
 
 **app**:
