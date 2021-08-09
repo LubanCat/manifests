@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="ssh://git@www.rockchip.com.cn/linux/" name="rk"/>
+
+  <default remote="rk" sync-j="4"/>
+
+  <project dest-branch="master" name="linux/bsp/internal_doc" path="docs/.Socs" revision="a14a44501e1ee4ec7472c69f8fa19c61b63d032c" upstream="master">
+    <linkfile dest="docs/RK356X" src="RK356X"/>
+    <linkfile dest="Rockchip_RK356X_NVR_SDK_Release_v1.1.3_20210809_CN.pdf" src="RK356X/Rockchip_RK356X_NVR_SDK_Release_v1.1.3_20210809_CN.pdf"/>
+  </project>
+  <project dest-branch="master" name="linux/bsp/docs" path="docs" revision="faf8a1708b5ee77a0e8fa4140ca1a8629a4355e9" upstream="master">
+    <linkfile dest="docs/.Socs/RK356X/Rockchip_RK3568_Reference_SATA_Performance_CN.pdf" src="Common/NVM/Rockchip_RK3568_Reference_SATA_Performance_CN.pdf"/>
+    <linkfile dest="docs/.Socs/RK356X/Rockchip_RK356X_Developer_Guide_SATA_CN.pdf" src="Common/NVM/Rockchip_RK356X_Developer_Guide_SATA_CN.pdf"/>
+    <linkfile dest="docs/.Socs/RK356X/Rockchip_RK356X_Developer_Guide_PCIe_CN.pdf" src="Common/PCIe/Rockchip_RK356X_Developer_Guide_PCIe_CN.pdf"/>
+    <linkfile dest="docs/.Socs/RK356X/Rockchip_RK356x_Developer_Guide_USB_CN.pdf" src="Common/USB/Rockchip_RK356x_Developer_Guide_USB_CN.pdf"/>
+    <linkfile dest="docs/.Socs/RK356X/Rockchip_Developer_Guide_Linux_Software_CN.pdf" src="Rockchip_Developer_Guide_Linux_Software_CN.pdf"/>
+  </project>
+
+  <project dest-branch="next-dev" name="android/rk/u-boot" path="u-boot" revision="2bfb6166539c606b37321694bfa3c19b436455a5" upstream="next-dev" clone-depth="1"/>
+
+  <project dest-branch="master" name="linux/tools" path="tools" revision="be00925f963bbd6e95a3b228342c7e816183cdd8" upstream="master" clone-depth="1" >
+    <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg"/>
+    <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rk356x-package-file"/>
+    <linkfile dest="tools/windows/RKDevTool/rockdev/mkupdate.bat" src="windows/RKDevTool/rockdev/rk356x-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
+  </project>
+  <project dest-branch="stable-4.19-rk356x-nvr" name="rk/kernel" path="kernel" revision="63df8a6b0ca4aaa49db9b95bdd438000baaf372a" upstream="stable-4.19-rk356x-nvr" clone-depth="1" />
+  <project dest-branch="stable-rk356x-nvr" name="rk/rkbin" path="rkbin" revision="7cf2492ae850ccf8b9dd1ceddfc49ff995626df6" upstream="stable-rk356x-nvr" clone-depth="1" />
+  <project path="build" name="linux/build" revision="372d5eb6afceb3a3fbd8edcbee48d1b473945274" upstream="nvr_linux_lite" clone-depth="1" >
+    <linkfile dest="build_emmc.sh" src="tools/build_emmc.sh"/>
+    <linkfile dest="build_spi_nand.sh" src="tools/build_spi_nand.sh"/>
+    <linkfile dest="mkfirmware.sh" src="tools/mkfirmware.sh"/>
+  </project>
+</manifest>
