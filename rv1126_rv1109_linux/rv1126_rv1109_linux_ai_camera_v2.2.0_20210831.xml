@@ -57,7 +57,7 @@
   </project>
   <project name="linux/linux-rga" path="external/linux-rga" revision="44985993e773be1b1a2829929136136f4fb0c3ec" upstream="im2d"/>
   <project name="linux/recovery" path="external/recovery" revision="6375a892286a7f0ded962921a0f0abf92e295ce8" upstream="develop"/>
-  <project name="linux/rockit" path="external/rockit" revision="dc1b7c2ab4ec44d63165d8b56e1d9b7494a27262" upstream="master"/>
+  <project name="linux/rockit" path="external/rockit" revision="3afa6de3937cf2e364977fb777601400b148de7a" upstream="master"/>
   <project name="linux/security/bin" path="external/security/bin" revision="f59085ce658bd69678b68fd4840fb86937678125" upstream="master"/>
   <project name="linux/tools" path="tools" revision="52ed86ff421a4ff5818e4dd0bbd8e37d59ad8c56" upstream="master">
     <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rv1126_rv1109-config.cfg"/>
