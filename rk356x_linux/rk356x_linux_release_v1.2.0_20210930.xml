@@ -38,7 +38,7 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project dest-branch="master" name="linux/debian" path="debian" revision="master" clone-depth="1"/>
-  <project dest-branch="master" name="linux/device/rockchip" path="device/rockchip" revision="8dede35ab89c8a8a3b5f53ad534127c1915b6144" upstream="master">
+  <project dest-branch="master" name="linux/device/rockchip" path="device/rockchip" revision="a79ed20df05f3b77abbcc395c1ee63f4774ae520" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -69,7 +69,7 @@
   <project dest-branch="master" name="linux/external/rkscript" path="external/rkscript" revision="b5c838e25eb564c1fa8e4df6874d32b6dcd8725f" upstream="master"/>
   <project dest-branch="master" name="linux/external/rktoolkit" path="external/rktoolkit" revision="77fb41f99185a6f9dc2c9c69e099f417d8ae905d" upstream="master"/>
   <project dest-branch="master" name="linux/external/rkupdate" path="external/rkupdate" revision="1e014c0295f960a23b5b351c0bb3e1c6903d0bf6" upstream="master"/>
-  <project dest-branch="master" name="linux/external/rkwifibt" path="external/rkwifibt" revision="1778e63fd69054af869bca1caf35bcaf2f7ec97e" upstream="master"/>
+  <project dest-branch="master" name="linux/external/rkwifibt" path="external/rkwifibt" revision="2242bd1270c09d0437eff2d4aee03734b283d52f" upstream="master"/>
   <project dest-branch="master" name="linux/external/rtc_demo" path="external/rtc_demo" revision="01ea9377beae66a544191ff5dbd920f19ba4614c" upstream="master"/>
   <project dest-branch="master" name="linux/external/softapDemo" path="external/softapDemo" revision="4c7d1bd3d28df276d263f49324b022b44b3a1c85" upstream="master"/>
   <project dest-branch="master" name="linux/external/tensorflow" path="external/tensorflow" revision="e1877bb157a775d76ec8c0b68467aef6d053bbb2" upstream="master"/>

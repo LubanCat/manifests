@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<project dest-branch="master" name="linux/bsp/internal_doc" path="docs/.Socs" revision="cc6a743d94fa54f412325e9f87368418236faeb5" upstream="master">
+    <linkfile dest="docs/RK3399" src="RK3399"/>
+</project>
+<project dest-branch="master" name="linux/bsp/docs" path="docs" revision="5ede5da66d2a6b6535fd1514edf18d3e89f676b8" upstream="master">
+    <linkfile dest="docs/.Socs/RK3399/Rockchip_RK3399_Developer_Guide_MCU_CN.pdf" src="Common/MCU/Rockchip_RK3399_Developer_Guide_MCU_CN.pdf"/>
+    <linkfile dest="docs/.Socs/RK3399/Rockchip_RK3399_Developer_Guide_Clock_CN.pdf" src="Common/CLK/Rockchip_RK3399_Developer_Guide_Clock_CN.pdf"/>
+    <linkfile dest="docs/.Socs/RK3399/Rockchip_RK3399_Developer_Guide_PCIe_CN.pdf" src="Common/PCIe/Rockchip_RK3399_Developer_Guide_PCIe_CN.pdf"/>
+    <linkfile dest="docs/.Socs/RK3399/Rockchip_RK3399_Developer_Guide_USB_DTS_CN.pdf" src="Common/USB/Rockchip_RK3399_Developer_Guide_USB_DTS_CN.pdf"/>
+    <linkfile dest="docs/.Socs/RK3399/Rockchip_RK3399_Developer_Guide_System_Suspend_CN.pdf" src="Common/TRUST/Rockchip_RK3399_Developer_Guide_System_Suspend_CN.pdf"/>
+    <linkfile dest="docs/.Socs/RK3399/Rockchip_RK3399_Developer_Guide_Linux4.4_Clock_CN.pdf" src="Common/CRU/Rockchip_RK3399_Developer_Guide_Linux4.4_Clock_CN.pdf"/>
+    <linkfile dest="docs/.Socs/RK3399/Rockchip_Developer_Guide_Linux_Software_CN.pdf" src="Rockchip_Developer_Guide_Linux_Software_CN.pdf"/>
+</project>
+
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<project dest-branch="master" name="linux/bsp/internal_doc" path="docs/.Socs" revision="cc6a743d94fa54f412325e9f87368418236faeb5" upstream="master">
+    <linkfile dest="docs/RK3326" src="RK3326"/>
+</project>
+<project dest-branch="master" name="linux/bsp/docs" path="docs" revision="061a8f43748843de65da71d2b303fe8cc1a3bcc5" upstream="master">
+    <linkfile dest="docs/.Socs/RK3326/Rockchip_Developer_Guide_Linux_Software_CN.pdf" src="Rockchip_Developer_Guide_Linux_Software_CN.pdf"/>
+</project>
+
+</manifest>
