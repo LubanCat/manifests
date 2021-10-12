@@ -52,7 +52,7 @@
   <project name="linux/external/uac_app" path="external/uac_app" revision="e82c9f701474a55882999c13882a9da8206571dd" upstream="master"/>
   <project name="linux/external/uvc_app" path="external/uvc_app" revision="2455efcaaecf038f03905be572aa3e65d3ded7fa" upstream="develop-4.19"/>
   <project name="linux/external/wifiAutoSetup" path="external/wifiAutoSetup" revision="872e84394896e12989c1745f4af536b567d02de7" upstream="master"/>
-  <project name="linux/bsp/internal_doc" path="docs/.Socs" revision="4da6935d33b7c54f496767c1ed832abcc26df5b1" upstream="master">
+  <project name="linux/bsp/internal_doc" path="docs/.Socs" revision="cb65dd019f575e4fb4a2cc1c5434a883442f0b15" upstream="master">
     <linkfile dest="docs/RV1126_RV1109" src="RV1126_RV1109"/>
   </project>
   <project name="linux/linux-rga" path="external/linux-rga" revision="44985993e773be1b1a2829929136136f4fb0c3ec" upstream="im2d"/>
