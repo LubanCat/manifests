@@ -23,7 +23,7 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project dest-branch="master" name="linux/debian" path="debian" revision="master" clone-depth="1"/>
-  <project dest-branch="master" name="linux/device/rockchip" path="device/rockchip" revision="a79ed20df05f3b77abbcc395c1ee63f4774ae520" upstream="master">
+  <project dest-branch="master" name="linux/device/rockchip" path="device/rockchip" revision="7b9702f5164fb251da0c78d8817b3c30c80d3233" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-
-  <include name="rk3326_linux_release.xml" />
-
-  <remove-project remote="rk"  dest-branch="stable-4.4-rk3326" name="rk/kernel" path="kernel" revision="22bc8db76bb65145e5fc99198cd310aff7e9c7ef" upstream="stable-4.4-rk3326"/>
-
-  <project dest-branch="stable-4.19-rk3326" name="rk/kernel" path="kernel" revision="efd472c3cd95e9a438ab8fda3264595cb6c3e9ca" upstream="stable-4.19-rk3326"/>
-</manifest>
