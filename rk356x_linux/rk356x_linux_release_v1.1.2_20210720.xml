@@ -81,7 +81,7 @@
   <project dest-branch="master" name="linux/libmali" path="external/libmali" revision="ec25af429684a6f2237518e9291976bb3b372f23" upstream="master"/>
   <project dest-branch="im2d" name="linux/linux-rga" path="external/linux-rga" revision="1fa8c4291d95daae3ec8223ce6253b81fc8c1cfd" upstream="im2d"/>
   <project dest-branch="develop" name="linux/recovery" path="external/recovery" revision="dc30a3194194605a5f0a01c2acdec319bcd657ba" upstream="develop"/>
-  <project dest-branch="master" name="linux/rockit" path="external/rockit" revision="facee975847e53828bd90186daa87f24c257f921" upstream="master"/>
+  <project dest-branch="master" name="linux/rockit" path="external/rockit" revision="master"/>
   <project dest-branch="master" name="linux/security/bin" path="external/security/bin" revision="f59085ce658bd69678b68fd4840fb86937678125" upstream="master"/>
   <project dest-branch="master" name="linux/tools" path="tools" revision="f9b502c8693570a30568956a5ee9d89a4cedb59d" upstream="master">
     <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg"/>
