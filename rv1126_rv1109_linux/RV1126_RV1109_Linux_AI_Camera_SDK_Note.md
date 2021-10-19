@@ -7,6 +7,60 @@
 [TOC]
 
 ---
+## rv1126_rv1109_linux_ai_camera_v2.3.0_20211019.xml Note
+
+```
+一、Kernel
+1. ISP相关驱动更新最新，修复对齐问题，关闭无用中断等
+2. DRM驱动更新，修复带cache flag无效问题
+3. 增加rv1126-uvc-spi-nor配置支持SPI NOR机器
+4. FLASH驱动更新，新增支持更多型号spi nand等，优化掉电等场景稳定性
+5. USB驱动更新，优化uvc驱动memcpy耗时等，减少延时；
+6. USB驱动更新，解决RV1126/RV1109 USB device热拔插概率性无法识别且需要重启恢复的问题
+7. USB驱动更新，修复UVC配置request num设置最大4后丢数据问题
+8. USB驱动更新，支持f_mtp驱动
+9. DTSI: flash pinctrl删除多余pin配置，避免一些主动调用场景引发稳定性问题 [重要]
+
+二、U-Boot
+1. SPI驱动更新
+2. DFU支持A/B固件升级
+
+三、Camera Engine rkaiq (AIQ)
+1. 修复动静判决宽度对齐问题；
+2. 修复dvp接入时aiq枚举cif设备名和驱动不匹配问题
+
+四、RGA &VPU
+1. RGA增加支持ARGB8888/XRGB8888/ARGB5551/ARGB4444/ABGR8888/XBGR8888/ABGR5551/ABGR4444格式
+2. RGA优化dma map
+3. VPU: mpp更新到最新版本
+
+五、App
+1. rockit：统一库版本，tgi支持不带ai裁剪选项
+2. rockit：新增支持4k下1440p自动切换通路插件和人脸画框插件配置
+3. aiserver：新增支持4k下1440p自动切换通路插件和人脸画框插件
+4. uvc app： 修复默认4k下1440p预览失败问题
+5. uvc app： 添加YUV格式下buf带cache处理，优化yuv传输耗时
+6. uvc app： 更新到V1.4.0版本，默认支持动态读取描述符获取分辨率等格式配置，不需要修改代码以增删格式列表
+
+六、Buildroot
+1. 新增UVC 16M spi nor产品配置和编译选项
+2. usb config： 支持uac+hid复合设备参考配置
+3. usb config： 默认添加uvc 640x360以满足微软TEAMS认证要求
+4. usb config： 添加mtp设备支持参考配置
+5. aicamera.sh： 修复uac和adb复合设备热拔插异常问题
+
+七、文档和工具
+1. 更新ISP驱动文档
+2. 更新UVC APP文档
+3. 更新DUF升级文档V1.10
+4. 更新UVC延时优化文档
+5. 更新烧写工具到V2.86，修复spi-nand固件烧写卡在98%问题等
+```
+
+
+
+
+
 ## rv1126_rv1109_linux_ai_camera_v2.2.0_20210831.xml Note
 
 ```
