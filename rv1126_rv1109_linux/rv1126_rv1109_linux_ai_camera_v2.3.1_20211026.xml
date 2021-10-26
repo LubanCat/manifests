@@ -9,7 +9,7 @@
   <project name="linux/app/CameraFactoryTestServer" path="app/CameraFactoryTestServer" revision="4bf562db7718264772ed9c52e1afc54ccebc8356" upstream="master"/>
   <project name="linux/app/rkaiq_tool_server" path="app/rkaiq_tool_server" revision="1e61f9d7fecfb9b17abae680f92a940475331720" upstream="socket"/>
   <project name="linux/app/LibIPCProtocol" path="app/libIPCProtocol" revision="d6de9ce40264f11a4a8b32f7d9d2b4a9a590f7cc" upstream="aicamera"/>
-  <project name="linux/app/aiserver" path="app/aiserver" revision="c2c64fc77f309f3b293d1919fd406b31f0e7424d" upstream="master"/>
+  <project name="linux/app/aiserver" path="app/aiserver" revision="8d329031758a40c806f2a58cfecb5cc346455f87" upstream="master"/>
   <project name="linux/app/camera" path="app/camera" revision="44a961358dcf912504a951e7caf60c7d55ed999a" upstream="master"/>
   <project name="linux/app/dbserver" path="app/dbserver" revision="ed4479a42b462a0f23e39fe77e2decc009fc0938" upstream="master"/>
   <project name="linux/app/eptz_demo" path="app/eptz_demo" revision="eefc46ba96e15e52d191b0db310cfb16ecfd7f40" upstream="master"/>
