@@ -7,6 +7,22 @@
 [TOC]
 
 ---
+## rv1126_rv1109_linux_ai_camera_v2.3.1_20211026.xml Note
+
+```
+一、App
+1. aiserver：修复eptz下概率坐标判断错误导致rga报错预览异常问题
+2. aiserver： 修复VO插件长宽配置异常问题
+3. uvc app： 修复amcap光圈控制选项设置后异常问题
+
+二、Buildroot
+1. 更新dl目录，预置一些bsp包，避免下载耗时
+```
+
+
+
+
+
 ## rv1126_rv1109_linux_ai_camera_v2.3.0_20211019.xml Note
 
 ```
