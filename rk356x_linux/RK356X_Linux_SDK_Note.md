@@ -7,6 +7,225 @@
 [TOC]
 
 ---
+## rk356x_linux_release_v1.2.1_20211105.xml Note
+
+**app**:
+
+```
+- update qsetting
+	* - qsetting: wifibt: fix build
+	* - qtbt:Solve the bug of incomplete Bluetooth display
+
+- update rkaiq_tool_server
+	* - media pipeline: only link for selected sensor
+```
+
+**external**:
+
+```
+- update mpp
+	* - [hal_task]: Remove unused variable
+	* - [mpp_dec]: Optimize decoder flow
+	* - [mpp_lock]: Add gcc atomic macro define
+	* - [h265d_parser]: Fix h265d parser crash issue
+	* - [mpp_meta]: Use macro to generate code
+	* - [mpp_meta]: Add performance test case
+	* - [mpp_meta]: Improve performance
+	* - [mpp_dec]: Fix double free issue
+	...
+
+- update gstreamer-rockchip
+	* - mppenc: Improve format and alignment supports
+	* - mppdec: Provide RGA formats only when available
+	* - mppdec: Add RGB/BGR formats
+	* - mppjpegenc: Update size limits
+	* - mppenc: Simplify caps
+	* - mppvideodec: Delay discarding frames for some broken videos
+	* - mppvideodec: Drop extra MPP frame in I4O2 deinterlaced mode
+	* - mppvideodec: Rule out YUV444 for H264
+	* - rkximage: Fix colorkey setting issue
+	* - mppdec: Use alignment 2 for strides when doing RGA conversion
+	* - rkximage: Support disabling vsync
+	* - rkximage: Update colorkey prop defination
+	* - mppjpegdec: Drop PP format NV16
+	* - mppdec: Support setting prefered output format
+	* - rockchipmpp: Fix RGA RGB16 wrong endian
+	* - mppdec: Drop RGB15 and BGR15
+	* - Revert "rockchipmpp: Use height as vstride in RGA conversion"
+	* - mppjpegdec: Add a sanity check for input video info
+	* - rockchipmpp: Fix a few compile warnings
+	* - Switch to meson
+	* - Remove unused tests/examples
+
+- update libmali
+	* - Move scripts and sources to sub directories
+	* - Speed up normalizing
+	* - debian: Sort targets
+	* - debian: Force enabling wrappers
+	* - libmali: px30, 3326: add libs of libmali-bifrost-g31-g2p0-only-cl.so of g2p0-01eac0-8
+	* - libmali: px30, 3326: add libs of libmali of g2p0-01eac0-7
+	* - libmali optimized for size: 356x: add libmali-bifrost-g52-g2p0-without-cl-dummy-gbm.so of g2p0-01eac0-6
+	* - libmali optimized for size: 356x: add libmali-bifrost-g52-g2p0-dummy-gbm.so of g2p0-01eac0-6
+	* - meson: Support optimize-level option
+	* - debian: Simplify conflicts logic
+	* - meson: Don't try to fixup non-existing headers
+	* - libmali: 356x: add libmali-bifrost-g52-g2p0-without-cl-dummy-gbm.so of g2p0-01eac0-5
+
+- update linux-rga
+	* - build: add .gitignore if build in rga source dir
+	* - build: Modify CMakeLists.
+	* - drmPrimeHandleToFD add DRM_CLOEXEC | DRM_RDWR flag
+	* - build: cmake support compiling with 'buildroot' TARGET.
+	* - im2d_api: Fix the error of rgaImDemo fill mode.
+	* - Modify the judgment about perpixelAlpha.
+	* - Support BGR565/BGRA5551/BGRA4444.
+	* - im2d_api: Fix the check error of crop mode.
+	* - im2d_api: Fix errors in the blend module.
+	* - docs: Modify the wrong format description of RGB and RGBA.
+	* - Fix the error of BGR565/5551/4444 format conversion.
+	* - Get the version compatible with RGA1.
+	* - im2d_api: Remove IM_CROP.
+
+- update camera_engine_rkaiq
+	* - update aiq to version v2.0x60.1
+	* - add lock for j2s & fix crash on multi camera.
+	* - rkaiq_3A_server: start engine in threads
+	* - rkaiq_3A_server: get sensor entity name from librkaiq
+	* - isp or ispp can be NULL for rkcif media device
+	* - CamHwIsp20: fix dvp entity name not matched with driver
+
+- update deviceio_release
+	* - devceio_release: update to 20210930
+	* - fixed build err in the case of cpp refer c
+	* - devceio_release: update to 20210907
+
+- update storage_manager/rknpu/rknn-toolkit2/rockx/rknpu2/isp2-ipc/ipcweb-backend/mediaserver/aiserver/uac_app/common_algorithm/libglCompositor/rkwifibt
+```
+
+**Debian**:
+
+```
+- update Debian10
+	* - mk-rootfs-buster.sh: Error out when source not found
+	* - mk-rootfs-buster.sh: Build for arm64 by default
+	* - mk-rootfs-buster.sh: Drop unused xserver -dev packages
+	* - mk-rootfs-buster.sh: Use apt-get to install local packages
+	* - mk-rootfs-buster.sh: Only hold custom local packages
+	* - packaegs: update xserver
+	* - packages: update libdrm-cursor
+	* - overlay-debug: update glmark2
+	* - packages: update xserver
+	* - overllay: upgrade bifrost-g31 to g2p0
+	* - packages: update libmali
+	* - packages: update libdrm-cursor
+	* - overlay: xorg.conf.d: Add some comments
+	* - overlay: fixes the typo for scripts
+	* - packages: update xserver
+	* - packages/mpp: update mpp
+	* - packages: update gst-rkmpp/mpp/rga packages
+	* - scripts: the libssl-dev had existed on base package
+	* - packages: fixes dri2 pagefilp issue for xserver
+	* - mk-rootfs-buster.sh: Only preload libdrm-cursor for X
+	* - overlay: enable ASYNC for atomic commit by default
+	* - packages: update xserver package
+	* - Merge "rkscripts: Don't remove the build dir"
+	* - Merge "packages: update rga/mpp/gstreamer-rockchip"
+	* - rkscripts: Don't remove the build dir
+	* - chromium-x11: Update to 91.0.4472.164
+	* - packages: update rga/mpp/gstreamer-rockchip
+```
+
+**Yocto**:
+
+```
+- update Yocto3.2
+	* - linux-rockchip: 4.4: Update color-key patch
+	* - linux-rockchip: 4.4: Fix compile error with new GCC
+	* - u-boot: Rebase patches
+	* - machine: px30: Switch mali to g2p0
+	* - Bump BSP package revisions at 2021_10_13
+	* - Add drm-cursor
+	* - Fix fetching errors for local git sources with detached HEAD
+	* - gstreamer-rockchip: Switch to meson build system
+```
+
+
+**Buildroot**:
+
+```
+- update buildroot 2018.02-rc3
+	* - rknpu: Remove redundant 356x options
+	* - rockchip_rk3568_defconfig: fix rknpu2.
+	* - qt5wayland: Support window lower() and raise()
+	* - configs: add rk3588 nvr defconfig
+	* - weston: Use vblank based dynamic repaint window
+	* - weston: Improve input device and output  associating
+	...
+```
+
+**U-boot**:
+
+```
+- update U-boot (next-dev)
+	* - mtd: spi-nor-ids: Add support for gd25lb512m
+	* - dm: sysreset: do optimise
+	* - arm: crt0_64.S: disable arm64 SError for usbplug
+	* - lib: optee_clientApi: data alignment for get_rkss_version
+	* - rockchip: rkimg: support setting NVME as main storage
+	* - rockchip: rk3308bs: correct the nand iomux
+	...
+```
+
+**rkbin**:
+
+```
+- update rkbin
+	* - rk3566: ddr: update ddr bin to v1.11
+	* - rk3568: ddr: update ddr bin to v1.11
+	...
+```
+
+**kernel**:
+
+```
+- update Kernel4.19
+	* - video: rockchip: mpp: use dma-buf-cache func
+	* - drm: rockchip: do release callback if not define CONFIG_DMABUF_CACHE
+	* - clk: rockchip: rk3568: add CLK_SET_RATE_NO_REPARENT flag for clk_gmacx_rx_tx
+	* - ASoC: es8311: fixed the dapm route error
+	* - phy: rockchip-naneng-usb2: do apb reset during probe
+	* - arm64: dts: rockchip: rk3568-linux: enable hdmi_sound with hdmi jack function
+	* - arm64: dts: rockchip: rk3568-evb: use "rockchip,hdmi" instead of "simple-audio-card"
+	* - mmc: dw_mmc-rockchip: Improve v2 tuning
+	* - mmc: dw_mmc-rockchip: Skip all phases bigger than 270 degrees
+	* - media: rockchip: ispp: replace iommu detach/attach
+	...
+```
+
+**docs**
+
+```
+- update docs
+	* - docs: add ROS2 document and update PCBA and Recovery document
+	* - Common/CAMERA: upgrade ISP2x to 20210925
+	* - docs: add wifibt avl for linux and update wifibt docs to 20210915
+	* - Linux: Multimedia: update Rockchip_Developer_Guide_Linux_RKADK_CN.pdf to v1.2.0
+	* - COMMON: update it with inside on 20210922
+	* - Linux: Recovery: update DFU upgrade guide document to v1.1.0
+	* - docs: update Rockchip_Driver_Guide_VI & Rockchip_Tuning_Guide_ISP20 document;
+```
+
+**tools**
+
+```
+- update tools
+	* - update RKDevTool from V2.84 to V2.86
+	* - linux: Linux_Pack_Firmware: add rv1126-package-file-sllock
+	* - tools: windows: update ParameterTool to v1.2
+	* - linux: Linux_Pack_Firmware: add new package file
+	...
+```
+
 ## rk356x_linux_release_v1.1.3_20210805.xml Note
 
 **app**:
@@ -65,7 +284,6 @@
 
 - update common_algorithm/libglCompositor/recovery/rkfacial/rkwifibt
 ```
-
 
 **U-boot**:
 
