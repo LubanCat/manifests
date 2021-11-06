@@ -56,10 +56,10 @@
     <linkfile dest="docs/RV1126_RV1109" src="RV1126_RV1109"/>
   </project>
   <project name="linux/linux-rga" path="external/linux-rga" revision="b40e4b66437289f91a4234a23a44d317002b6905" upstream="im2d"/>
-  <project name="linux/recovery" path="external/recovery" revision="6375a892286a7f0ded962921a0f0abf92e295ce8" upstream="develop"/>
+  <project name="linux/recovery" path="external/recovery" revision="59e08f5e524eadfb7436c97cbbbc2b18118534c4" upstream="develop-rv1126-uvc"/>
   <project name="linux/rockit" path="external/rockit" revision="c0f42dcfb74ec195dfec7ac96d6fdab4719083b8" upstream="master"/>
   <project name="linux/security/bin" path="external/security/bin" revision="f59085ce658bd69678b68fd4840fb86937678125" upstream="master"/>
-  <project name="linux/tools" path="tools" revision="266050571af887cb0242e3184f544125cfbdfc42" upstream="master">
+  <project name="linux/tools" path="tools" revision="2edad885ae7c1201475e0a1db4bdb0cdb61e1143" upstream="master">
     <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rv1126_rv1109-config.cfg"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rv1126_rv1109-package-file"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/mkupdate.bat" src="windows/RKDevTool/rockdev/rv1126_rv1109-mkupdate.bat"/>
