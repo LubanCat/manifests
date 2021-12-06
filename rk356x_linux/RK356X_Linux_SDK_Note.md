@@ -7,6 +7,52 @@
 [TOC]
 
 ---
+## rk356x_linux_release_v1.2.2_20211205.xml Note
+
+**Buildroot**:
+
+```
+- update buildroot 2018.02-rc3
+	* - add arm32 rknpu2 test mode and demo
+	* - gstreamer1: gstpad: Add 1 sec timeout for activation
+	* - gst1-plugins-base: playbin2: Fix deadlock when hooking about-to-finish signal
+	* - qt5multimedia: Support choosing playbin2 and playbin3
+	...
+```
+
+**external**:
+
+```
+- update mpp
+	* - [mpp_impl]: modify dump frame default size
+	* - [mpp_dec]: Optimize sort pts function
+	* - [mpp_list]: Add list_sort func
+	* - [mpp_enc]: Fix rotation case GET_CFG mismatch
+	* - [h264e_vepu]: add cfg to disable mb rc
+	* - [hal_task]: Remove hal_enc_task.h
+	* - [mpp_hal]: Remove enc define from HalTaskInfo
+	* - [mpp_cluster]: Change callback return type
+	...
+
+- update gstreamer-rockchip
+	* - rockchipmpp: Add mppvpxalphadecodebin element
+	* - mppenc: Add mpph265enc
+	* - mppenc: Fix unbalance stream unlock
+	*- mppdec: Unlock stream when doing RGA conversion
+	* - rkximage/mppdec: Support NV12_10(AFBC)
+	* - rkximage: Disable colorkey by default
+	...
+```
+
+**kernel**:
+
+```
+- update Kernel4.19
+	* - video: rockchip: mpp: rkvdec2: setup link mode clk
+	* - video: rockchip: mpp: Fix mpp_iommu_refresh crash issue
+	...
+```
+
 ## rk356x_linux_release_v1.2.1_20211105.xml Note
 
 **app**:
