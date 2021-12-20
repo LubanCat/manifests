@@ -77,7 +77,7 @@
   <project dest-branch="master" name="linux/external/update_engine" path="external/update_engine" revision="ef212877ada6fe629f52485113b35a81ab31009b" upstream="master"/>
   <project dest-branch="develop-4.19" name="linux/external/uvc_app" path="external/uvc_app" revision="e6b7aa7bf357e60abd04b9c20738dc1f9b6755a1" upstream="develop-4.19"/>
   <project dest-branch="master" name="linux/external/wifiAutoSetup" path="external/wifiAutoSetup" revision="872e84394896e12989c1745f4af536b567d02de7" upstream="master"/>
-  <project dest-branch="master" name="linux/gstreamer-rockchip" path="external/gstreamer-rockchip" revision="3c8fd7ff42d3783ad439761fe34a8b32dfe4beb7" upstream="master"/>
+  <project dest-branch="master" name="linux/gstreamer-rockchip" path="external/gstreamer-rockchip" revision="refs/tags/linux-4.19-gen-rkr2"/>
   <project dest-branch="master" name="linux/libmali" path="external/libmali" revision="master" clone-depth="1"/>
   <project dest-branch="im2d" name="linux/linux-rga" path="external/linux-rga" revision="9679ef07bbc45be5c08d34350a7abe719f374a87" upstream="im2d"/>
   <project dest-branch="develop" name="linux/recovery" path="external/recovery" revision="d596194eee9c46bfdbe209077346faad160cdf92" upstream="develop"/>
