@@ -3,6 +3,7 @@
   <remote fetch="ssh://git@www.rockchip.com.cn/linux/" name="rk"/>
 
   <default remote="rk" sync-j="4"/>
+  <include name="include/rk3358_doc.xml" />
 
   <project dest-branch="develop-next" name="android/rk/platform/system/rk_tee_user" path="external/security/rk_tee_user" revision="566bc0f418a454f1beb265dd8c744d350ceb0dd0" upstream="develop-next"/>
   <project dest-branch="next-dev" name="android/rk/u-boot" path="u-boot" revision="68cdac84e119cb1120806f8ad962c44cbb203ceb" upstream="next-dev"/>
@@ -13,10 +14,8 @@
   <project dest-branch="master" name="linux/app/qcamera" path="app/qcamera" revision="3a74b34724828075bcb9f51b704e0c50e7dadaec" upstream="master"/>
   <project dest-branch="master" name="linux/app/qplayer" path="app/qplayer" revision="0121646c9fe2335eef9a963071d07b797a17487e" upstream="master"/>
   <project dest-branch="develop" name="linux/app/settings" path="app/qsetting" revision="7719da2d42787bac1a6fe075f2ddf6157cd5d678" upstream="develop"/>
-  <project dest-branch="master" name="linux/bsp/docs" path="docs" revision="8704b5e6f1e53b811d833446088609faa2567d45" upstream="master"/>
   <project dest-branch="master" name="linux/bsp/external/bluetooth_bsa" path="external/bluetooth_bsa" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master"/>
   <project dest-branch="master" name="linux/bsp/external/broadcom_bsa" path="external/broadcom_bsa" revision="46234ce7a904794754bba79cb7c9f26d39605311" upstream="master"/>
-  <project dest-branch="master" name="linux/bsp/internal_doc" path="docs/Socs" revision="cca2f3d23c6daf0726a4c4b9dc8a64c9dd063508" upstream="master"/>
   <project dest-branch="rockchip/2018.02-rc3" name="linux/buildroot" path="buildroot" revision="fe204a54d2ac19a963e9cd345e3c2f293b4fd746" upstream="rockchip/2018.02-rc3">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
