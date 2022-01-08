@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<project dest-branch="master" name="linux/bsp/internal_doc" path="docs/.Socs" revision="cc6a743d94fa54f412325e9f87368418236faeb5" upstream="master">
+<project dest-branch="master" name="linux/bsp/internal_doc" path="docs/.Socs" revision="2e3a925584d994c8340ca059979628455f9e33b1" upstream="master">
     <linkfile dest="docs/RK356X" src="RK356X"/>
 </project>
-<project dest-branch="master" name="linux/bsp/docs" path="docs" revision="061a8f43748843de65da71d2b303fe8cc1a3bcc5" upstream="master">
+<project dest-branch="master" name="linux/bsp/docs" path="docs" revision="54bef1433c530f04fea89eb872d96d11ca8bec48" upstream="master">
     <linkfile dest="docs/.Socs/RK356X/Rockchip_RK3568_Reference_SATA_Performance_CN.pdf" src="Common/NVM/Rockchip_RK3568_Reference_SATA_Performance_CN.pdf"/>
     <linkfile dest="docs/.Socs/RK356X/Rockchip_RK356X_Developer_Guide_SATA_CN.pdf" src="Common/NVM/Rockchip_RK356X_Developer_Guide_SATA_CN.pdf"/>
     <linkfile dest="docs/.Socs/RK356X/Rockchip_RK356X_Developer_Guide_PCIe_CN.pdf" src="Common/PCIe/Rockchip_RK356X_Developer_Guide_PCIe_CN.pdf"/>

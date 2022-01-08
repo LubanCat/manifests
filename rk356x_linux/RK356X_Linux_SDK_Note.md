@@ -7,6 +7,91 @@
 [TOC]
 
 ---
+## rk356x_linux_release_v1.2.3_20220108.xml Note
+
+**Buildroot**:
+
+```
+- update buildroot 2018.02-rc3
+	* - glmark2 upgrade to 2021.02 version
+	* - Support AFBC for kmssink and waylandsink
+	* - Fix a memory leak in window create/destroy on qt5wayland
+	* - Support NV12_10 and NV16 format
+	...
+```
+
+**Debian**:
+
+```
+- update Debian10
+	* - ecfd77c packages: update gstreamer for afbc
+	* - 4f78d66 packages: armhf: Update gstreamer and gstreamer plugins
+	* - 776346f overlay-debug: update scripts
+	* - 33934b6 mk-rootfs-buster.sh: remove the typo
+	* - a438f20 packages: update gst-rkmpp/mpp/libdrm-cursor/xserver
+	* - ed04efc packages: Update gstreamer and gstreamer plugins
+	* - 41a6ac8 mk-rootfs-buster.sh: add some packages
+	* - 9d2aac4 overlay-firmware: remove unused wifi tools
+	* - 93c150e overlay-debug: add rockchip_test
+	* - a792a28 overlay-debug: update ddr test tools
+	* - 18985be overlay: update services
+	...
+```
+
+**external**:
+
+```
+- update camera_engine_rkaiq
+	* - c1b0f18 rkaiq_3A_server: workaround: always enable readback
+	* - e758b50 update aiq to version v2.0x60.1
+
+- update mpp
+	* - 693720fd ([iep2]: Disable test log
+	* - e85c28ab [vp9d]: Fix ref frame pointer not free issue
+	* - f94ae6d0 [vepu580]: Add YUV444 support for vepu580
+	* - 5dec7c0b [hal_h265e]: Format file from dos to unix
+	* - be46d787 [hal_hevc580]: Add frame offset x y set
+	...
+
+- update gstreamer-rockchip
+	* - 9db2606 rkximage: Fix pitch error for YUV420_8BIT
+	* - 652bf72 HACK: rkximage: Fix aligning error for AFBC
+	* - 983a1e1 mppdec: Adjust crop size based on MPP's offsets
+	* - b0d0fc5 HACK: mppdec: Avoid copying output buffer in make_writable() while shared
+	* - e2e2491 mppdec: Honor interlace mode changing
+	* - b35866b mppdec: Support crop-rectangle property
+	...
+```
+
+**Kernel**:
+
+```
+- update Kernel to 4.19.219
+	* - 82957dba3977 drm/rockchip: vop2: add support DRM_FORMAT_YUYV for RK356x Cluster
+	* - 6b8a1e9f8ebf drm/rockchip: dev_ebc: release version v2.26
+	* - 3987669c73ce media: i2c: add new camera sensor gc030a
+	* - 61cf54704b72 media: rockchip: isp: improve snapshot feature(tb in RISC-V)
+	...
+```
+
+**Uboot**:
+
+```
+- update rkbin
+	* - c7a0111 rk3568: bl32: fix pack failure
+	* - 0419aef rk3568: bl32: update version to v2.01
+	...
+```
+
+**Tools**:
+
+```
+- update tools
+	* - 1a32bc7 tools: linux: update Linux_Upgrade_Tool to v2.1
+	* - 00ad7ea tools: windows: update RKDevTool to v2.91
+	...
+```
+
 ## rk356x_linux_release_v1.2.2_20211205.xml Note
 
 **Buildroot**:
