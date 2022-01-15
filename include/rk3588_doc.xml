@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<project dest-branch="master" name="linux/bsp/internal_doc" path="docs/.Socs" revision="refs/tags/linux-5.10-gen-rkr1">
+    <linkfile dest="docs/RK3588" src="RK3588"/>
+</project>
+<project dest-branch="master" name="linux/bsp/docs" path="docs" revision="refs/tags/linux-5.10-gen-rkr1">
+    <linkfile dest="docs/.Socs/RK3588/Rockchip_Developer_Guide_Linux_Software_CN.pdf" src="Rockchip_Developer_Guide_Linux_Software_CN.pdf"/>
+</project>
+
+</manifest>
