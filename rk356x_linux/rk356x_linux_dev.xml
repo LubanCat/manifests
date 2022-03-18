@@ -9,7 +9,7 @@
 
   <!-- <project dest-branch="rk33/mid/8.1/develop" name="android/RKNPUTool" path="external/RKNPUTools" revision="68e68f97ea9e9fa3350419a40b95b92b0828a882" upstream="rk33/mid/8.1/develop"/> -->
   <!-- <project dest-branch="develop-next" name="android/rk/platform/system/rk_tee_user" path="external/security/rk_tee_user" revision="dd9d4d313ebd2d74b3cdc31c76770bef0dacdc66" upstream="develop-next"/> -->
-  <project dest-branch="next-dev" name="android/rk/u-boot" path="u-boot" revision="dde42ec6a2c0d2cdb20ef366963a0b673bac9a94" upstream="next-dev"/>
+  <project dest-branch="next-dev" name="linux/u-boot" path="u-boot" revision="dde42ec6a2c0d2cdb20ef366963a0b673bac9a94" upstream="next-dev"/>
   <!-- <project dest-branch="master" name="linux/app-new/LibIPCProtocol" path="app/libIPCProtocol" revision="45cdd16d137929a06ad6231eca4d17eed5a967d6" upstream="master"/> -->
   <!-- <project dest-branch="master" name="linux/app-new/mediaserver" path="app/mediaserver" revision="bdfd5d9dd5f81ec3d3ae9c7bd1c8db076a39bd8b" upstream="master"/> -->
   <!-- <project dest-branch="master" name="linux/app-new/qfm" path="app/qfm" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/> -->
