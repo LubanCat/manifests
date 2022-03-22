@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="ssh://git@gitlab.ebf.local/rockchip/" name="ebf"/>
+  <remote fetch="ssh://git@gitlab.ebf.local/rockchip/linux/" name="ebf"/>
+  <remote fetch="https://github.com/Caesar-github/" name="rk-github"/>
 
   <default remote="ebf" sync-j="4"/>
 
@@ -9,7 +10,7 @@
 
   <!-- <project dest-branch="rk33/mid/8.1/develop" name="android/RKNPUTool" path="external/RKNPUTools" revision="68e68f97ea9e9fa3350419a40b95b92b0828a882" upstream="rk33/mid/8.1/develop"/> -->
   <!-- <project dest-branch="develop-next" name="android/rk/platform/system/rk_tee_user" path="external/security/rk_tee_user" revision="dd9d4d313ebd2d74b3cdc31c76770bef0dacdc66" upstream="develop-next"/> -->
-  <project dest-branch="next-dev" name="linux/u-boot" path="u-boot" revision="dde42ec6a2c0d2cdb20ef366963a0b673bac9a94" upstream="next-dev"/>
+  <project dest-branch="next-dev" name="u-boot" path="u-boot" revision="dde42ec6a2c0d2cdb20ef366963a0b673bac9a94" upstream="next-dev"/>
   <!-- <project dest-branch="master" name="linux/app-new/LibIPCProtocol" path="app/libIPCProtocol" revision="45cdd16d137929a06ad6231eca4d17eed5a967d6" upstream="master"/> -->
   <!-- <project dest-branch="master" name="linux/app-new/mediaserver" path="app/mediaserver" revision="bdfd5d9dd5f81ec3d3ae9c7bd1c8db076a39bd8b" upstream="master"/> -->
   <!-- <project dest-branch="master" name="linux/app-new/qfm" path="app/qfm" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/> -->
@@ -33,12 +34,12 @@
   <!-- <project dest-branch="master" name="linux/app/web-new/ipcweb-ng" path="app/ipcweb-ng" revision="ca9ad4f24bb46568dbbb80ac216a6e2b5f872d23" upstream="master"/> -->
   <!-- <project dest-branch="master" name="linux/bsp/external/bluetooth_bsa" path="external/bluetooth_bsa" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master"/> -->
   <!-- <project dest-branch="master" name="linux/bsp/external/broadcom_bsa" path="external/broadcom_bsa" revision="46234ce7a904794754bba79cb7c9f26d39605311" upstream="master"/> -->
-  <project name="linux/buildroot" path="buildroot" revision="refs/tags/linux-4.19-gen-rkr3">
+  <project name="buildroot" path="buildroot" revision="refs/tags/linux-4.19-gen-rkr3">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
-  <project dest-branch="master" name="linux/debian" path="debian" revision="refs/tags/linux-4.19-gen-rkr2"/>
-  <project dest-branch="master" name="linux/device_rockchip" path="device/rockchip" revision="f459d579aabb75233c343b5d45461d18fa7fa87e" upstream="master">
+  <project dest-branch="master" name="debian" path="debian" revision="refs/tags/linux-4.19-gen-rkr2"/>
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="f459d579aabb75233c343b5d45461d18fa7fa87e" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -78,7 +79,7 @@
   <!-- <project dest-branch="develop-4.19" name="linux/external/uvc_app" path="external/uvc_app" revision="97915cfca3f11b828de2a289a3c233fd6dbef6f5" upstream="develop-4.19"/> -->
   <!-- <project dest-branch="master" name="linux/external/wifiAutoSetup" path="external/wifiAutoSetup" revision="872e84394896e12989c1745f4af536b567d02de7" upstream="master"/> -->
   <!-- <project name="linux/gstreamer-rockchip" path="external/gstreamer-rockchip" revision="refs/tags/linux-4.19-gen-rkr3"/> -->
-  <!-- <project dest-branch="master" name="linux/libmali" path="external/libmali" revision="968a49083754f4c63ae02c4c54f866cb8c83d661" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="libmali" path="external/libmali" revision="968a49083754f4c63ae02c4c54f866cb8c83d661" upstream="master"/>
   <!-- <project dest-branch="im2d" name="linux/linux-rga" path="external/linux-rga" revision="1e2f0dbb838de3512a8a29143196d7b5e460e1ca" upstream="im2d"/> -->
   <!-- <project dest-branch="develop" name="linux/recovery" path="external/recovery" revision="69eb9ffe14c08e144205b096d91176c88fbfa345" upstream="develop"/> -->
   <!-- <project dest-branch="master" name="linux/rockit" path="external/rockit" revision="c8fdc5aa247a989e6869e794d232d0ed4e8f908d" upstream="master"/> -->
@@ -90,11 +91,11 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project> -->
-  <project dest-branch="stable-4.19-rk356x" name="linux/kernel" path="kernel" revision="863e1d0fec38d1fc0b47acb2780203af9c737d9e" upstream="stable-4.19-rk356x"/>
+  <project dest-branch="stable-4.19-rk356x" name="kernel" path="kernel" revision="863e1d0fec38d1fc0b47acb2780203af9c737d9e" upstream="stable-4.19-rk356x"/>
   <!-- <project dest-branch="develop" name="rk/mpp" path="external/mpp" revision="693720fd192d443ffc6dfab16f1ea359e09dcac6" upstream="develop"/> -->
-  <project dest-branch="master" name="linux/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
-  <project dest-branch="master" name="linux/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
-  <project dest-branch="master" name="linux/rkbin" path="rkbin" revision="8047b5083d0c9a49b841f4f0ab7204bf5043a1ce" upstream="master"/>
+  <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
+  <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
+  <project dest-branch="master" name="rkbin" path="rkbin" revision="8047b5083d0c9a49b841f4f0ab7204bf5043a1ce" upstream="master"/>
   <!-- <project dest-branch="master" name="rk/rknn-toolkit2" path="external/rknn-toolkit2" revision="e2131fc0f2c4ffe3a0f91336e991137f13c686b5" upstream="master"/> -->
   <!-- <project dest-branch="master" name="rk/rknpu2" path="external/rknpu2" revision="c0303684992ded83acb3c9e153d8920172dffd64" upstream="master"/> -->
   <!-- <project dest-branch="master" name="rk/rockface" path="external/rockface" revision="c15e36566c5bf07e1f8449e9087d73533b4ff420" upstream="master"/> -->
