@@ -13,22 +13,22 @@
   <project dest-branch="next-dev" name="u-boot" path="u-boot" revision="dde42ec6a2c0d2cdb20ef366963a0b673bac9a94" upstream="next-dev"/>
   <!-- <project remote="rk-github" dest-branch="master" name="LibIPCProtocol" path="app/libIPCProtocol" revision="45cdd16d137929a06ad6231eca4d17eed5a967d6" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="mediaserver" path="app/mediaserver" revision="bdfd5d9dd5f81ec3d3ae9c7bd1c8db076a39bd8b" upstream="master"/> -->
-  <!-- <project remote="rk-github" dest-branch="master" name="qfm" path="app/qfm" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="qfm" path="app/qfm" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/>
   <!-- <project remote="rk-github" dest-branch="master" name="CameraFactoryTestServer" path="app/CameraFactoryTestServer" revision="4bf562db7718264772ed9c52e1afc54ccebc8356" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="QFacialGate" path="app/QFacialGate" revision="87f2c3643b41ed70e9551e0039edc8369dbe626a" upstream="master"/> -->
-  <!-- <project remote="rk-github" dest-branch="develop" name="QLauncher" path="app/QLauncher" revision="a17ceb273aaa6f5c9aaf9f570d4ee56e28135c9d" upstream="develop"/> -->
+  <project remote="rk-github" dest-branch="develop" name="QLauncher" path="app/QLauncher" revision="a17ceb273aaa6f5c9aaf9f570d4ee56e28135c9d" upstream="develop"/>
   <!-- <project remote="rk-github" dest-branch="master" name="aiserver" path="app/aiserver" revision="e3aea22f23df6fdaa6120567286473210394e5e2" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="dbserver" path="app/dbserver" revision="ed4479a42b462a0f23e39fe77e2decc009fc0938" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="eptz_demo" path="app/eptz_demo" revision="eefc46ba96e15e52d191b0db310cfb16ecfd7f40" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="ipc-daemon" path="app/ipc-daemon" revision="30b8dc6f23c4623324bcd051659ef8b45018a8c2" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="libgdbus" path="app/libgdbus" revision="79370be32dde657abf1128c90c72b93e75d814ed" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="librkdb" path="app/librkdb" revision="72fd398899e791dcf0a02b484a9be404063ed94e" upstream="master"/> -->
-  <!-- <project remote="rk-github" dest-branch="master" name="multivideoplayer" path="app/multivideoplayer" revision="5d566e0b2ab416c251b54d59d6237e7164c7e270" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="multivideoplayer" path="app/multivideoplayer" revision="5d566e0b2ab416c251b54d59d6237e7164c7e270" upstream="master"/>
   <!-- <project remote="rk-github" dest-branch="master" name="network_manager" path="app/netserver" revision="2c696348c2e4dd2eb278efd38370255e752eb4d7" upstream="master"/> -->
-  <!-- <project remote="rk-github" dest-branch="master" name="qcamera" path="app/qcamera" revision="3a74b34724828075bcb9f51b704e0c50e7dadaec" upstream="master"/> -->
-  <!-- <project remote="rk-github" dest-branch="master" name="qplayer" path="app/qplayer" revision="0121646c9fe2335eef9a963071d07b797a17487e" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="qcamera" path="app/qcamera" revision="3a74b34724828075bcb9f51b704e0c50e7dadaec" upstream="master"/>
+  <project remote="rk-github" dest-branch="master" name="qplayer" path="app/qplayer" revision="0121646c9fe2335eef9a963071d07b797a17487e" upstream="master"/>
   <!-- <project remote="rk-github" dest-branch="socket" name="rkaiq_tool_server" path="app/rkaiq_tool_server" revision="75cb7e5d124ca55c710fb7e45eac74a07b76b4ea" upstream="socket"/> -->
-  <!-- <project remote="rk-github" dest-branch="develop" name="settings" path="app/qsetting" revision="7719da2d42787bac1a6fe075f2ddf6157cd5d678" upstream="develop"/> -->
+  <project dest-branch="develop" name="settings" path="app/qsetting" revision="7719da2d42787bac1a6fe075f2ddf6157cd5d678" upstream="develop"/>
   <!-- <project dest-branch="master" name="app/storage_manager" path="app/storage_manager" revision="213aded5fbf9dc2fd05c0fd529aa3da55a6fea93" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="ipcweb-backend" path="app/ipcweb-backend" revision="98bc965bc491ef3b80b9de4e40123c18c3b81af7" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="ipcweb-ng" path="app/ipcweb-ng" revision="ca9ad4f24bb46568dbbb80ac216a6e2b5f872d23" upstream="master"/> -->
@@ -39,6 +39,7 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project dest-branch="master" name="debian" path="debian" revision="bf305fc62a931c28d5b1ddeec070cd5800400a22" upstream="master"/>
+  <project dest-branch="master" name="ubuntu" path="ubuntu" revision="056575249398c93d13e7eb986e759cabb784fcf0" upstream="ubuntu18.04"/>
   <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="b8e445f606227053fae4fc017e68ee81311a0342" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
@@ -54,7 +55,7 @@
   <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="c1b0f182d28ae9a4ef4eb4dabc26ec93d565438a" upstream="rk356x"/>
   <!-- <project remote="rk-github" dest-branch="master" name="chromium" path="external/chromium" revision="bba90aee6a986fca85e8cf79c2917ebf5a2b6e17" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="common_algorithm" path="external/common_algorithm" revision="070a45578a453f2a9e4e994a3ea9cb6a1cdcd9b2" upstream="master"/> -->
-  <!-- <project remote="rk-github" dest-branch="master" name="deviceio_release" path="external/deviceio_release" revision="187439b6c9ed867c5a28d8b39cb2ecf19ba9dae6" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="deviceio_release" path="external/deviceio_release" revision="187439b6c9ed867c5a28d8b39cb2ecf19ba9dae6" upstream="master"/>
   <!-- <project remote="rk-github" dest-branch="master" name="eq_drc_process" path="external/eq_drc_process" revision="6fe472aa76ed71922742863c8f94222dab3dbf3c" upstream="master"/> -->
   <!-- <project dest-branch="rk356x_dev" name="isp2-ipc" path="external/isp2-ipc" revision="37fd1c708eee3f68a0e25b2e4792e5bc2d30b626" upstream="rk356x_dev"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="ladspaSDK" path="external/ladspaSDK" revision="c1a72f6e72d86b3d235df50d97e5566fb6e93490" upstream="master"/> -->
@@ -72,7 +73,7 @@
   <project remote="rk-github" dest-branch="master" name="rkupdate" path="external/rkupdate" revision="534d8750105c2649e24648b40551fa1304f5eeab" upstream="master"/>
   <project dest-branch="master" name="rkwifibt" path="external/rkwifibt" revision="0990c26eb4e5fe8cb8b3fa26782fc49e7c544d27" upstream="master"/>
   <!-- <project remote="rk-github" dest-branch="master" name="rtc_demo" path="external/rtc_demo" revision="01ea9377beae66a544191ff5dbd920f19ba4614c" upstream="master"/> -->
-  <!-- <project remote="rk-github" dest-branch="master" name="softapDemo" path="external/softapDemo" revision="4c7d1bd3d28df276d263f49324b022b44b3a1c85" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="softapDemo" path="external/softapDemo" revision="4c7d1bd3d28df276d263f49324b022b44b3a1c85" upstream="master"/>
   <!-- <project remote="rk-github" dest-branch="master" name="tensorflow" path="external/tensorflow" revision="e1877bb157a775d76ec8c0b68467aef6d053bbb2" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="uac_app" path="external/uac_app" revision="ea59dca532288686841ad6ba64b0adf68c655bd8" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="update_engine" path="external/update_engine" revision="ef212877ada6fe629f52485113b35a81ab31009b" upstream="master"/> -->
