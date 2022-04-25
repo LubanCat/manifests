@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="ssh://git@gitlab.ebf.local/rockchip/linux/" name="ebf"/>
+  <remote fetch="https://github.com/Caesar-github/" name="rk-github"/>
+
+  <default remote="ebf" sync-j="4"/>
+
+  <!-- <include name="include/yocto.xml" /> -->
+  <!-- <include name="include/rk356x_doc.xml" /> -->
+
+  <!-- <project remote="rk-github" dest-branch="rk33/mid/8.1/develop" name="RKNPUTool" path="external/RKNPUTools" revision="68e68f97ea9e9fa3350419a40b95b92b0828a882" upstream="rk33/mid/8.1/develop"/> -->
+  <!-- <project remote="rk-github" dest-branch="develop-next" name="rk_tee_user" path="external/security/rk_tee_user" revision="dd9d4d313ebd2d74b3cdc31c76770bef0dacdc66" upstream="develop-next"/> -->
+  <project dest-branch="next-dev" name="u-boot" path="u-boot" revision="dde42ec6a2c0d2cdb20ef366963a0b673bac9a94" upstream="next-dev"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="LibIPCProtocol" path="app/libIPCProtocol" revision="45cdd16d137929a06ad6231eca4d17eed5a967d6" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="mediaserver" path="app/mediaserver" revision="bdfd5d9dd5f81ec3d3ae9c7bd1c8db076a39bd8b" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="qfm" path="app/qfm" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="CameraFactoryTestServer" path="app/CameraFactoryTestServer" revision="4bf562db7718264772ed9c52e1afc54ccebc8356" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="QFacialGate" path="app/QFacialGate" revision="87f2c3643b41ed70e9551e0039edc8369dbe626a" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="develop" name="QLauncher" path="app/QLauncher" revision="a17ceb273aaa6f5c9aaf9f570d4ee56e28135c9d" upstream="develop"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="aiserver" path="app/aiserver" revision="e3aea22f23df6fdaa6120567286473210394e5e2" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="dbserver" path="app/dbserver" revision="ed4479a42b462a0f23e39fe77e2decc009fc0938" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="eptz_demo" path="app/eptz_demo" revision="eefc46ba96e15e52d191b0db310cfb16ecfd7f40" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="ipc-daemon" path="app/ipc-daemon" revision="30b8dc6f23c4623324bcd051659ef8b45018a8c2" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="libgdbus" path="app/libgdbus" revision="79370be32dde657abf1128c90c72b93e75d814ed" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="librkdb" path="app/librkdb" revision="72fd398899e791dcf0a02b484a9be404063ed94e" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="multivideoplayer" path="app/multivideoplayer" revision="5d566e0b2ab416c251b54d59d6237e7164c7e270" upstream="master"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="network_manager" path="app/netserver" revision="2c696348c2e4dd2eb278efd38370255e752eb4d7" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="qcamera" path="app/qcamera" revision="3a74b34724828075bcb9f51b704e0c50e7dadaec" upstream="master"/>
+  <project remote="rk-github" dest-branch="master" name="qplayer" path="app/qplayer" revision="0121646c9fe2335eef9a963071d07b797a17487e" upstream="master"/>
+  <!-- <project remote="rk-github" dest-branch="socket" name="rkaiq_tool_server" path="app/rkaiq_tool_server" revision="75cb7e5d124ca55c710fb7e45eac74a07b76b4ea" upstream="socket"/> -->
+  <project dest-branch="develop" name="settings" path="app/qsetting" revision="7719da2d42787bac1a6fe075f2ddf6157cd5d678" upstream="develop"/>
+  <!-- <project dest-branch="master" name="app/storage_manager" path="app/storage_manager" revision="213aded5fbf9dc2fd05c0fd529aa3da55a6fea93" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="ipcweb-backend" path="app/ipcweb-backend" revision="98bc965bc491ef3b80b9de4e40123c18c3b81af7" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="ipcweb-ng" path="app/ipcweb-ng" revision="ca9ad4f24bb46568dbbb80ac216a6e2b5f872d23" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="bluetooth_bsa" path="external/bluetooth_bsa" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="broadcom_bsa" path="external/broadcom_bsa" revision="46234ce7a904794754bba79cb7c9f26d39605311" upstream="master"/> -->
+  <project dest-branch="master"  name="buildroot" path="buildroot" revision="a48faa57be87464276de6d5a8e02e1d96ae06dd6" upstream="rk356x">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project dest-branch="master" name="debian" path="debian" revision="bf305fc62a931c28d5b1ddeec070cd5800400a22" upstream="master"/>
+  <project dest-branch="master" name="ubuntu" path="ubuntu" revision="056575249398c93d13e7eb986e759cabb784fcf0" upstream="ubuntu18.04"/>
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="b8e445f606227053fae4fc017e68ee81311a0342" upstream="master">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.target_product" src="rk356x"/>
+  </project>
+  <!-- <project remote="rk-github" dest-branch="master" name="CallFunIpc" path="external/CallFunIpc" revision="b23fcde9739d9bdcc3c477caa0a845355825711f" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="alsa-config" path="external/alsa-config" revision="1e0c4b5382b84ed629b1ca9e40c814103b92ee93" upstream="master"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="app" path="external/app" revision="3a06ebb791eb8bc6d2b41876f895d121be987f41" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="avb" path="external/avb" revision="64b5ea0130d7440084796f6a23d7cd91fac988b8" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="ble_wificonfig" path="external/ble_wificonfig" revision="3b56e0e268634216df1f992d944bb30158e86786" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="bluez-alsa" path="external/bluez-alsa" revision="e383251a22fef7213b7e5a804e4c7a7ca621c80d" upstream="master"/> -->
+  <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="c1b0f182d28ae9a4ef4eb4dabc26ec93d565438a" upstream="rk356x"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="chromium" path="external/chromium" revision="bba90aee6a986fca85e8cf79c2917ebf5a2b6e17" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="common_algorithm" path="external/common_algorithm" revision="070a45578a453f2a9e4e994a3ea9cb6a1cdcd9b2" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="deviceio_release" path="external/deviceio_release" revision="187439b6c9ed867c5a28d8b39cb2ecf19ba9dae6" upstream="master"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="eq_drc_process" path="external/eq_drc_process" revision="6fe472aa76ed71922742863c8f94222dab3dbf3c" upstream="master"/> -->
+  <!-- <project dest-branch="rk356x_dev" name="isp2-ipc" path="external/isp2-ipc" revision="37fd1c708eee3f68a0e25b2e4792e5bc2d30b626" upstream="rk356x_dev"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="ladspaSDK" path="external/ladspaSDK" revision="c1a72f6e72d86b3d235df50d97e5566fb6e93490" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="libglCompositor" path="external/libglCompositor" revision="5dcd40eb0d8a44ae7eccd4961aea6b01c0f78180" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="minigui" path="external/minigui" revision="56dfcf3f4d2978cabe7684ca64073ebdfaae73b6" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="minigui_desktop" path="external/minigui_desktop" revision="9fa64dabb6bae25c07c2fc6ed40de6123f71f493" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="minilogger" path="external/minilogger" revision="5f0fa4698d5305d8653c2352bfcf1d9aa57064a4" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="pcba_adb_test" path="external/pcba_adb_test" revision="0a1ca61f27007e8374d21f3af167ee5e02923f19" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="rk_pcba_test" path="external/rk_pcba_test" revision="36e07775f017df15a8f20e62f52cb59e1ed3ae10" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="rkfacial" path="external/rkfacial" revision="8d37181704e2e3d1ab604e1b81d948808398ba23" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="rknn_demo" path="external/rknn_demo" revision="d24d15b855ee5b0521ee33bd13a1f1bcf597b7dc" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="rknpu" path="external/rknpu" revision="7196bf33840ee8de05104fef5312bccc5d9b54ce" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="rkscript" path="external/rkscript" revision="6c1303d90b979ccd30ebea43d4f942e5aa6f8860" upstream="master"/>
+  <project remote="rk-github" dest-branch="master" name="rktoolkit" path="external/rktoolkit" revision="77fb41f99185a6f9dc2c9c69e099f417d8ae905d" upstream="master"/>
+  <project remote="rk-github" dest-branch="master" name="rkupdate" path="external/rkupdate" revision="534d8750105c2649e24648b40551fa1304f5eeab" upstream="master"/>
+  <project dest-branch="master" name="rkwifibt" path="external/rkwifibt" revision="0990c26eb4e5fe8cb8b3fa26782fc49e7c544d27" upstream="master"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="rtc_demo" path="external/rtc_demo" revision="01ea9377beae66a544191ff5dbd920f19ba4614c" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="softapDemo" path="external/softapDemo" revision="4c7d1bd3d28df276d263f49324b022b44b3a1c85" upstream="master"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="tensorflow" path="external/tensorflow" revision="e1877bb157a775d76ec8c0b68467aef6d053bbb2" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="uac_app" path="external/uac_app" revision="ea59dca532288686841ad6ba64b0adf68c655bd8" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="update_engine" path="external/update_engine" revision="ef212877ada6fe629f52485113b35a81ab31009b" upstream="master"/> -->
+  <!-- <project dest-branch="develop-4.19" name="uvc_app" path="external/uvc_app" revision="97915cfca3f11b828de2a289a3c233fd6dbef6f5" upstream="develop-4.19"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="wifiAutoSetup" path="external/wifiAutoSetup" revision="872e84394896e12989c1745f4af536b567d02de7" upstream="master"/> -->
+  <project remote="rk-github" name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="9db260682e11ff6d5ca70f22e3a9e980a5f6ecd1" upstream="master"/>
+  <project remote="rk-github" dest-branch="master" name="libmali" path="external/libmali" revision="968a49083754f4c63ae02c4c54f866cb8c83d661" upstream="master"/>
+  <project remote="rk-github" dest-branch="im2d" name="linux-rga" path="external/linux-rga" revision="1e2f0dbb838de3512a8a29143196d7b5e460e1ca" upstream="im2d"/>
+  <project remote="rk-github" dest-branch="develop" name="recovery" path="external/recovery" revision="69eb9ffe14c08e144205b096d91176c88fbfa345" upstream="develop"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="rockit" path="external/rockit" revision="c8fdc5aa247a989e6869e794d232d0ed4e8f908d" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="bin" path="external/security/bin" revision="68a2fde8aadcfde9fec65af03db2c641d6631675" upstream="master"/> -->
+  <project dest-branch="master" name="tools" path="tools" revision="1a32bc776af52494144fcef6641a73850cee628a" upstream="master">
+    <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg"/>
+    <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rk356x-package-file"/>
+    <linkfile dest="tools/windows/RKDevTool/rockdev/mkupdate.bat" src="windows/RKDevTool/rockdev/rk356x-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
+  </project>
+  <project dest-branch="stable-4.19-rk356x" name="kernel" path="kernel" revision="035a6bb99e56382d713d897a13916ac2bb2580eb" upstream="stable-4.19-rk356x"/>
+  <project dest-branch="develop" name="mpp" path="external/mpp" revision="693720fd192d443ffc6dfab16f1ea359e09dcac6" upstream="develop"/>
+  <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
+  <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
+  <project dest-branch="master" name="rkbin" path="rkbin" revision="8047b5083d0c9a49b841f4f0ab7204bf5043a1ce" upstream="master"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="rk/rknn-toolkit2" path="external/rknn-toolkit2" revision="e2131fc0f2c4ffe3a0f91336e991137f13c686b5" upstream="master"/> -->
+  <project remote="rk-github" dest-branch="master" name="rknpu2" path="external/rknpu2" revision="c0303684992ded83acb3c9e153d8920172dffd64" upstream="master"/>
+  <!-- <project remote="rk-github" dest-branch="master" name="rockface" path="external/rockface" revision="c15e36566c5bf07e1f8449e9087d73533b4ff420" upstream="master"/> -->
+  <!-- <project remote="rk-github" dest-branch="master" name="rockx" path="external/rockx" revision="19ffaec48095f6ee53b798d7d0ba3de86515449a" upstream="master"/> -->
+</manifest>
