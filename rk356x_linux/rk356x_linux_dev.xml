@@ -12,8 +12,8 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="c1b0f182d28ae9a4ef4eb4dabc26ec93d565438a" upstream="rk356x"/>
-  <project dest-branch="master" name="debian" revision="a3fd82c163ca6cda16a677ffdb685a2f6846ddf9" upstream="master"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="b8e445f606227053fae4fc017e68ee81311a0342" upstream="master">
+  <project dest-branch="master" name="debian" revision="66a5492b1299c369818c61771601e2aff12fc03b" upstream="master"/>
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="d3d27ccea11b3cb20ffa834927766bdbec7f7f7b" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -48,5 +48,5 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
   <project dest-branch="next-dev" name="u-boot" revision="dde42ec6a2c0d2cdb20ef366963a0b673bac9a94" upstream="next-dev"/>
-  <project dest-branch="master" name="ubuntu" revision="056575249398c93d13e7eb986e759cabb784fcf0" upstream="ubuntu18.04"/>
+  <project dest-branch="master" name="ubuntu" revision="cc512136c9ba53956694e58b0cd2964646a81718" upstream="ubuntu18.04"/>
 </manifest>
