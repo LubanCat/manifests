@@ -40,7 +40,7 @@
   </project>
   <project dest-branch="master" name="debian" path="debian" revision="66a5492b1299c369818c61771601e2aff12fc03b" upstream="master"/>
   <project dest-branch="master" name="ubuntu" path="ubuntu" revision="dd7d9cfdee940e03b34323d0ed9bd5b70d0b6f07" upstream="ubuntu18.04"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="cb65ccb25b90f04d317129f9609f17de0dd06c55" upstream="master">
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="e4e0daf1f104b0c6735156b78671070d4ef8e64c" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -92,7 +92,7 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
-  <project dest-branch="stable-4.19-rk356x" name="kernel" path="kernel" revision="cd348c360d499c4799c68931b92d1e835351f138" upstream="stable-4.19-rk356x"/>
+  <project dest-branch="stable-4.19-rk356x" name="kernel" path="kernel" revision="1416399af9acfe7246320d12a3bd1b278ffbb91b" upstream="stable-4.19-rk356x"/>
   <project dest-branch="develop" name="mpp" path="external/mpp" revision="693720fd192d443ffc6dfab16f1ea359e09dcac6" upstream="develop"/>
   <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
   <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
