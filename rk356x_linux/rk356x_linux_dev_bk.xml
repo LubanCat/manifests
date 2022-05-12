@@ -39,8 +39,8 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project dest-branch="master" name="debian" path="debian" revision="66a5492b1299c369818c61771601e2aff12fc03b" upstream="master"/>
-  <project dest-branch="master" name="ubuntu" path="ubuntu" revision="dd7d9cfdee940e03b34323d0ed9bd5b70d0b6f07" upstream="ubuntu18.04"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="e4e0daf1f104b0c6735156b78671070d4ef8e64c" upstream="master">
+  <project dest-branch="master" name="ubuntu" path="ubuntu" revision="52dee52d38c365ac16fb2e7439bdc66b5beccdbe" upstream="ubuntu18.04"/>
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="e3b1c6524d1c2dd5b048bc7584713933f6a4da5b" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -96,7 +96,7 @@
   <project dest-branch="develop" name="mpp" path="external/mpp" revision="693720fd192d443ffc6dfab16f1ea359e09dcac6" upstream="develop"/>
   <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
   <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
-  <project dest-branch="master" name="rkbin" path="rkbin" revision="8047b5083d0c9a49b841f4f0ab7204bf5043a1ce" upstream="master"/>
+  <project dest-branch="master" name="rkbin" path="rkbin" revision="7b8720a8f4f38c3cd396d62b519af059febd2c6c" upstream="master"/>
   <!-- <project remote="rk-github" dest-branch="master" name="rk/rknn-toolkit2" path="external/rknn-toolkit2" revision="e2131fc0f2c4ffe3a0f91336e991137f13c686b5" upstream="master"/> -->
   <project remote="rk-github" dest-branch="master" name="rknpu2" path="external/rknpu2" revision="c0303684992ded83acb3c9e153d8920172dffd64" upstream="master"/>
   <!-- <project remote="rk-github" dest-branch="master" name="rockface" path="external/rockface" revision="c15e36566c5bf07e1f8449e9087d73533b4ff420" upstream="master"/> -->

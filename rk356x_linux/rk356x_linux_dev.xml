@@ -13,7 +13,7 @@
   </project>
   <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="c1b0f182d28ae9a4ef4eb4dabc26ec93d565438a" upstream="rk356x"/>
   <project dest-branch="master" name="debian" revision="66a5492b1299c369818c61771601e2aff12fc03b" upstream="master"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="e4e0daf1f104b0c6735156b78671070d4ef8e64c" upstream="master">
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="e3b1c6524d1c2dd5b048bc7584713933f6a4da5b" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -32,7 +32,7 @@
   <project dest-branch="master" name="qfm" path="app/qfm" remote="rk-github" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/>
   <project dest-branch="master" name="qplayer" path="app/qplayer" remote="rk-github" revision="0121646c9fe2335eef9a963071d07b797a17487e" upstream="master"/>
   <project dest-branch="develop" name="recovery" path="external/recovery" remote="rk-github" revision="69eb9ffe14c08e144205b096d91176c88fbfa345" upstream="develop"/>
-  <project dest-branch="master" name="rkbin" revision="8047b5083d0c9a49b841f4f0ab7204bf5043a1ce" upstream="master"/>
+  <project dest-branch="master" name="rkbin" revision="7b8720a8f4f38c3cd396d62b519af059febd2c6c" upstream="master"/>
   <project dest-branch="master" name="rknpu2" path="external/rknpu2" remote="rk-github" revision="c0303684992ded83acb3c9e153d8920172dffd64" upstream="master"/>
   <project dest-branch="master" name="rkscript" path="external/rkscript" remote="rk-github" revision="6c1303d90b979ccd30ebea43d4f942e5aa6f8860" upstream="master"/>
   <project dest-branch="master" name="rktoolkit" path="external/rktoolkit" remote="rk-github" revision="77fb41f99185a6f9dc2c9c69e099f417d8ae905d" upstream="master"/>
@@ -47,5 +47,5 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
   <project dest-branch="next-dev" name="u-boot" revision="dde42ec6a2c0d2cdb20ef366963a0b673bac9a94" upstream="next-dev"/>
-  <project dest-branch="master" name="ubuntu" revision="dd7d9cfdee940e03b34323d0ed9bd5b70d0b6f07" upstream="ubuntu18.04"/>
+  <project dest-branch="master" name="ubuntu" revision="52dee52d38c365ac16fb2e7439bdc66b5beccdbe" upstream="ubuntu18.04"/>
 </manifest>
