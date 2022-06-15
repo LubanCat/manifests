@@ -1,18 +1,20 @@
-# 构建环境搭建
+# 主机构建环境搭建
 
-## Debian/Ubuntu.
+## Ubuntu LTS
 ```
 # 安装 repo git
 sudo apt install repo git
 ```
 
-## 切换Python 2 版本
+## 切换Python 2 版本 （Ubuntu18.04）
+
+由于在Ubuntu18.04中，用apt命令安装的repo版本较旧，仅支持Python2版本，所以我们先要将系统python版本切换为python2
 
 查看当前Python版本
 ```
 python -V
 ```
-若返回的版本号为Python2版本，则无需再切换Python版本。若为Python3版本，则可以用以下方式切换：
+若返回的版本号为Python2版本，则无需再切换Python版本。若为Python3版本或未发现python，则可以用以下方式切换：
 
 ```
 #查看当前系统安装的Python版本有哪些
@@ -26,9 +28,40 @@ python -V
 ```
 此时系统默认Python版本切换为python2
 
+我们需要先将repo升级到最新的完整版本
+
+```
+repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo
+```
+
+由于最新的完整版repo使用Python3，而我们的Python环境为Python2，所以脚本无法正常运行，需要再切换回Python3。
+
+注意：切换Python2版本仅Ubuntu18.04版本需要。
+
+## 切换Python 3 版本
+
+查看当前Python版本
+```
+python -V
+```
+若返回的版本号为Python3版本，则无需再切换Python版本。若为Python2版本或未发现python，则可以用以下方式切换：
+
+```
+#查看当前系统安装的Python版本有哪些
+ls /usr/bin/python*
+
+#将python链接到python3
+sudo ln -sf /usr/bin/python3 /usr/bin/python
+
+#重新查看默认Python版本
+python -V
+```
+此时系统默认Python版本切换为python3
+
 ## 拉取源码
 ```
-repo init -u git@gitlab.ebf.local:rockchip/linux/manifests.git -b linux -m rk356x_linux_release.xml
+repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo \
+-u git@gitlab.ebf.local:rockchip/linux/manifests.git -b linux -m rk356x_linux_release.xml
 
 .repo/repo/repo sync -c --no-tags
 ```
@@ -41,26 +74,10 @@ repo init -u git@gitlab.ebf.local:rockchip/linux/manifests.git -b linux -m rk356
 ./build.sh lunch
 
 #输入对应板卡不同系统配置文件前的序号
-Which would you like? [0]:8
+Which would you like? [0]:1
 
 #一键编译
 ./build.sh
-```
-
-
-
-## 修改Ubuntu系统的版本
-
-打开 device/rockchip/rk356x/BoardConfig-rkxx-lubancat-xx-ububtu.mk
-
-```
-#修改Ubuntu版本,当前只支持bionic
-# bionic：ubuntu18.04  focal:ubuntu20.04
-RK_UBUNTU_VERSION=bionic
-
-#修改是否添加桌面套件
-#desktop:桌面版 console：控制台版
-RK_ROOTFS_TARGET=desktop
 ```
 
 ## 单独编译
@@ -83,20 +100,19 @@ source envsetup.sh rockchip_rk3568
 # Debian 编译
 ./build.sh debian
 
-# Ubuntu 编译
-./build.sh ubuntu
-
 # 打包update.img镜像
 ./build.sh updateimg
 ```
 
 ## 构建示例
 
-### LubanCat-rk3568-LBC板卡 Ubuntu18.04操作系统构建
+### LubanCat2 板卡 Debian 10 操作系统构建
+
+Debian/Ubuntu镜像构建之前，请查看相应目录下readme.md文件，安装构建工具，此构建工具不同版本不通用。
 
 ```
 # 选择板卡配置文件，可直接指定配置文件名称，也可以用 ./build.sh lunch 来选择
-./build.sh BoardConfig-rk3568-lubancat-lbc-ubuntu.mk
+./build.sh BoardConfig-LubanCat2-debian.mk
 
 # U-Boot 编译
 ./build.sh uboot
@@ -109,19 +125,17 @@ source envsetup.sh rockchip_rk3568
 ./build.sh recovery
 
 # Ubuntu 编译
-./build.sh ubuntu
+./build.sh debian
 
 # 打包update.img镜像
 ./build.sh updateimg
 ```
 
-
-
-### LubanCat-rk3568-LBC板卡 Buildroot操作系统构建
+### LubanCat2 板卡 Buildroot操作系统构建
 
 ```
 # 选择板卡配置文件，可直接指定配置文件名称，也可以用 ./build.sh lunch 来选择
-./build.sh BoardConfig-rk3568-lubancat-lbc-buildroot.mk
+./build.sh BoardConfig-LubanCat2-buildroot.mk
 
 # U-Boot 编译
 ./build.sh uboot
@@ -145,3 +159,4 @@ source envsetup.sh rockchip_rk3568
 - 指定的配置文件需要与操作系统对应
 - 各操作系统只有rootfs的构建不同，U-Boot、Kernel、Recovery都是相同的
 - 生成的镜像保存在 rockdev目录下，在 IMAGE 目录下备份
+- Ubuntu镜像需单独操作，具体方法请查看文档《LubanCat镜像构建与部署》
