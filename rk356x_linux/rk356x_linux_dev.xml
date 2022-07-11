@@ -23,7 +23,7 @@
   <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
   <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="9db260682e11ff6d5ca70f22e3a9e980a5f6ecd1" upstream="master"/>
-  <project dest-branch="stable-4.19-rk356x" name="kernel" revision="17399f9c7c2de808a6a64cd9dd9019851a688b1f" upstream="stable-4.19-rk356x"/>
+  <project dest-branch="stable-4.19-rk356x" name="kernel" revision="693cbb56de7cc899fe29ae086f4733721d88c505" upstream="stable-4.19-rk356x"/>
   <project dest-branch="master" name="libmali" path="external/libmali" remote="rk-github" revision="968a49083754f4c63ae02c4c54f866cb8c83d661" upstream="master"/>
   <project dest-branch="im2d" name="linux-rga" path="external/linux-rga" remote="rk-github" revision="1e2f0dbb838de3512a8a29143196d7b5e460e1ca" upstream="im2d"/>
   <project dest-branch="develop" name="mpp" path="external/mpp" revision="693720fd192d443ffc6dfab16f1ea359e09dcac6" upstream="develop"/>
@@ -47,6 +47,6 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
-  <project dest-branch="next-dev" name="u-boot" revision="71b09913e1d0a1f9c5c46fecb2da8af6f2e5c832" upstream="next-dev"/>
+  <project dest-branch="next-dev" name="u-boot" revision="61d783c822f28d026d6e46bc0769e169992c3dbe" upstream="next-dev"/>
   <project dest-branch="master" name="ubuntu" revision="da882c69247767c43f0c7d9323b67f0381e32e27" upstream="ubuntu18.04"/>
 </manifest>
