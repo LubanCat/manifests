@@ -12,8 +12,8 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="c1b0f182d28ae9a4ef4eb4dabc26ec93d565438a" upstream="rk356x"/>
-  <project dest-branch="master" name="debian" revision="ba62ecc14350318d830281e45ea3858222cf7ffa" upstream="master"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="badd1f7dfe76a408f5bf36732ed401bc574f9658" upstream="master">
+  <project dest-branch="master" name="debian" revision="e38894696d662d59a0512519bf0b08fae1878eb8" upstream="master"/>
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="3918912dcb60c8a2b36a2b5d26d93d7d8c64b46a" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -23,7 +23,7 @@
   <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
   <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="9db260682e11ff6d5ca70f22e3a9e980a5f6ecd1" upstream="master"/>
-  <project dest-branch="stable-4.19-rk356x" name="kernel" revision="7757585f772651dbd789b65c9984ad8bff77f592" upstream="stable-4.19-rk356x"/>
+  <project dest-branch="stable-4.19-rk356x" name="kernel" revision="e7e16baa5b2c26876029ccb01176a98ab037f64d" upstream="stable-4.19-rk356x"/>
   <project dest-branch="master" name="libmali" path="external/libmali" remote="rk-github" revision="968a49083754f4c63ae02c4c54f866cb8c83d661" upstream="master"/>
   <project dest-branch="im2d" name="linux-rga" path="external/linux-rga" remote="rk-github" revision="1e2f0dbb838de3512a8a29143196d7b5e460e1ca" upstream="im2d"/>
   <project dest-branch="develop" name="mpp" path="external/mpp" revision="693720fd192d443ffc6dfab16f1ea359e09dcac6" upstream="develop"/>
@@ -32,7 +32,7 @@
   <project dest-branch="master" name="qfm" path="app/qfm" remote="rk-github" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/>
   <project dest-branch="master" name="qplayer" path="app/qplayer" remote="rk-github" revision="0121646c9fe2335eef9a963071d07b797a17487e" upstream="master"/>
   <project dest-branch="develop" name="recovery" path="external/recovery" remote="rk-github" revision="69eb9ffe14c08e144205b096d91176c88fbfa345" upstream="develop"/>
-  <project dest-branch="master" name="rkbin" revision="7b8720a8f4f38c3cd396d62b519af059febd2c6c" upstream="master"/>
+  <project dest-branch="master" name="rkbin" revision="e1c4ccc157d3c334f5340762a2e2a5560b05846e" upstream="master"/>
   <project dest-branch="master" name="rknpu2" path="external/rknpu2" remote="rk-github" revision="c0303684992ded83acb3c9e153d8920172dffd64" upstream="master"/>
   <project dest-branch="master" name="rkscript" path="external/rkscript" remote="rk-github" revision="6c1303d90b979ccd30ebea43d4f942e5aa6f8860" upstream="master"/>
   <project dest-branch="master" name="rktoolkit" path="external/rktoolkit" remote="rk-github" revision="77fb41f99185a6f9dc2c9c69e099f417d8ae905d" upstream="master"/>
@@ -40,13 +40,13 @@
   <project dest-branch="master" name="rkwifibt" path="external/rkwifibt" revision="0990c26eb4e5fe8cb8b3fa26782fc49e7c544d27" upstream="master"/>
   <project dest-branch="develop" name="settings" path="app/qsetting" revision="7719da2d42787bac1a6fe075f2ddf6157cd5d678" upstream="develop"/>
   <project dest-branch="master" name="softapDemo" path="external/softapDemo" remote="rk-github" revision="4c7d1bd3d28df276d263f49324b022b44b3a1c85" upstream="master"/>
-  <project dest-branch="master" name="tools" revision="130d4442db6aa9ff050e2e1038fc46bc143e88c8" upstream="master">
+  <project dest-branch="master" name="tools" revision="1809a6c9a4112bf5d8fcbdb0e5077d051ee501c0" upstream="master">
     <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rk356x-package-file"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/mkupdate.bat" src="windows/RKDevTool/rockdev/rk356x-mkupdate.bat"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
-  <project dest-branch="next-dev" name="u-boot" revision="7c62151d07b1dbec5b40744b2dfcd41ef1903a27" upstream="next-dev"/>
-  <project dest-branch="master" name="ubuntu" revision="83ada511a4318e2c109a806a22fd3d403d0c18e9" upstream="ubuntu18.04"/>
+  <project dest-branch="next-dev" name="u-boot" revision="8ee3ddf983f1af9716b40f3e1eda37f2133aa4e8" upstream="next-dev"/>
+  <project dest-branch="master" name="ubuntu" revision="23f2f840eff47a09ed207cfd462d9b999f1343e8" upstream="ubuntu18.04"/>
 </manifest>

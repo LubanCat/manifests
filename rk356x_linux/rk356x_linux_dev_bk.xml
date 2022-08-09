@@ -10,7 +10,7 @@
 
   <!-- <project remote="rk-github" dest-branch="rk33/mid/8.1/develop" name="RKNPUTool" path="external/RKNPUTools" revision="68e68f97ea9e9fa3350419a40b95b92b0828a882" upstream="rk33/mid/8.1/develop"/> -->
   <!-- <project remote="rk-github" dest-branch="develop-next" name="rk_tee_user" path="external/security/rk_tee_user" revision="dd9d4d313ebd2d74b3cdc31c76770bef0dacdc66" upstream="develop-next"/> -->
-  <project dest-branch="next-dev" name="u-boot" path="u-boot" revision="61d783c822f28d026d6e46bc0769e169992c3dbe" upstream="next-dev"/>
+  <project dest-branch="next-dev" name="u-boot" path="u-boot" revision="8ee3ddf983f1af9716b40f3e1eda37f2133aa4e8" upstream="next-dev"/>
   <!-- <project remote="rk-github" dest-branch="master" name="LibIPCProtocol" path="app/libIPCProtocol" revision="45cdd16d137929a06ad6231eca4d17eed5a967d6" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="mediaserver" path="app/mediaserver" revision="bdfd5d9dd5f81ec3d3ae9c7bd1c8db076a39bd8b" upstream="master"/> -->
   <project remote="rk-github" dest-branch="master" name="qfm" path="app/qfm" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/>
@@ -38,9 +38,9 @@
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
-  <project dest-branch="master" name="debian" path="debian" revision="ba62ecc14350318d830281e45ea3858222cf7ffa" upstream="master"/>
-  <project dest-branch="master" name="ubuntu" path="ubuntu" revision="da882c69247767c43f0c7d9323b67f0381e32e27" upstream="ubuntu18.04"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="ddd6a1226da9e23cf694d2ff576a48bfb26d271f" upstream="master">
+  <project dest-branch="master" name="debian" path="debian" revision="e38894696d662d59a0512519bf0b08fae1878eb8" upstream="master"/>
+  <project dest-branch="master" name="ubuntu" path="ubuntu" revision="23f2f840eff47a09ed207cfd462d9b999f1343e8" upstream="ubuntu18.04"/>
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="3918912dcb60c8a2b36a2b5d26d93d7d8c64b46a" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -85,18 +85,18 @@
   <project remote="rk-github" dest-branch="develop" name="recovery" path="external/recovery" revision="69eb9ffe14c08e144205b096d91176c88fbfa345" upstream="develop"/>
   <!-- <project remote="rk-github" dest-branch="master" name="rockit" path="external/rockit" revision="c8fdc5aa247a989e6869e794d232d0ed4e8f908d" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="bin" path="external/security/bin" revision="68a2fde8aadcfde9fec65af03db2c641d6631675" upstream="master"/> -->
-  <project dest-branch="master" name="tools" path="tools" revision="130d4442db6aa9ff050e2e1038fc46bc143e88c8" upstream="master">
+  <project dest-branch="master" name="tools" path="tools" revision="1809a6c9a4112bf5d8fcbdb0e5077d051ee501c0" upstream="master">
     <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rk356x-package-file"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/mkupdate.bat" src="windows/RKDevTool/rockdev/rk356x-mkupdate.bat"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
-  <project dest-branch="stable-4.19-rk356x" name="kernel" path="kernel" revision="693cbb56de7cc899fe29ae086f4733721d88c505" upstream="stable-4.19-rk356x"/>
+  <project dest-branch="stable-4.19-rk356x" name="kernel" path="kernel" revision="e7e16baa5b2c26876029ccb01176a98ab037f64d" upstream="stable-4.19-rk356x"/>
   <project dest-branch="develop" name="mpp" path="external/mpp" revision="693720fd192d443ffc6dfab16f1ea359e09dcac6" upstream="develop"/>
   <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
   <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
-  <project dest-branch="master" name="rkbin" path="rkbin" revision="7b8720a8f4f38c3cd396d62b519af059febd2c6c" upstream="master"/>
+  <project dest-branch="master" name="rkbin" path="rkbin" revision="e1c4ccc157d3c334f5340762a2e2a5560b05846e" upstream="master"/>
   <!-- <project remote="rk-github" dest-branch="master" name="rk/rknn-toolkit2" path="external/rknn-toolkit2" revision="e2131fc0f2c4ffe3a0f91336e991137f13c686b5" upstream="master"/> -->
   <project remote="rk-github" dest-branch="master" name="rknpu2" path="external/rknpu2" revision="c0303684992ded83acb3c9e153d8920172dffd64" upstream="master"/>
   <!-- <project remote="rk-github" dest-branch="master" name="rockface" path="external/rockface" revision="c15e36566c5bf07e1f8449e9087d73533b4ff420" upstream="master"/> -->
