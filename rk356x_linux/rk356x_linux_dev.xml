@@ -7,6 +7,7 @@
   
   <project dest-branch="develop" name="QLauncher" path="app/QLauncher" remote="rk-github" revision="a17ceb273aaa6f5c9aaf9f570d4ee56e28135c9d" upstream="develop"/>
   <project dest-branch="master" name="alsa-config" path="external/alsa-config" remote="rk-github" revision="1e0c4b5382b84ed629b1ca9e40c814103b92ee93" upstream="master"/>
+  <project dest-branch="master" name="bluetooth_bsa" path="external/bluetooth_bsa" remote="rk-github" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master"/>
   <project dest-branch="master" name="buildroot" revision="edfb5620fb0ebf9ff09eb579ce4021ede87174c9" upstream="rk356x">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
@@ -39,7 +40,6 @@
   <project dest-branch="master" name="rkupdate" path="external/rkupdate" remote="rk-github" revision="534d8750105c2649e24648b40551fa1304f5eeab" upstream="master"/>
   <project dest-branch="master" name="rkwifibt" path="external/rkwifibt" revision="0990c26eb4e5fe8cb8b3fa26782fc49e7c544d27" upstream="master"/>
   <project dest-branch="develop" name="settings" path="app/qsetting" revision="7719da2d42787bac1a6fe075f2ddf6157cd5d678" upstream="develop"/>
-  <!-- <project dest-branch="master" name="softapDemo" path="external/softapDemo" remote="rk-github" revision="4c7d1bd3d28df276d263f49324b022b44b3a1c85" upstream="master"/> -->
   <project dest-branch="master" name="tools" revision="1809a6c9a4112bf5d8fcbdb0e5077d051ee501c0" upstream="master">
     <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rk356x-package-file"/>

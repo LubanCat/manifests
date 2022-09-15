@@ -10,7 +10,7 @@
 
   <!-- <project remote="rk-github" dest-branch="rk33/mid/8.1/develop" name="RKNPUTool" path="external/RKNPUTools" revision="68e68f97ea9e9fa3350419a40b95b92b0828a882" upstream="rk33/mid/8.1/develop"/> -->
   <!-- <project remote="rk-github" dest-branch="develop-next" name="rk_tee_user" path="external/security/rk_tee_user" revision="dd9d4d313ebd2d74b3cdc31c76770bef0dacdc66" upstream="develop-next"/> -->
-  <project dest-branch="next-dev" name="u-boot" path="u-boot" revision="8ee3ddf983f1af9716b40f3e1eda37f2133aa4e8" upstream="next-dev"/>
+  <project dest-branch="next-dev" name="u-boot" path="u-boot" revision="f403aeeed3239b3a9530e4d1be869f962da96d4e" upstream="next-dev"/>
   <!-- <project remote="rk-github" dest-branch="master" name="LibIPCProtocol" path="app/libIPCProtocol" revision="45cdd16d137929a06ad6231eca4d17eed5a967d6" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="mediaserver" path="app/mediaserver" revision="bdfd5d9dd5f81ec3d3ae9c7bd1c8db076a39bd8b" upstream="master"/> -->
   <project remote="rk-github" dest-branch="master" name="qfm" path="app/qfm" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/>
@@ -34,13 +34,13 @@
   <!-- <project remote="rk-github" dest-branch="master" name="ipcweb-ng" path="app/ipcweb-ng" revision="ca9ad4f24bb46568dbbb80ac216a6e2b5f872d23" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="bluetooth_bsa" path="external/bluetooth_bsa" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="broadcom_bsa" path="external/broadcom_bsa" revision="46234ce7a904794754bba79cb7c9f26d39605311" upstream="master"/> -->
-  <project dest-branch="master"  name="buildroot" path="buildroot" revision="c2f0d6ffd0f4cdd99ce093a6c66c13ae2a1ee714" upstream="rk356x">
+  <project dest-branch="master"  name="buildroot" path="buildroot" revision="edfb5620fb0ebf9ff09eb579ce4021ede87174c9" upstream="rk356x">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
-  <project dest-branch="master" name="debian" path="debian" revision="e38894696d662d59a0512519bf0b08fae1878eb8" upstream="master"/>
-  <project dest-branch="master" name="ubuntu" path="ubuntu" revision="23f2f840eff47a09ed207cfd462d9b999f1343e8" upstream="ubuntu18.04"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="3918912dcb60c8a2b36a2b5d26d93d7d8c64b46a" upstream="master">
+  <project dest-branch="master" name="debian" path="debian" revision="74c04e38610963de92684d6e28a4c43509813834" upstream="master"/>
+  <project dest-branch="master" name="ubuntu" path="ubuntu" revision="9dcc7a4c66d4be8d8f57a34f7a31e81be6e07ed2" upstream="ubuntu18.04"/>
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="968d76671aa333ddaa39b0ac988ed557ea559a3a" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -92,7 +92,7 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
-  <project dest-branch="stable-4.19-rk356x" name="kernel" path="kernel" revision="e7e16baa5b2c26876029ccb01176a98ab037f64d" upstream="stable-4.19-rk356x"/>
+  <project dest-branch="stable-4.19-rk356x" name="kernel" path="kernel" revision="bd86c4bc2f8e18b159e9a146c2c838fc654e98f4" upstream="stable-4.19-rk356x"/>
   <project dest-branch="develop" name="mpp" path="external/mpp" revision="693720fd192d443ffc6dfab16f1ea359e09dcac6" upstream="develop"/>
   <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
   <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
