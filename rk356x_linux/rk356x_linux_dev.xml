@@ -48,5 +48,4 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
   <project dest-branch="next-dev" name="u-boot" revision="f403aeeed3239b3a9530e4d1be869f962da96d4e" upstream="next-dev"/>
-  <project dest-branch="master" name="ubuntu" revision="9dcc7a4c66d4be8d8f57a34f7a31e81be6e07ed2" upstream="ubuntu18.04"/>
 </manifest>
