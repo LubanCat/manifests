@@ -27,7 +27,7 @@
   <project dest-branch="stable-4.19-rk356x" name="kernel" revision="bd86c4bc2f8e18b159e9a146c2c838fc654e98f4" upstream="stable-4.19-rk356x"/>
   <project dest-branch="master" name="libmali" path="external/libmali" remote="rk-github" revision="968a49083754f4c63ae02c4c54f866cb8c83d661" upstream="master"/>
   <project dest-branch="im2d" name="linux-rga" path="external/linux-rga" remote="rk-github" revision="1e2f0dbb838de3512a8a29143196d7b5e460e1ca" upstream="im2d"/>
-  <project dest-branch="develop" name="mpp" path="external/mpp" revision="693720fd192d443ffc6dfab16f1ea359e09dcac6" upstream="develop"/>
+  <project dest-branch="develop" name="mpp" path="external/mpp" remote="rk-github" revision="9ffb11ca0ad1ec1c08d673af5020c5efd0006a42" upstream="develop"/>
   <project dest-branch="master" name="multivideoplayer" path="app/multivideoplayer" remote="rk-github" revision="5d566e0b2ab416c251b54d59d6237e7164c7e270" upstream="master"/>
   <project dest-branch="master" name="qcamera" path="app/qcamera" remote="rk-github" revision="3a74b34724828075bcb9f51b704e0c50e7dadaec" upstream="master"/>
   <project dest-branch="master" name="qfm" path="app/qfm" remote="rk-github" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/>
