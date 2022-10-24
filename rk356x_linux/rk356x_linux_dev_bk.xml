@@ -34,13 +34,12 @@
   <!-- <project remote="rk-github" dest-branch="master" name="ipcweb-ng" path="app/ipcweb-ng" revision="ca9ad4f24bb46568dbbb80ac216a6e2b5f872d23" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="bluetooth_bsa" path="external/bluetooth_bsa" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master"/> -->
   <!-- <project remote="rk-github" dest-branch="master" name="broadcom_bsa" path="external/broadcom_bsa" revision="46234ce7a904794754bba79cb7c9f26d39605311" upstream="master"/> -->
-  <project dest-branch="master"  name="buildroot" path="buildroot" revision="edfb5620fb0ebf9ff09eb579ce4021ede87174c9" upstream="rk356x">
+  <project dest-branch="master"  name="buildroot" path="buildroot" revision="81a26cf5545d3b37015cf346a2e08007b8f89769" upstream="rk356x">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
-  <project dest-branch="master" name="debian" path="debian" revision="74c04e38610963de92684d6e28a4c43509813834" upstream="master"/>
-  <project dest-branch="master" name="ubuntu" path="ubuntu" revision="9dcc7a4c66d4be8d8f57a34f7a31e81be6e07ed2" upstream="ubuntu18.04"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="968d76671aa333ddaa39b0ac988ed557ea559a3a" upstream="master">
+  <project dest-branch="master" name="debian" path="debian" revision="bfd4f677b7eb7e89087a3ced41e5ee4a0b6a22af" upstream="master"/>
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="9601ea9c8a65b37205564bbc6404be3895d02586" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -92,7 +91,7 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
-  <project dest-branch="stable-4.19-rk356x" name="kernel" path="kernel" revision="bd86c4bc2f8e18b159e9a146c2c838fc654e98f4" upstream="stable-4.19-rk356x"/>
+  <project dest-branch="stable-4.19-rk356x" name="kernel" path="kernel" revision="da6dca24d17d20d0eeb23af262601170e37ac9da" upstream="stable-4.19-rk356x"/>
   <project dest-branch="develop" name="mpp" path="external/mpp" revision="693720fd192d443ffc6dfab16f1ea359e09dcac6" upstream="develop"/>
   <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
   <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
