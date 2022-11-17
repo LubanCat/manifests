@@ -2,8 +2,11 @@
 
 ## Ubuntu LTS
 ```
-# 安装 repo git
-sudo apt install repo git
+# 安装SDK构建所需要的软件包
+sudo apt install repo git ssh make gcc libssl-dev liblz4-tool \
+expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support \
+qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib \
+unzip device-tree-compiler python-pip libncurses5-dev python3-pyelftools \
 ```
 
 ## 切换Python 2 版本 （Ubuntu18.04）
