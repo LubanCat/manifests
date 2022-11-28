@@ -2,8 +2,12 @@
 
 ## Ubuntu LTS
 ```
-# 安装 repo git
-sudo apt install repo git
+# 安装SDK构建所需要的软件包
+sudo apt install repo git ssh make gcc libssl-dev liblz4-tool \
+expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support \
+qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib \
+unzip device-tree-compiler python-pip libncurses5-dev python3-pyelftools \
+u-boot-tools
 ```
 
 ## 切换Python 2 版本 （Ubuntu18.04）
@@ -60,13 +64,26 @@ python -V
 
 ## 拉取源码
 ```
+#内部地址(用户使用)
+repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo \
+-u https://github.com/LubanCat/manifests.git -b linux -m rk356x_linux_release.xml
+
+
+#内部地址(内部开发使用)
 repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo \
 -u git@gitlab.ebf.local:rockchip/linux/manifests.git -b linux -m rk356x_linux_release.xml
 
 .repo/repo/repo sync -c --no-tags
 ```
 
-# 构建镜像
+# 构建板卡通用镜像
+
+##安装构建根文件系统依赖
+```
+sudo dpkg -i debian/ubuntu-build-service/packages/*
+sudo apt-get install -f
+```
+
 ## 一键构建
 
 ```
@@ -74,7 +91,7 @@ repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo \
 ./build.sh lunch
 
 #输入对应板卡不同系统配置文件前的序号
-Which would you like? [0]:1
+Which would you like? [0]:2
 
 #一键编译
 ./build.sh
@@ -87,15 +104,8 @@ Which would you like? [0]:1
 ./build.sh uboot
 
 # Kernel 编译
-/build.sh kernel
-
-# Recovery 编译
-# 需要特别注意 recovery.img 是包含 kernel.img，所以每次 Kernel 更改，Recovery 是需要重新打包生成。
-source envsetup.sh rockchip_rk3568
-./build.sh recovery
-
-# Buildroot 编译
-./build.sh buildroot
+/build.sh kerneldeb
+/build.sh extboot
 
 # Debian 编译
 ./build.sh debian
@@ -104,7 +114,7 @@ source envsetup.sh rockchip_rk3568
 ./build.sh updateimg
 ```
 
-## 构建示例
+<!-- ## 构建示例
 
 ### LubanCat2 板卡 Debian 10 操作系统构建
 
@@ -152,11 +162,12 @@ source envsetup.sh rockchip_rk3568
 
 # 打包update.img镜像
 ./build.sh updateimg
-```
+``` -->
 
 #### 注意
 
 - 指定的配置文件需要与操作系统对应
-- 各操作系统只有rootfs的构建不同，U-Boot、Kernel、Recovery都是相同的
-- 生成的镜像保存在 rockdev目录下，在 IMAGE 目录下备份
-- Ubuntu镜像需单独操作，具体方法请查看文档《LubanCat镜像构建与部署》
+- 各操作系统只有rootfs的构建不同，U-Boot、Kernel都是相同的
+- 生成的镜像保存在 rockdev目录下
+- Ubuntu镜像需单独操作
+- 镜像详细构建流程请查看在线文档《[野火]嵌入式Linux镜像构建与部署—基于LubanCat-RK系列板卡》 https://doc.embedfire.com/linux/rk356x/build_and_deploy/zh/latest/index.html
