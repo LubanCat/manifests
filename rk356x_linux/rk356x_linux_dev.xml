@@ -9,13 +9,13 @@
   <project dest-branch="develop" name="QLauncher" path="app/QLauncher" remote="rk-github" revision="a17ceb273aaa6f5c9aaf9f570d4ee56e28135c9d" upstream="develop"/>
   <project dest-branch="master" name="alsa-config" path="external/alsa-config" remote="rk-github" revision="1e0c4b5382b84ed629b1ca9e40c814103b92ee93" upstream="master"/>
   <project dest-branch="master" name="bluetooth_bsa" path="external/bluetooth_bsa" remote="rk-github" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master"/>
-  <project dest-branch="master" name="buildroot" revision="81a26cf5545d3b37015cf346a2e08007b8f89769" upstream="rk356x">
+  <project dest-branch="rk356x" name="buildroot" revision="81a26cf5545d3b37015cf346a2e08007b8f89769" upstream="rk356x">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
-  <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="c1b0f182d28ae9a4ef4eb4dabc26ec93d565438a" upstream="rk356x"/>
-  <project dest-branch="master" name="debian" revision="fdbdf15bb289d3150456f1326185525f249293f3" upstream="master"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="088b5e5b434b408722bea20621fe7c1a7263c810" upstream="master">
+  <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="67e59a503756c5c01c83bcf35a825615c7bfdf36" upstream="rk356x"/>
+  <project dest-branch="master" name="debian" revision="50ed3bf0dab4b7d217e2ac2bcd78e3807ba1e536" upstream="master"/>
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="67f343c86bc477839717c558d4974e52499aa6fa" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -39,7 +39,7 @@
   <project dest-branch="master" name="rkscript" path="external/rkscript" remote="rk-github" revision="6c1303d90b979ccd30ebea43d4f942e5aa6f8860" upstream="master"/>
   <project dest-branch="master" name="rktoolkit" path="external/rktoolkit" remote="rk-github" revision="77fb41f99185a6f9dc2c9c69e099f417d8ae905d" upstream="master"/>
   <project dest-branch="master" name="rkupdate" path="external/rkupdate" remote="rk-github" revision="534d8750105c2649e24648b40551fa1304f5eeab" upstream="master"/>
-  <project dest-branch="master" name="rkwifibt" path="external/rkwifibt" revision="0990c26eb4e5fe8cb8b3fa26782fc49e7c544d27" upstream="master"/>
+  <project dest-branch="master" name="rkwifibt" path="external/rkwifibt" revision="175e30a3aa42946044468b8f15dea1e09fade517" upstream="master"/>
   <project dest-branch="develop" name="settings" path="app/qsetting" revision="7719da2d42787bac1a6fe075f2ddf6157cd5d678" upstream="develop"/>
   <project dest-branch="master" name="tools" revision="1809a6c9a4112bf5d8fcbdb0e5077d051ee501c0" upstream="master">
     <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg"/>

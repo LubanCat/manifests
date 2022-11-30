@@ -64,16 +64,15 @@ python -V
 
 ## 拉取源码
 ```
-#内部地址(用户使用)
-repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo \
--u https://github.com/LubanCat/manifests.git -b linux -m rk356x_linux_release.xml
+#github地址(用户使用)
+repo --trace init --depth=1 -u https://github.com/LubanCat/manifests.git -b linux -m rk356x_linux_release.xml
 
 
 #内部地址(内部开发使用)
-repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo \
--u git@gitlab.ebf.local:rockchip/linux/manifests.git -b linux -m rk356x_linux_release.xml
+repo init -u git@gitlab.ebf.local:rockchip/linux/manifests.git -b linux -m rk356x_linux_release.xml
 
-.repo/repo/repo sync -c --no-tags
+# 同步源码
+.repo/repo/repo --trace sync -c -j4
 ```
 
 # 构建板卡通用镜像
