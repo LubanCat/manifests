@@ -75,6 +75,8 @@ repo init -u git@gitlab.ebf.local:rockchip/linux/manifests.git -b linux -m rk356
 .repo/repo/repo --trace sync -c -j4
 ```
 
+--depth=1 可以在拉取时进行浅克隆，只拉取最新的一次提交，可以有效减少从网络拉取的内容。如果想拉取完整的带所有提交的内容，可以删除此选项。
+
 # 构建板卡通用镜像
 
 ##安装构建根文件系统依赖
