@@ -14,7 +14,7 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="67e59a503756c5c01c83bcf35a825615c7bfdf36" upstream="rk356x"/>
-  <project dest-branch="master" name="debian" revision="97415d64549c9c49aa96cfa187b463d11c526b76" upstream="master"/>
+  <project dest-branch="master" name="debian" revision="16b339517aff74b328ada983ac3d7789f7b0bff8" upstream="master"/>
   <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="67f343c86bc477839717c558d4974e52499aa6fa" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
