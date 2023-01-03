@@ -14,8 +14,8 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="67e59a503756c5c01c83bcf35a825615c7bfdf36" upstream="rk356x"/>
-  <project dest-branch="master" name="debian" revision="73b0e901352305f9bfb2143d9803681075c3b3ab" upstream="master"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="67f343c86bc477839717c558d4974e52499aa6fa" upstream="master">
+  <project dest-branch="master" name="debian" revision="2cdc7131941a9d7d8c1718bbf75126b2dc410a92" upstream="master"/>
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="18f9302b030eedcf822fd745c70b258910c2dbaa" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -25,7 +25,7 @@
   <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
   <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="9db260682e11ff6d5ca70f22e3a9e980a5f6ecd1" upstream="master"/>
-  <project dest-branch="stable-4.19-rk356x" name="kernel" revision="152eaf9d2972dc74297827cef7c6b40b90da2653" upstream="stable-4.19-rk356x"/>
+  <project dest-branch="stable-4.19-rk356x" name="kernel" revision="62c00d64f1d9b54f4531088ca6a2711c814ec81d" upstream="stable-4.19-rk356x"/>
   <project dest-branch="master" name="libmali" path="external/libmali" revision="74d74912a708da0eeb55029b9ae953206a734dd6" upstream="master"/>
   <project dest-branch="im2d" name="linux-rga" path="external/linux-rga" remote="rk-github" revision="1e2f0dbb838de3512a8a29143196d7b5e460e1ca" upstream="im2d"/>
   <project dest-branch="develop" name="mpp" path="external/mpp" remote="rk-github" revision="9ffb11ca0ad1ec1c08d673af5020c5efd0006a42" upstream="develop"/>
