@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux/"/>
-  <remote name="origin" fetch="https://github.com/LubanCat/"/>
+  <!-- <remote name="origin" fetch="https://github.com/LubanCat/"/> -->
   <remote name="rk-github" fetch="https://github.com/Caesar-github/"/>
   
   <default remote="origin" sync-j="4"/>
@@ -9,7 +9,7 @@
   <project name="QLauncher" path="app/QLauncher" remote="rk-github" revision="dd5644dcdbcfa99569c52681efcee2f8b033ae8a" upstream="develop" dest-branch="develop"/>
   <project name="alsa-config" path="external/alsa-config" remote="rk-github" revision="2c1f3238a1835261246b3faefe74d3406821b187" upstream="master" dest-branch="master"/>
   <project name="bluetooth_bsa" path="external/bluetooth_bsa" remote="rk-github" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master" dest-branch="master"/>
-  <project name="buildroot" revision="cabef7b35b4188cb591e750c7d448515b819fecf" upstream="rockchip/2018.02-rc3" dest-branch="rockchip/2018.02-rc3">
+  <project name="buildroot" revision="fead9b2d6b44cdeee1692b879c25dc9fb7fc5a92" upstream="rk3588" dest-branch="rk3588">
     <linkfile src="build/Makefile" dest="Makefile"/>
     <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
   </project>
@@ -20,6 +20,7 @@
     <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
+  <project name="debian-archive" path="debian" revision="0d21243a18a1d3df434e8b89fc2fffd9ec5f6f27" upstream="develop-bullseye" dest-branch="develop-bullseye"/>
   <project name="deviceio_release" path="external/deviceio_release" remote="rk-github" revision="187439b6c9ed867c5a28d8b39cb2ecf19ba9dae6" upstream="master" dest-branch="master"/>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" upstream="master" dest-branch="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="4cd4edf2fce63533982b9a0e2b0ef6be3598693d" upstream="master"/>
