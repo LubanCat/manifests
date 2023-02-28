@@ -14,17 +14,17 @@
     <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
   </project>
   <project name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="a4e43c541357dcfd65950b600132d514687e7cd3" upstream="rk3588" dest-branch="rk3588"/>
-  <project name="device_rockchip" path="device/rockchip" revision="9a3ad6f8a0fed833bb8e5d514b5914fb2244e3d5" upstream="master" dest-branch="master">
+  <project name="debian-archive" path="debian" revision="0d21243a18a1d3df434e8b89fc2fffd9ec5f6f27" upstream="develop-bullseye" dest-branch="develop-bullseye"/>
+  <project name="device_rockchip" path="device/rockchip" revision="e7746f3c95e1ea127cbf55c1d837730a52f619b4" upstream="master" dest-branch="master">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
     <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
-  <project name="debian-archive" path="debian" revision="0d21243a18a1d3df434e8b89fc2fffd9ec5f6f27" upstream="develop-bullseye" dest-branch="develop-bullseye"/>
   <project name="deviceio_release" path="external/deviceio_release" remote="rk-github" revision="187439b6c9ed867c5a28d8b39cb2ecf19ba9dae6" upstream="master" dest-branch="master"/>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" upstream="master" dest-branch="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="4cd4edf2fce63533982b9a0e2b0ef6be3598693d" upstream="master"/>
-  <project name="kernel" revision="a4423c56f430bfc7c75dbb68d4a9a1a0ef62b371" upstream="develop-5.10" dest-branch="develop-5.10"/>
+  <project name="kernel" revision="68fbab44938ef54fa29dba51e3e6dd6251141ed8" upstream="develop-5.10" dest-branch="develop-5.10"/>
   <project name="libmali" path="external/libmali" revision="8f46cc7b9777975f40323b0971f3483fa2aefcd3" upstream="master" dest-branch="master"/>
   <project name="linux-rga" path="external/linux-rga" revision="53d2b8e110dfb7a568718e4ba8ec4ceb64da8fac" upstream="multi_rga_im2d_api" dest-branch="multi_rga_im2d_api"/>
   <project name="mpp" path="external/mpp" remote="rk-github" revision="19e7edf048184ef247d643988f4a16d4cda34de6" upstream="develop" dest-branch="develop"/>
