@@ -13,7 +13,7 @@
     <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
   </project>
   <project name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="a4e43c541357dcfd65950b600132d514687e7cd3" upstream="rk3588" dest-branch="rk3588"/>
-  <project name="debian-archive" path="debian" revision="13fa9fe1b21d39f38fc4c31fe9c5085731b96d32" upstream="develop-bullseye" dest-branch="develop-bullseye"/>
+  <project name="debian-archive" path="debian" revision="7bd098935543d0bab96d71f3c4460fce02eedb5a" upstream="develop-bullseye" dest-branch="develop-bullseye"/>
   <project name="device_rockchip" path="device/rockchip" revision="c1475016c2fd8c116f681789b99ed1c24c15f9e5" upstream="master" dest-branch="master">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
@@ -23,7 +23,7 @@
   <project name="deviceio_release" path="external/deviceio_release" remote="rk-github" revision="187439b6c9ed867c5a28d8b39cb2ecf19ba9dae6" upstream="master" dest-branch="master"/>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" upstream="master" dest-branch="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="4cd4edf2fce63533982b9a0e2b0ef6be3598693d" upstream="master"/>
-  <project name="kernel" revision="ee1ad566d996be25ffce7eb1746a4ba817f1c7a9" upstream="develop-5.10" dest-branch="develop-5.10"/>
+  <project name="kernel" revision="9c24cb75f2d972c28b789bab39cad8657264f355" upstream="develop-5.10" dest-branch="develop-5.10"/>
   <project name="libmali" path="external/libmali" revision="8f46cc7b9777975f40323b0971f3483fa2aefcd3" upstream="master" dest-branch="master"/>
   <project name="linux-rga" path="external/linux-rga" revision="53d2b8e110dfb7a568718e4ba8ec4ceb64da8fac" upstream="multi_rga_im2d_api" dest-branch="multi_rga_im2d_api"/>
   <project name="mpp" path="external/mpp" remote="rk-github" revision="19e7edf048184ef247d643988f4a16d4cda34de6" upstream="develop" dest-branch="develop"/>
