@@ -14,8 +14,8 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="67e59a503756c5c01c83bcf35a825615c7bfdf36" upstream="rk356x"/>
-  <project dest-branch="master" name="debian" revision="2cdc7131941a9d7d8c1718bbf75126b2dc410a92" upstream="master"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="18f9302b030eedcf822fd745c70b258910c2dbaa" upstream="master">
+  <project dest-branch="master" name="debian" revision="80be9e9e2515a4a263ce0aca9738b3154c5d3bfa" upstream="master"/>
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="96020125991e88b6fb0d1b555f59dd5ae7c92b24" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -25,7 +25,7 @@
   <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
   <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="9db260682e11ff6d5ca70f22e3a9e980a5f6ecd1" upstream="master"/>
-  <project dest-branch="stable-4.19-rk356x" name="kernel" revision="3b8018dc58f4b3a0d150f03814bd5c012ed35ab7" upstream="stable-4.19-rk356x"/>
+  <project dest-branch="stable-4.19-rk356x" name="kernel" revision="f5a1fd8307ba2652e00484e5620044a8fea79360" upstream="stable-4.19-rk356x"/>
   <project dest-branch="master" name="libmali" path="external/libmali" revision="74d74912a708da0eeb55029b9ae953206a734dd6" upstream="master"/>
   <project dest-branch="im2d" name="linux-rga" path="external/linux-rga" remote="rk-github" revision="1e2f0dbb838de3512a8a29143196d7b5e460e1ca" upstream="im2d"/>
   <project dest-branch="develop" name="mpp" path="external/mpp" remote="rk-github" revision="9ffb11ca0ad1ec1c08d673af5020c5efd0006a42" upstream="develop"/>
@@ -48,5 +48,5 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
-  <project dest-branch="next-dev" name="u-boot" revision="5b00db8d3d9d7d7104a3bd0ce175bf62b4f5a089" upstream="next-dev"/>
+  <project dest-branch="next-dev" name="u-boot" revision="36052bc85bcae290bfd68b2677b06277a09520bf" upstream="next-dev"/>
 </manifest>
