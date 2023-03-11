@@ -3,44 +3,40 @@
 ## Ubuntu LTS
 ```
 # 安装SDK构建所需要的软件包
-sudo apt install repo git ssh make gcc libssl-dev liblz4-tool \
+sudo apt install git ssh make gcc libssl-dev liblz4-tool u-boot-tools curl\
 expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support \
 qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib \
 unzip device-tree-compiler python-pip libncurses5-dev python3-pyelftools \
-u-boot-tools
-```
-
-## 切换Python 2 版本 （Ubuntu18.04）
-
-由于在Ubuntu18.04中，用apt命令安装的repo版本较旧，仅支持Python2版本，所以我们先要将系统python版本切换为python2
-
-查看当前Python版本
-```
-python -V
-```
-若返回的版本号为Python2版本，则无需再切换Python版本。若为Python3版本或未发现python，则可以用以下方式切换：
 
 ```
-#查看当前系统安装的Python版本有哪些
-ls /usr/bin/python*
 
-#将python链接到python2
-sudo ln -sf /usr/bin/python2 /usr/bin/python
-
-#重新查看默认Python版本
-python -V
-```
-此时系统默认Python版本切换为python2
-
-我们需要先将repo升级到最新的完整版本
+## 安装repo
 
 ```
-repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo
+mkdir ~/bin
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+# 如果上面的地址无法访问，可以用下面的：
+# curl -sSL  'https://gerrit-googlesource.proxy.ustclug.org/git-repo/+/master/repo?format=TEXT' |base64 -d > ~/bin/repo
+chmod a+x ~/bin/repo    
+echo PATH=~/bin:$PATH >> ~/.bashrc
+source ~/.bashrc
 ```
+执行完上面的命令后我们来验证repo是否安装成功能正常运行。
+```
+repo --version
 
-由于最新的完整版repo使用Python3，而我们的Python环境为Python2，所以脚本无法正常运行，需要再切换回Python3。
-
-注意：切换Python2版本仅Ubuntu18.04版本需要。
+#返回以下信息
+#返回的信息根据Ubuntu版本的不同略有差异
+<repo not installed>
+repo launcher version 2.32
+    (from /home/he/bin/repo)
+git 2.25.1
+Python 3.8.10 (default, Nov 14 2022, 12:59:47) 
+[GCC 9.4.0]
+OS Linux 5.15.0-60-generic (#66~20.04.1-Ubuntu SMP Wed Jan 25 09:41:30 UTC 2023)
+CPU x86_64 (x86_64)
+Bug reports: https://bugs.chromium.org/p/gerrit/issues/entry?template=Repo+tool+issue
+```
 
 ## 切换Python 3 版本
 
