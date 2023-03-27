@@ -7,6 +7,7 @@ sudo apt install git ssh make gcc libssl-dev liblz4-tool u-boot-tools curl\
 expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support \
 qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib \
 unzip device-tree-compiler python-pip libncurses5-dev python3-pyelftools \
+dpkg-dev
 
 ```
 
