@@ -15,7 +15,7 @@
   </project>
   <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="67e59a503756c5c01c83bcf35a825615c7bfdf36" upstream="rk356x"/>
   <project dest-branch="debian10" name="debian" revision="708a24fe8eb993192756344cd034354056429153" upstream="debian10"/>
-  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="1bdb034914928ad1c51144a7d5926a994d12c196" upstream="master">
+  <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="dd8e3b6b9ac83b60dc1675384b423f3316175774" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -25,9 +25,10 @@
   <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
   <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="9db260682e11ff6d5ca70f22e3a9e980a5f6ecd1" upstream="master"/>
-  <project dest-branch="stable-4.19-rk356x" name="kernel" revision="327a4c875ed64b99592bcdcd3293955554d1ba73" upstream="stable-4.19-rk356x"/>
+  <project dest-branch="stable-4.19-rk356x" name="kernel" revision="9b2f3f42fbf72b7906ce40c0469ce9a86ebbceb7" upstream="stable-4.19-rk356x"/>
   <project dest-branch="master" name="libmali" path="external/libmali" revision="74d74912a708da0eeb55029b9ae953206a734dd6" upstream="master"/>
   <project dest-branch="im2d" name="linux-rga" path="external/linux-rga" remote="rk-github" revision="1e2f0dbb838de3512a8a29143196d7b5e460e1ca" upstream="im2d"/>
+  <project dest-branch="rk356x" name="lubancat-bin" revision="7ee295087b9b4b183c9f03cf56edaa9b928e5e1b" upstream="rk356x"/>
   <project dest-branch="develop" name="mpp" path="external/mpp" remote="rk-github" revision="9ffb11ca0ad1ec1c08d673af5020c5efd0006a42" upstream="develop"/>
   <project dest-branch="master" name="multivideoplayer" path="app/multivideoplayer" remote="rk-github" revision="5d566e0b2ab416c251b54d59d6237e7164c7e270" upstream="master"/>
   <project dest-branch="master" name="qcamera" path="app/qcamera" remote="rk-github" revision="3a74b34724828075bcb9f51b704e0c50e7dadaec" upstream="master"/>
@@ -48,5 +49,6 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
-  <project dest-branch="next-dev" name="u-boot" revision="ca2fcac8aad9b96713cef0182370c5879a95f8fe" upstream="next-dev"/>
+  <project dest-branch="next-dev" name="u-boot" revision="8aefdf71e3abf1d93cfa329121237744cacd7f38" upstream="next-dev"/>
+  <project dest-branch="ubuntu20.04" name="ubuntu" revision="1fc516b4d058123b4d42b80343bf2ebe1b2b14db" upstream="ubuntu20.04"/>
 </manifest>
