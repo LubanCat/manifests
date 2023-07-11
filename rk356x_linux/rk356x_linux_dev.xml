@@ -14,7 +14,7 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="67e59a503756c5c01c83bcf35a825615c7bfdf36" upstream="rk356x"/>
-  <project dest-branch="debian10" name="debian" revision="8c3f2bea28451e0a3c2e9c8e01e9fcfa5cf2a6fe" upstream="debian10"/>
+  <project dest-branch="debian10" name="debian" revision="6098a8f117738f88d149230a217527122a186b97" upstream="debian10"/>
   <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="8bda0a1ce4eba7aac15c1ac89e94ccf64fc75e94" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
@@ -50,5 +50,5 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
   <project dest-branch="next-dev" name="u-boot" revision="dba3c59ad0b38168745911c842edcba0f89f3926" upstream="next-dev"/>
-  <project dest-branch="ubuntu20.04" name="ubuntu" revision="257306e66e3723bb41c90451da6dad5f532aae58" upstream="ubuntu20.04"/>
+  <project dest-branch="ubuntu20.04" name="ubuntu" revision="6d9bffb8ab7e47e21e7c8ec3c8253e0fb061aed3" upstream="ubuntu20.04"/>
 </manifest>
