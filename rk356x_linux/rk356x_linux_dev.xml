@@ -5,15 +5,10 @@
   <remote fetch="https://github.com/Caesar-github/" name="rk-github"/>
   
   <default remote="origin" sync-j="4"/>
-  
-  <project dest-branch="develop" name="QLauncher" path="app/QLauncher" remote="rk-github" revision="a17ceb273aaa6f5c9aaf9f570d4ee56e28135c9d" upstream="develop"/>
-  <project dest-branch="master" name="alsa-config" path="external/alsa-config" remote="rk-github" revision="1e0c4b5382b84ed629b1ca9e40c814103b92ee93" upstream="master"/>
-  <project dest-branch="master" name="bluetooth_bsa" path="external/bluetooth_bsa" remote="rk-github" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master"/>
-  <project dest-branch="rk356x" name="buildroot" revision="81a26cf5545d3b37015cf346a2e08007b8f89769" upstream="rk356x">
-    <linkfile dest="Makefile" src="build/Makefile"/>
-    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
-  </project>
-  <project dest-branch="rk356x" name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="67e59a503756c5c01c83bcf35a825615c7bfdf36" upstream="rk356x"/>
+
+  <!-- <include name="include/rk356x_buildroot.xml" /> -->
+  <!-- 如果需要构建Buildroot或recovery分区，打开rk356x_buildroot.xml -->
+
   <project dest-branch="debian10" name="debian" revision="6098a8f117738f88d149230a217527122a186b97" upstream="debian10"/>
   <project dest-branch="master" name="device_rockchip" path="device/rockchip" revision="8bda0a1ce4eba7aac15c1ac89e94ccf64fc75e94" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
@@ -21,27 +16,11 @@
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
     <linkfile dest="device/rockchip/.target_product" src="rk356x"/>
   </project>
-  <project dest-branch="master" name="deviceio_release" path="external/deviceio_release" remote="rk-github" revision="187439b6c9ed867c5a28d8b39cb2ecf19ba9dae6" upstream="master"/>
   <project dest-branch="master" name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master"/>
   <project dest-branch="master" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
-  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="9db260682e11ff6d5ca70f22e3a9e980a5f6ecd1" upstream="master"/>
   <project dest-branch="stable-4.19-rk356x" name="kernel" revision="6b67afb6b7d43e26fc7f8d56621ff593719c14ba" upstream="stable-4.19-rk356x"/>
-  <project dest-branch="master" name="libmali" path="external/libmali" revision="74d74912a708da0eeb55029b9ae953206a734dd6" upstream="master"/>
-  <project dest-branch="im2d" name="linux-rga" path="external/linux-rga" remote="rk-github" revision="1e2f0dbb838de3512a8a29143196d7b5e460e1ca" upstream="im2d"/>
   <project dest-branch="rk356x" name="lubancat-bin" revision="7ee295087b9b4b183c9f03cf56edaa9b928e5e1b" upstream="rk356x"/>
-  <project dest-branch="develop" name="mpp" path="external/mpp" remote="rk-github" revision="9ffb11ca0ad1ec1c08d673af5020c5efd0006a42" upstream="develop"/>
-  <project dest-branch="master" name="multivideoplayer" path="app/multivideoplayer" remote="rk-github" revision="5d566e0b2ab416c251b54d59d6237e7164c7e270" upstream="master"/>
-  <project dest-branch="master" name="qcamera" path="app/qcamera" remote="rk-github" revision="3a74b34724828075bcb9f51b704e0c50e7dadaec" upstream="master"/>
-  <project dest-branch="master" name="qfm" path="app/qfm" remote="rk-github" revision="7e94be4d1ce41e395909da8b963ad46c65ca285f" upstream="master"/>
-  <project dest-branch="master" name="qplayer" path="app/qplayer" remote="rk-github" revision="0121646c9fe2335eef9a963071d07b797a17487e" upstream="master"/>
-  <project dest-branch="develop" name="recovery" path="external/recovery" remote="rk-github" revision="69eb9ffe14c08e144205b096d91176c88fbfa345" upstream="develop"/>
   <project dest-branch="master" name="rkbin" revision="1f4778f3145971f8a2f84ad7ac46832fbde58768" upstream="master"/>
-  <project dest-branch="master" name="rknpu2" path="external/rknpu2" remote="rk-github" revision="c0303684992ded83acb3c9e153d8920172dffd64" upstream="master"/>
-  <project dest-branch="master" name="rkscript" path="external/rkscript" remote="rk-github" revision="6c1303d90b979ccd30ebea43d4f942e5aa6f8860" upstream="master"/>
-  <project dest-branch="master" name="rktoolkit" path="external/rktoolkit" remote="rk-github" revision="77fb41f99185a6f9dc2c9c69e099f417d8ae905d" upstream="master"/>
-  <project dest-branch="master" name="rkupdate" path="external/rkupdate" remote="rk-github" revision="534d8750105c2649e24648b40551fa1304f5eeab" upstream="master"/>
-  <project dest-branch="master" name="rkwifibt" path="external/rkwifibt" revision="175e30a3aa42946044468b8f15dea1e09fade517" upstream="master"/>
-  <project dest-branch="develop" name="settings" path="app/qsetting" revision="7719da2d42787bac1a6fe075f2ddf6157cd5d678" upstream="develop"/>
   <project dest-branch="master" name="tools" revision="e8adb3e955688312a9d4d240da2bdca965c57a44" upstream="master">
     <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rk356x-package-file"/>
