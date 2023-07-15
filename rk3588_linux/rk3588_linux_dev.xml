@@ -1,44 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux/"/>
+  <remote name="origin" fetch="https://github.com/LubanCat"/>  
   <remote name="rk-github" fetch="https://github.com/Caesar-github/"/>
-  
+
   <default remote="origin" sync-j="4"/>
+
+  <!-- <include name="include/rk3588_buildroot.xml" /> -->
+  <!-- 如果需要构建Buildroot或recovery分区，打开rk3588_buildroot.xml -->
   
-  <project name="QLauncher" path="app/QLauncher" remote="rk-github" revision="dd5644dcdbcfa99569c52681efcee2f8b033ae8a" upstream="develop" dest-branch="develop"/>
-  <project name="alsa-config" path="external/alsa-config" remote="rk-github" revision="2c1f3238a1835261246b3faefe74d3406821b187" upstream="master" dest-branch="master"/>
-  <project name="bluetooth_bsa" path="external/bluetooth_bsa" remote="rk-github" revision="51b1afeefd0984dc1965379513a2931e85d281fa" upstream="master" dest-branch="master"/>
-  <project name="buildroot" revision="fead9b2d6b44cdeee1692b879c25dc9fb7fc5a92" upstream="rk3588" dest-branch="rk3588">
-    <linkfile src="build/Makefile" dest="Makefile"/>
-    <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
-  </project>
-  <project name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="a4e43c541357dcfd65950b600132d514687e7cd3" upstream="rk3588" dest-branch="rk3588"/>
-  <project name="debian-archive" path="debian" revision="62ca7d0ace6e757626abaeaf6bec37bea5faa443" upstream="develop-bullseye" dest-branch="develop-bullseye"/>
+  <project name="debian-archive" path="debian" revision="e7fc83893c985c083caac32fef8f96ef70e82294" upstream="develop-bullseye" dest-branch="develop-bullseye"/>
   <project name="device_rockchip" path="device/rockchip" revision="831aed26e77266e8b0f6a4ea5341f6fd5beaaae1" upstream="master" dest-branch="master">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
     <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
-  <project name="deviceio_release" path="external/deviceio_release" remote="rk-github" revision="187439b6c9ed867c5a28d8b39cb2ecf19ba9dae6" upstream="master" dest-branch="master"/>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" upstream="master" dest-branch="master"/>
-  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="4cd4edf2fce63533982b9a0e2b0ef6be3598693d" upstream="master"/>
   <project name="kernel" revision="0311b538d7506cdb130e4419412355dfed7908ce" upstream="develop-5.10" dest-branch="develop-5.10"/>
-  <project name="libmali" path="external/libmali" revision="8f46cc7b9777975f40323b0971f3483fa2aefcd3" upstream="master" dest-branch="master"/>
-  <project name="linux-rga" path="external/linux-rga" revision="53d2b8e110dfb7a568718e4ba8ec4ceb64da8fac" upstream="multi_rga_im2d_api" dest-branch="multi_rga_im2d_api"/>
-  <project name="mpp" path="external/mpp" remote="rk-github" revision="19e7edf048184ef247d643988f4a16d4cda34de6" upstream="develop" dest-branch="develop"/>
-  <project name="multivideoplayer" path="app/multivideoplayer" remote="rk-github" revision="04ad2098ec542d6f0da932d4ee6676ce5a68ca82" upstream="master" dest-branch="master"/>
-  <project name="qcamera" path="app/qcamera" remote="rk-github" revision="3bf2887b30e9b99be5d1fd036a2f88b464ea2781" upstream="master" dest-branch="master"/>
-  <project name="qfm" path="app/qfm" remote="rk-github" revision="e01d39158e6601273de9aea93c81fa413e3cf4ce" upstream="master" dest-branch="master"/>
-  <project name="qplayer" path="app/qplayer" remote="rk-github" revision="f11833c643f7512d90a0d38281e263feecb8428a" upstream="master" dest-branch="master"/>
-  <project name="recovery" path="external/recovery" remote="rk-github" revision="17541e8cf1badefd1e87bf1ed600eec52b6c25e5" upstream="develop" dest-branch="develop"/>
+  <project name="lubancat-bin" revision="26f97b00bf6d99d5885727ba2245664f87ca66ea" upstream="rk3588" dest-branch="rk3588"/>
   <project name="rkbin" revision="1f4778f3145971f8a2f84ad7ac46832fbde58768" upstream="master" dest-branch="master"/>
-  <project name="rknpu2" path="external/rknpu2" remote="rk-github" revision="28565a67ed3b3762a758acbdbafc60e1de352cc7" upstream="master" dest-branch="master"/>
-  <project name="rkscript" path="external/rkscript" remote="rk-github" revision="6c1303d90b979ccd30ebea43d4f942e5aa6f8860" upstream="master" dest-branch="master"/>
-  <project name="rktoolkit" path="external/rktoolkit" remote="rk-github" revision="6eafc640027b3620e20ce7bcf563dd608b5b3838" upstream="master" dest-branch="master"/>
-  <project name="rkupdate" path="external/rkupdate" remote="rk-github" revision="534d8750105c2649e24648b40551fa1304f5eeab" upstream="master" dest-branch="master"/>
-  <project name="rkwifibt" path="external/rkwifibt" remote="rk-github" revision="a03e128aa4b52fc5d904634c9838623a74ade393" upstream="master" dest-branch="master"/>
-  <project name="settings" path="app/qsetting" revision="7719da2d42787bac1a6fe075f2ddf6157cd5d678" upstream="develop" dest-branch="develop"/>
   <project name="tools" revision="e8adb3e955688312a9d4d240da2bdca965c57a44" upstream="master" dest-branch="master">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk3588-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
     <linkfile src="windows/RKDevTool/rockdev/rk3588-package-file" dest="tools/windows/RKDevTool/rockdev/package-file"/>
@@ -47,4 +28,5 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
   <project name="u-boot" revision="dba3c59ad0b38168745911c842edcba0f89f3926" upstream="next-dev" dest-branch="next-dev"/>
+  <project name="ubuntu" revision="6d9bffb8ab7e47e21e7c8ec3c8253e0fb061aed3" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
 </manifest>
