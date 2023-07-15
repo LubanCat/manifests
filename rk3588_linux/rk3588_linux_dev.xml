@@ -14,7 +14,7 @@
   </project>
   <project name="camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="a4e43c541357dcfd65950b600132d514687e7cd3" upstream="rk3588" dest-branch="rk3588"/>
   <project name="debian-archive" path="debian" revision="62ca7d0ace6e757626abaeaf6bec37bea5faa443" upstream="develop-bullseye" dest-branch="develop-bullseye"/>
-  <project name="device_rockchip" path="device/rockchip" revision="8f86a256ea2d3a36e895451b465ad4774524bbe3" upstream="master" dest-branch="master">
+  <project name="device_rockchip" path="device/rockchip" revision="831aed26e77266e8b0f6a4ea5341f6fd5beaaae1" upstream="master" dest-branch="master">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
     <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>
@@ -23,7 +23,7 @@
   <project name="deviceio_release" path="external/deviceio_release" remote="rk-github" revision="187439b6c9ed867c5a28d8b39cb2ecf19ba9dae6" upstream="master" dest-branch="master"/>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" upstream="master" dest-branch="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" remote="rk-github" revision="4cd4edf2fce63533982b9a0e2b0ef6be3598693d" upstream="master"/>
-  <project name="kernel" revision="1f5fbdeb1ece65578f242f3daa205ac99ec64514" upstream="develop-5.10" dest-branch="develop-5.10"/>
+  <project name="kernel" revision="0311b538d7506cdb130e4419412355dfed7908ce" upstream="develop-5.10" dest-branch="develop-5.10"/>
   <project name="libmali" path="external/libmali" revision="8f46cc7b9777975f40323b0971f3483fa2aefcd3" upstream="master" dest-branch="master"/>
   <project name="linux-rga" path="external/linux-rga" revision="53d2b8e110dfb7a568718e4ba8ec4ceb64da8fac" upstream="multi_rga_im2d_api" dest-branch="multi_rga_im2d_api"/>
   <project name="mpp" path="external/mpp" remote="rk-github" revision="19e7edf048184ef247d643988f4a16d4cda34de6" upstream="develop" dest-branch="develop"/>
@@ -46,5 +46,5 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-mkupdate.sh" dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh"/>
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
-  <project name="u-boot" revision="4b6a8ca16a98968a00f4bd8531dd33089f50e218" upstream="next-dev" dest-branch="next-dev"/>
+  <project name="u-boot" revision="dba3c59ad0b38168745911c842edcba0f89f3926" upstream="next-dev" dest-branch="next-dev"/>
 </manifest>
