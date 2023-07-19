@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux/"/> -->
   <remote name="origin" fetch="https://github.com/LubanCat/"/>
   <remote name="rk-github" fetch="https://github.com/Caesar-github/"/>
-
+  
   <default remote="origin" sync-j="4"/>
 
   <!-- <include name="include/rk356x_buildroot.xml" /> -->
   <!-- 如果需要构建Buildroot或recovery分区，打开rk356x_buildroot.xml -->
 
   <project name="debian" revision="6098a8f117738f88d149230a217527122a186b97" upstream="debian10" dest-branch="debian10"/>
-  <project name="device_rockchip" path="device/rockchip" revision="8bda0a1ce4eba7aac15c1ac89e94ccf64fc75e94" upstream="master" dest-branch="master">
+  <project name="device_rockchip" path="device/rockchip" revision="831aed26e77266e8b0f6a4ea5341f6fd5beaaae1" upstream="master" dest-branch="master">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
     <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>
@@ -18,9 +17,9 @@
   </project>
   <project name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master" dest-branch="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master" dest-branch="master"/>
-  <project name="kernel" revision="bb4d452e50401668d2d2d681d8b15f52b2257461" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
+  <project name="kernel" revision="758ffb37da1a8d4ef03d8bbbdb65bb2181b3fed6" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
   <project name="lubancat-bin" revision="7ee295087b9b4b183c9f03cf56edaa9b928e5e1b" upstream="rk356x" dest-branch="rk356x"/>
-  <project name="rkbin" revision="1f4778f3145971f8a2f84ad7ac46832fbde58768" upstream="master" dest-branch="master"/>
+  <project name="rkbin" revision="50f626abcd07bdc663406e00993546a686c77ddc" upstream="master" dest-branch="master"/>
   <project name="tools" revision="e8adb3e955688312a9d4d240da2bdca965c57a44" upstream="master" dest-branch="master">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
     <linkfile src="windows/RKDevTool/rockdev/rk356x-package-file" dest="tools/windows/RKDevTool/rockdev/package-file"/>
