@@ -3,21 +3,21 @@
   <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux/"/>
   <!-- <remote name="origin" fetch="https://github.com/LubanCat"/>   -->
   <remote name="rk-github" fetch="https://github.com/Caesar-github/"/>
-
-  <default remote="origin" sync-j="4"/>
-
+  
   <!-- <include name="include/rk3588_buildroot.xml" /> -->
   <!-- 如果需要构建Buildroot或recovery分区，打开rk3588_buildroot.xml -->
   
-  <project name="debian-archive" path="debian" revision="e7fc83893c985c083caac32fef8f96ef70e82294" upstream="develop-bullseye" dest-branch="develop-bullseye"/>
-  <project name="device_rockchip" path="device/rockchip" revision="831aed26e77266e8b0f6a4ea5341f6fd5beaaae1" upstream="master" dest-branch="master">
+  <default remote="origin" sync-j="4" />
+  
+  <project name="debian11" path="debian" revision="280e46d839e85b8c6eb956b088700188fce057cf" upstream="debian11" dest-branch="debian11"/>
+  <project name="device_rockchip" path="device/rockchip" revision="1cc80b0733a6dc875c67bd1f917ca69b2eaf50ff" upstream="master" dest-branch="master">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
     <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" upstream="master" dest-branch="master"/>
-  <project name="kernel" revision="ce200e2aab55d9a93877da150667c8fe91bdadc8" upstream="develop-5.10" dest-branch="develop-5.10"/>
+  <project name="kernel" revision="4bac6b36f40aa308cf6509033dd57b0649c6ac76" upstream="develop-5.10" dest-branch="develop-5.10"/>
   <project name="lubancat-bin" revision="da4446576b196334590e59a9ec4cb2a094980bdf" upstream="rk3588" dest-branch="rk3588"/>
   <project name="rkbin" revision="50f626abcd07bdc663406e00993546a686c77ddc" upstream="master" dest-branch="master"/>
   <project name="tools" revision="e8adb3e955688312a9d4d240da2bdca965c57a44" upstream="master" dest-branch="master">
@@ -27,6 +27,6 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-mkupdate.sh" dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh"/>
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
-  <project name="u-boot" revision="f09ead00dda565c5bdb2931e0f6e9bdf891ff54d" upstream="next-dev" dest-branch="next-dev"/>
+  <project name="u-boot" revision="4574b07dd1e87a2e643ab9d2e04bce595c344164" upstream="next-dev" dest-branch="next-dev"/>
   <project name="ubuntu" revision="907501789aaa72c408316e86a8ff7cad0726fbba" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
 </manifest>
