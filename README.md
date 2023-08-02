@@ -64,9 +64,12 @@ python -V
 #github地址(用户使用)
 repo --trace init --depth=1 -u https://github.com/LubanCat/manifests.git -b linux -m rk356x_linux_release.xml
 
-
 #内部地址(内部开发使用)
 repo init -u git@gitlab.ebf.local:rockchip/linux/manifests.git -b linux -m rk356x_linux_release.xml
+
+#如果运行以上命令失败，提示：fatal: Cannot get https://gerrit.googlesource.com/git-repo/clone.bundle 则可以在以上命令中添加 --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo 例如：
+
+repo --trace init --depth=1 --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo -u https://github.com/LubanCat/manifests.git -b linux -m rk356x_linux_release.xml 
 
 # 同步源码
 .repo/repo/repo --trace sync -c -j4
