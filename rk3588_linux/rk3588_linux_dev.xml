@@ -8,7 +8,7 @@
   <!-- 如果需要构建Buildroot或recovery分区，打开rk3588_buildroot.xml -->
   <default remote="origin" sync-j="4"/>
   
-  <project name="debian11" path="debian" revision="aa7e22739899996ad8865f8758b69f82e597ef4e" upstream="debian11" dest-branch="debian11"/>
+  <project name="debian11" path="debian" revision="1d48124323f0e16e77c02f9e0b146ae2440a93c8" upstream="debian11" dest-branch="debian11"/>
   <project name="device_rockchip" path="device/rockchip" revision="6de248d391731fd3849bd83d6929d9010b6159de" upstream="master" dest-branch="master">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
@@ -16,7 +16,7 @@
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" upstream="master" dest-branch="master"/>
-  <project name="kernel" revision="bdd88d45d559f8cd0636eb2e8ed0e22cdf314b78" upstream="develop-5.10" dest-branch="develop-5.10"/>
+  <project name="kernel" revision="f1f2a03dc5734b49fe1b7cfe44c6cf10baca14d6" upstream="develop-5.10" dest-branch="develop-5.10"/>
   <project name="lubancat-bin" revision="da4446576b196334590e59a9ec4cb2a094980bdf" upstream="rk3588" dest-branch="rk3588"/>
   <project name="rkbin" revision="50f626abcd07bdc663406e00993546a686c77ddc" upstream="master" dest-branch="master"/>
   <project name="tools" revision="e8adb3e955688312a9d4d240da2bdca965c57a44" upstream="master" dest-branch="master">
