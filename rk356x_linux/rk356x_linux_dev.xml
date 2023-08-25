@@ -8,8 +8,8 @@
 
   <!-- <include name="include/rk356x_buildroot.xml" /> -->
   <!-- 如果需要构建Buildroot或recovery分区，打开rk356x_buildroot.xml -->
-
-  <project name="debian" revision="6098a8f117738f88d149230a217527122a186b97" upstream="debian10" dest-branch="debian10"/>
+  
+  <project name="debian" revision="1c423f5e9b967514ae1d425d3732556e06323311" upstream="debian10" dest-branch="debian10"/>
   <project name="device_rockchip" path="device/rockchip" revision="831aed26e77266e8b0f6a4ea5341f6fd5beaaae1" upstream="master" dest-branch="master">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
@@ -18,7 +18,7 @@
   </project>
   <project name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master" dest-branch="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master" dest-branch="master"/>
-  <project name="kernel" revision="fafb5e4e11d929be2793b96ef15a44b0a61652cf" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
+  <project name="kernel" revision="ddf356c1c502e6870c1058e093530c7de6398f13" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
   <project name="lubancat-bin" revision="7ee295087b9b4b183c9f03cf56edaa9b928e5e1b" upstream="rk356x" dest-branch="rk356x"/>
   <project name="rkbin" revision="50f626abcd07bdc663406e00993546a686c77ddc" upstream="master" dest-branch="master"/>
   <project name="tools" revision="e8adb3e955688312a9d4d240da2bdca965c57a44" upstream="master" dest-branch="master">
@@ -29,5 +29,5 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
   <project name="u-boot" revision="dba3c59ad0b38168745911c842edcba0f89f3926" upstream="next-dev" dest-branch="next-dev"/>
-  <project name="ubuntu" revision="6d9bffb8ab7e47e21e7c8ec3c8253e0fb061aed3" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
+  <project name="ubuntu" revision="bc19508bc6d90c39fb9f6a349f31b3cfc4c316b9" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
 </manifest>
