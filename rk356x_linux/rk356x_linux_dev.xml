@@ -19,7 +19,7 @@
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master" dest-branch="master"/>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="3d26ae9f06a13c71a45f80082d5f3df049943d70" upstream="master" dest-branch="master"/>
   <project name="rk3568-kernel5.10"  path="kernel" revision="3487fa46250b3f6f2471694c771063cd7289ef65" upstream="main" dest-branch="main"/>
-  <project name="lubancat-bin" revision="7ee295087b9b4b183c9f03cf56edaa9b928e5e1b" upstream="rk356x" dest-branch="rk356x"/>
+  <project name="lubancat-bin" revision="495d3eabce85d6ab8b0408c041ed4e940c467def" upstream="rk356x" dest-branch="rk356x"/>
   <project name="rkbin" revision="1f4778f3145971f8a2f84ad7ac46832fbde58768" upstream="master" dest-branch="master"/>
   <project name="tools" revision="e8adb3e955688312a9d4d240da2bdca965c57a44" upstream="master" dest-branch="master">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
