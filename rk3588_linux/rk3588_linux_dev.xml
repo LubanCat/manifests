@@ -27,5 +27,5 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
   <project name="u-boot" revision="4574b07dd1e87a2e643ab9d2e04bce595c344164" upstream="next-dev" dest-branch="next-dev"/>
-  <!-- <project name="ubuntu" revision="907501789aaa72c408316e86a8ff7cad0726fbba" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/> -->
+  <project name="ubuntu" revision="d3106e331aaf7f99601a6ab916473926211e6067" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
 </manifest>
