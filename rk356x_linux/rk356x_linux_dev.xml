@@ -18,7 +18,7 @@
   </project>
   <project name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master" dest-branch="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master" dest-branch="master"/>
-  <project name="kernel" revision="1dcab8cfa74a24751305ddc5a5fa1d10e616749d" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
+  <project name="kernel" revision="e33f8e7b6c6f3fe79b64a007d24791f24595507b" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
   <project name="lubancat-bin" revision="7ee295087b9b4b183c9f03cf56edaa9b928e5e1b" upstream="rk356x" dest-branch="rk356x"/>
   <project name="rkbin" revision="70a4b3fc75053d10a2718a75591a2fe998a207de" upstream="master" dest-branch="master"/>
   <project name="tools" revision="f3cf9b371e85f357865ab164a3eba99e8125d70b" upstream="master" dest-branch="master">
@@ -29,5 +29,5 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
   <project name="u-boot" revision="4574b07dd1e87a2e643ab9d2e04bce595c344164" upstream="next-dev" dest-branch="next-dev"/>
-  <project name="ubuntu" revision="852941a5c7942efd7d5f3f2bad41c319917c3605" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
+  <project name="ubuntu" revision="d3106e331aaf7f99601a6ab916473926211e6067" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
 </manifest>
