@@ -9,8 +9,8 @@
   <!-- <include name="include/rk356x_buildroot.xml" /> -->
   <!-- 如果需要构建Buildroot或recovery分区，打开rk356x_buildroot.xml -->
   
-  <project name="debian" revision="0628f54a2147331405f4bc1a0598a34aede3adab" upstream="debian10" dest-branch="debian10"/>
-  <project name="device_rockchip" path="device/rockchip" revision="6de248d391731fd3849bd83d6929d9010b6159de" upstream="master" dest-branch="master">
+  <project name="debian" revision="e53932ab80a7b066ebc651205f06d92afb374622" upstream="debian10" dest-branch="debian10"/>
+  <project name="device_rockchip" path="device/rockchip" revision="bc7f087cbc082c82b0a5898fd67ccd13a7ed03be" upstream="master" dest-branch="master">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
     <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>
@@ -18,7 +18,7 @@
   </project>
   <project name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master" dest-branch="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master" dest-branch="master"/>
-  <project name="kernel" revision="b9377069da661b0b27987e87f98c845b8ae58790" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
+  <project name="kernel" revision="5f54a1a1d1c8efd655426e5d6527c368f385c589" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
   <project name="lubancat-bin" revision="7ee295087b9b4b183c9f03cf56edaa9b928e5e1b" upstream="rk356x" dest-branch="rk356x"/>
   <project name="rkbin" revision="70a4b3fc75053d10a2718a75591a2fe998a207de" upstream="master" dest-branch="master"/>
   <project name="tools" revision="f3cf9b371e85f357865ab164a3eba99e8125d70b" upstream="master" dest-branch="master">
@@ -29,5 +29,5 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
   <project name="u-boot" revision="4574b07dd1e87a2e643ab9d2e04bce595c344164" upstream="next-dev" dest-branch="next-dev"/>
-  <project name="ubuntu" revision="cef7aa5159a1e652d0cd77dc13c2c8630517b439" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
+  <project name="ubuntu" revision="9a72d500b73dc40d5d825133b0cf8e51acd7f2f2" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
 </manifest>
