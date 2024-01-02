@@ -21,7 +21,7 @@
   <project name="kernel" revision="73beee80b14ecdd433835693e473a1a504731201" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
   <project name="lubancat-bin" revision="7ee295087b9b4b183c9f03cf56edaa9b928e5e1b" upstream="rk356x" dest-branch="rk356x"/>
   <project name="rkbin" revision="70a4b3fc75053d10a2718a75591a2fe998a207de" upstream="master" dest-branch="master"/>
-  <project name="tools" revision="6ba88ee3d6da6d5d67bdafee05c13e03db4a1bbb" upstream="master" dest-branch="master">
+  <project name="tools" revision="210be81d659a6bc4e7a648744ae77837f394be0f" upstream="master" dest-branch="master">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
     <linkfile src="windows/RKDevTool/rockdev/rk356x-package-file" dest="tools/windows/RKDevTool/rockdev/package-file"/>
     <linkfile src="windows/RKDevTool/rockdev/rk356x-mkupdate.bat" dest="tools/windows/RKDevTool/rockdev/mkupdate.bat"/>
