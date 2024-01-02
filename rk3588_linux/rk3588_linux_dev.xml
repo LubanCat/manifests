@@ -8,7 +8,7 @@
   <!-- 如果需要构建Buildroot或recovery分区，打开rk3588_buildroot.xml -->
   <default remote="origin" sync-j="4"/>
   
-  <project name="debian11" path="debian" revision="4a8d0069f2e6fab8d612d28efad1ce1dce71ad2a" upstream="debian11" dest-branch="debian11"/>
+  <project name="debian11" path="debian" revision="6088bd753491938d8fde6b9cf89df0e7e373b749" upstream="debian11" dest-branch="debian11"/>
   <project name="device_rockchip" path="device/rockchip" revision="bc7f087cbc082c82b0a5898fd67ccd13a7ed03be" upstream="master" dest-branch="master">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
@@ -16,10 +16,10 @@
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" upstream="master" dest-branch="master"/>
-  <project name="kernel" revision="ee9b64256531e1096649b58650ca6b28b6cee2b2" upstream="develop-5.10" dest-branch="develop-5.10"/>
+  <project name="kernel" revision="dad7b643b1b76d7240eb04b955ec9dc1942637a7" upstream="develop-5.10" dest-branch="develop-5.10"/>
   <project name="lubancat-bin" revision="da4446576b196334590e59a9ec4cb2a094980bdf" upstream="rk3588" dest-branch="rk3588"/>
   <project name="rkbin" revision="8350c611251e50410eabb29f7df66083efeb9551" upstream="master" dest-branch="master"/>
-  <project name="tools" revision="f3cf9b371e85f357865ab164a3eba99e8125d70b" upstream="master" dest-branch="master">
+  <project name="tools" revision="210be81d659a6bc4e7a648744ae77837f394be0f" upstream="master" dest-branch="master">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk3588-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
     <linkfile src="windows/RKDevTool/rockdev/rk3588-package-file" dest="tools/windows/RKDevTool/rockdev/package-file"/>
     <linkfile src="windows/RKDevTool/rockdev/rk3588-mkupdate.bat" dest="tools/windows/RKDevTool/rockdev/mkupdate.bat"/>
@@ -27,5 +27,5 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
   <project name="u-boot" revision="4574b07dd1e87a2e643ab9d2e04bce595c344164" upstream="next-dev" dest-branch="next-dev"/>
-  <project name="ubuntu" revision="3733284728739de2b94da8930dd093534c09387f" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
+  <project name="ubuntu" revision="3f4d03b776349f36d51878ae1bafe174bb6436b8" upstream="ubuntu20.04" dest-branch="ubuntu20.04"/>
 </manifest>
