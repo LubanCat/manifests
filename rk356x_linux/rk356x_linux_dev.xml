@@ -9,7 +9,7 @@
   <!-- <include name="include/rk356x_buildroot.xml" /> -->
   <!-- 如果需要构建Buildroot或recovery分区，打开rk356x_buildroot.xml -->
   
-  <project name="debian" revision="e53932ab80a7b066ebc651205f06d92afb374622" upstream="debian10" dest-branch="debian10"/>
+  <project name="debian" revision="a4f7d3c85645cfae4ba570986b6e01297498f656" upstream="debian10" dest-branch="debian10"/>
   <project name="device_rockchip" path="device/rockchip" revision="bc7f087cbc082c82b0a5898fd67ccd13a7ed03be" upstream="master" dest-branch="master">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
@@ -18,9 +18,9 @@
   </project>
   <project name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master" dest-branch="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master" dest-branch="master"/>
-  <project name="kernel" revision="73beee80b14ecdd433835693e473a1a504731201" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
+  <project name="kernel" revision="c40ee063aa240d2931d7762f9eda6ad7d1102c22" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x"/>
   <project name="lubancat-bin" revision="7ee295087b9b4b183c9f03cf56edaa9b928e5e1b" upstream="rk356x" dest-branch="rk356x"/>
-  <project name="rkbin" revision="70a4b3fc75053d10a2718a75591a2fe998a207de" upstream="master" dest-branch="master"/>
+  <project name="rkbin" revision="8350c611251e50410eabb29f7df66083efeb9551" upstream="master" dest-branch="master"/>
   <project name="tools" revision="210be81d659a6bc4e7a648744ae77837f394be0f" upstream="master" dest-branch="master">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
     <linkfile src="windows/RKDevTool/rockdev/rk356x-package-file" dest="tools/windows/RKDevTool/rockdev/package-file"/>
