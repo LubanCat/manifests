@@ -14,7 +14,7 @@
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" clone-depth="1"/>
   <project name="gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="2e89382ca3f8c34086272509ae4d7a5c340ffafc" clone-depth="1"/>
   <project name="kernel" revision="5d79f8f4294f1695244148c58e18d0c0cb6b9d54" upstream="lbc-develop-5.10" dest-branch="lbc-develop-5.10" clone-depth="1"/>
-  <project name="lubancat-bin" revision="d11e1777fe81bcdfff308105ce0fa314d33ea370" upstream="main" dest-branch="main" clone-depth="1"/>
+  <project name="lubancat-bin" revision="c7360158a896a4ce4a5c42b44f67cd2fa7e4c7d9" upstream="main" dest-branch="main" clone-depth="1"/>
   <project name="rkbin" revision="refs/tags/lbc-gen-rkr8" clone-depth="1"/>
   <project name="tools" revision="refs/tags/lbc-gen-rkr7" clone-depth="1"/>
   <project name="u-boot" revision="refs/tags/lbc-gen-rkr7.1" clone-depth="1"/>
