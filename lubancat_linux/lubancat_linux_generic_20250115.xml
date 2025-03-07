@@ -4,7 +4,7 @@
   
   <project name="debian11" revision="0169ef8fa580289d6a1e0af1b2fbeb079e3e1f9d" dest-branch="debian11" clone-depth="1"/>
   <project name="debian12" revision="5c51a8344da2e2f86306d44009caa611ad996c5f" dest-branch="debian12" clone-depth="1"/>
-  <project name="device_rockchip" path="device/rockchip" revision="33f386a1394fce60edc82e9f330f4c505db8cc96" dest-branch="main" clone-depth="1">
+  <project name="device_rockchip" path="device/rockchip" revision="3c7eaeda299d1aa87dac1a73e0ff089089a0ebb6" dest-branch="main" clone-depth="1">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
     <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
@@ -12,7 +12,7 @@
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" clone-depth="1"/>
   <project name="gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="2e89382ca3f8c34086272509ae4d7a5c340ffafc" clone-depth="1"/>
   <project name="kernel" path="kernel-5.10" revision="70f614a584a90ea3a552ff950ec91bb7944888b4" dest-branch="lbc-develop-5.10" clone-depth="1"/>
-  <project name="kernel" path="kernel-6.1" revision="6b6871d59150608caed4af40d93b2d2924286023" dest-branch="lbc-develop-6.1" clone-depth="1"/>
+  <project name="kernel" path="kernel-6.1" revision="0e6b14809411a138b4440be1a7d7edae60738850" dest-branch="lbc-develop-6.1" clone-depth="1"/>
   <project name="lubancat-bin" revision="896857623caf65f9ae040fd01cdce81933b2c7d3" dest-branch="main" clone-depth="1"/>
   <project name="rkbin" revision="refs/tags/lbc-stan-rkr5" clone-depth="1"/>
   <project name="tools" revision="refs/tags/lbc-stan-rkr5" clone-depth="1"/>
