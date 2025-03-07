@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <default remote="origin" sync-j="4" clone-depth="1"/>
   
   <include name="lubancat_linux/lubancat_linux_generic_20250115.xml"/>
   <include name="lubancat_linux_full/buildroot-rk3576-rkr5.xml"/>

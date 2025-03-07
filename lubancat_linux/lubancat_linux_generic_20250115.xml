@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux/"/> -->
-  <remote name="origin" fetch="https://github.com/LubanCat/"/>
-  
-  <default remote="origin" sync-j="4"/>
+  <include name="remote.xml"/>
   
   <project name="debian11" revision="0169ef8fa580289d6a1e0af1b2fbeb079e3e1f9d" dest-branch="debian11" clone-depth="1"/>
   <project name="debian12" revision="5c51a8344da2e2f86306d44009caa611ad996c5f" dest-branch="debian12" clone-depth="1"/>
