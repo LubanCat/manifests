@@ -1,7 +1,7 @@
 variables:
   #NAS地址
-  # NAS_URL1: /mnt/百度云对外发布资料/Linux产品线/鲁班猫_瑞芯微系列/8-SDK源码压缩包及虚拟机/LubanCat_Linux_SDK
-  NAS_URL1: /mnt/百度云内部资料/测试/LubanCat_SDK
+  NAS_URL1: /mnt/百度云对外发布资料/Linux产品线/鲁班猫_瑞芯微系列/8-SDK源码压缩包及虚拟机/LubanCat_Linux_SDK
+  # NAS_URL1: /mnt/百度云内部资料/测试/LubanCat_SDK
 
 stages: # 分段
   - pack
