@@ -2,7 +2,7 @@
 <manifest>
   <include name="remote.xml"/>
 
-  <include name="lubancat_linux/lubancat_linux_generic_20250115.xml"/>
+  <include name="lubancat_linux/lubancat_linux_generic_20250312.xml"/>
   <include name="lubancat_linux_full/buildroot-2024.04-rkr5.xml"/>
 
   <project name="buildroot" revision="b2460d5cf8d810814815f4df0826d32fe13da99e" clone-depth="1">
