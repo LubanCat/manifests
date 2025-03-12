@@ -5,7 +5,7 @@
 
   <default remote="origin" sync-j="4"/>
   
-  <project name="debian11" path="debian" revision="2ecef7d4cc59ed390cb90dbd5d8cd215725c1864" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="debian11" path="debian" revision="8768ef4d37ea89e016a907671fc1cb4f87e4b597" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
   <project name="device_rockchip" path="device/rockchip" revision="aa605529daab64df339d9592f347a5d656d47f8a" dest-branch="master" clone-depth="1">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
@@ -13,8 +13,8 @@
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" dest-branch="master" clone-depth="1"/>
-  <project name="kernel" revision="3e8d7524e9b93575a51fe51d650ca44ba5f0cbd1" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
-  <project name="lubancat-bin" revision="657df4b284c429b100988c40d27441236781d350" dest-branch="rk3588" clone-depth="1"/>
+  <project name="kernel" revision="b98eedc17f4386e56abacdfaadf2a4e20bc56b22" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="lubancat-bin" revision="896857623caf65f9ae040fd01cdce81933b2c7d3" dest-branch="rk3588" clone-depth="1"/>
   <project name="rkbin" revision="refs/tags/lbc-gen-rkr8" clone-depth="1"/>
   <project name="tools" revision="210be81d659a6bc4e7a648744ae77837f394be0f" dest-branch="master" clone-depth="1">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk3588-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
@@ -24,5 +24,5 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
   <project name="u-boot" revision="refs/tags/lbc-gen-rkr7.1" clone-depth="1"/>
-  <project name="ubuntu" revision="024307086c6d2271cfc15b48a9954541596887a2" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="ubuntu" revision="13bc7e006a36d4fe18d07f83c6b1e2ff12ca0d06" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
 </manifest>
