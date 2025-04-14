@@ -31,6 +31,8 @@ pack-generic:
     - TAR_NAME="${FILE_NAME}_${COMMIT_DATE}.tgz" && echo TAR_NAME=$TAR_NAME
     # 返回主目录
     - cd $LubanCat_SDK_DIR
+    # 查看 .repo/repo/repo 版本
+    - .repo/repo/repo --version
     # 替换为内部gitlab地址
     - sed -i '/github/ s/^/  <!--/; /github/ s/$/ -->/' .repo/manifests/remote.xml
     - sed -i '/gitlab/ s/<!--*//;/gitlab/ s/ *-->//' .repo/manifests/remote.xml
@@ -78,6 +80,8 @@ pack-gen_full:
     - TAR_NAME="${FILE_NAME}_${COMMIT_DATE}.tgz" && echo TAR_NAME=$TAR_NAME
     # 返回主目录
     - cd $LubanCat_SDK_DIR
+    # 查看 .repo/repo/repo 版本
+    - .repo/repo/repo --version
     # 替换为内部gitlab地址
     - sed -i '/github/ s/^/  <!--/; /github/ s/$/ -->/' .repo/manifests/remote.xml
     - sed -i '/gitlab/ s/<!--*//;/gitlab/ s/ *-->//' .repo/manifests/remote.xml
@@ -125,6 +129,8 @@ pack-rk3588:
     - TAR_NAME="${FILE_NAME}_${COMMIT_DATE}.tgz" && echo TAR_NAME=$TAR_NAME
     # 返回主目录
     - cd $LubanCat_SDK_DIR
+    # 查看 .repo/repo/repo 版本
+    - .repo/repo/repo --version
     # 替换为内部gitlab地址
     - sed -i '/github/ s/^/  <!--/; /github/ s/$/ -->/' .repo/manifests/${XML_FILE}
     - sed -i '/gitlab/ s/<!--*//;/gitlab/ s/ *-->//' .repo/manifests/${XML_FILE}
@@ -172,6 +178,8 @@ pack-rk356x:
     - TAR_NAME="${FILE_NAME}_${COMMIT_DATE}.tgz" && echo TAR_NAME=$TAR_NAME
     # 返回主目录
     - cd $LubanCat_SDK_DIR
+    # 查看 .repo/repo/repo 版本
+    - .repo/repo/repo --version
     # 替换为内部gitlab地址
     - sed -i '/github/ s/^/  <!--/; /github/ s/$/ -->/' .repo/manifests/${XML_FILE}
     - sed -i '/gitlab/ s/<!--*//;/gitlab/ s/ *-->//' .repo/manifests/${XML_FILE}
