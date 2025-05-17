@@ -5,7 +5,7 @@
 
   <default remote="origin" sync-j="4"/>
   
-  <project name="debian11" path="debian" revision="42f361a75f6928c0d01b5386bdeb03e49632c11d" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="debian11" path="debian" revision="d8ff0c2ac2379e3662fa6a5de5dc048f24202dc8" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
   <project name="device_rockchip" path="device/rockchip" revision="aa605529daab64df339d9592f347a5d656d47f8a" dest-branch="master" clone-depth="1">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
@@ -13,7 +13,7 @@
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" dest-branch="master" clone-depth="1"/>
-  <project name="kernel" revision="0f9a66a6a4c7559baa3689c79e23bcd2e8032ed5" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="kernel" revision="12c3d7f8d5373ac914eac6bea6773a2e76b0dd14" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
   <project name="lubancat-bin" revision="896857623caf65f9ae040fd01cdce81933b2c7d3" dest-branch="rk3588" clone-depth="1"/>
   <project name="rkbin" revision="refs/tags/lbc-gen-rkr8" clone-depth="1"/>
   <project name="tools" revision="210be81d659a6bc4e7a648744ae77837f394be0f" dest-branch="master" clone-depth="1">
@@ -24,5 +24,5 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
   <project name="u-boot" revision="refs/tags/lbc-gen-rkr7.1" clone-depth="1"/>
-  <project name="ubuntu" revision="528659c8447fb923ffce8fdab57e8d08eaebf2bf" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="ubuntu" revision="86dd0e62f49c10f8ab0fa549fb8495c1851218e0" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
 </manifest>
