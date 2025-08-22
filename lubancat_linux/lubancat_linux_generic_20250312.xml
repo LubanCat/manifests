@@ -2,21 +2,21 @@
 <manifest>
   <include name="remote.xml"/>
   
-  <project name="debian11" revision="15236ceb435543cfc9cf3c06882ac1347a312c8b" dest-branch="debian11" clone-depth="1"/>
-  <project name="debian12" revision="51dacde7421db2a3399104799f114b48995de8bd" dest-branch="debian12" clone-depth="1"/>
-  <project name="device_rockchip" path="device/rockchip" revision="3316762d5cb9cb02ef34429c3f1912ae9168ad72" dest-branch="main" clone-depth="1">
+  <project name="debian11" revision="0169ef8fa580289d6a1e0af1b2fbeb079e3e1f9d" dest-branch="debian11" clone-depth="1"/>
+  <project name="debian12" revision="5c51a8344da2e2f86306d44009caa611ad996c5f" dest-branch="debian12" clone-depth="1"/>
+  <project name="device_rockchip" path="device/rockchip" revision="3c7eaeda299d1aa87dac1a73e0ff089089a0ebb6" dest-branch="main" clone-depth="1">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
     <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
   </project>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" clone-depth="1"/>
   <project name="gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="2e89382ca3f8c34086272509ae4d7a5c340ffafc" clone-depth="1"/>
-  <project name="kernel" path="kernel-5.10" revision="2d36fb3454177e085064f894cbe013550efa1dd9" dest-branch="lbc-develop-5.10" clone-depth="1"/>
-  <project name="kernel" path="kernel-6.1" revision="3a1a31c0c1bc94b71b7f21f36976647f1faa7026" dest-branch="lbc-develop-6.1" clone-depth="1"/>
+  <project name="kernel" path="kernel-5.10" revision="61c55fce7cf9c093961567cc45e54a46a472754d" dest-branch="lbc-develop-5.10" clone-depth="1"/>
+  <project name="kernel" path="kernel-6.1" revision="60d91d19f6b93d547f5f47ebb9512428ff932b1d" dest-branch="lbc-develop-6.1" clone-depth="1"/>
   <project name="lubancat-bin" revision="896857623caf65f9ae040fd01cdce81933b2c7d3" dest-branch="main" clone-depth="1"/>
   <project name="rkbin" revision="refs/tags/lbc-stan-rkr5" clone-depth="1"/>
   <project name="tools" revision="refs/tags/lbc-stan-rkr5" clone-depth="1"/>
   <project name="u-boot" revision="refs/tags/lbc-stan-rkr5" clone-depth="1"/>
-  <project name="ubuntu20.04" revision="f86b12b9cdec6139ac5eb37db15ba8546dd3ce8b" dest-branch="ubuntu20.04" clone-depth="1"/>
-  <project name="ubuntu22.04" revision="4701a8ccafedc4403b62314b586798e6a91e284c" dest-branch="ubuntu22.04" clone-depth="1"/>
+  <project name="ubuntu20.04" revision="f856e83e2f64fc9e50fbc6ed861dd2546ec459d5" dest-branch="ubuntu20.04" clone-depth="1"/>
+  <project name="ubuntu22.04" revision="472a4e5a13831fdc3dd63359cee6521f4217f3e4" dest-branch="ubuntu22.04" clone-depth="1"/>
 </manifest>
