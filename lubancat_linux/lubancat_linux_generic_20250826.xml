@@ -14,9 +14,9 @@
   <project name="kernel" path="kernel-5.10" revision="2d36fb3454177e085064f894cbe013550efa1dd9" dest-branch="lbc-develop-5.10" clone-depth="1"/>
   <project name="kernel" path="kernel-6.1" revision="20efd7c69d12aad07105e60bb6bb50ebb7102581" dest-branch="lbc-develop-6.1" clone-depth="1"/>
   <project name="lubancat-bin" revision="896857623caf65f9ae040fd01cdce81933b2c7d3" dest-branch="main" clone-depth="1"/>
-  <project name="rkbin" revision="refs/tags/lbc-stan-rkr5" clone-depth="1"/>
-  <project name="tools" revision="refs/tags/lbc-stan-rkr5" clone-depth="1"/>
-  <project name="u-boot" revision="refs/tags/lbc-stan-rkr5" clone-depth="1"/>
+  <project name="rkbin" revision="58a39b47f77a26a1e110fa1a1ce80bcfcb0b3505" dest-branch="main" clone-depth="1"/>
+  <project name="tools" revision="c27464a38afb984e5928e90371b57cd89291f288" dest-branch="main" clone-depth="1"/>
+  <project name="u-boot" revision="3c40a12022050aefaf3f78669a62a28ac639e6e2" dest-branch="main" clone-depth="1"/>
   <project name="ubuntu20.04" revision="f86b12b9cdec6139ac5eb37db15ba8546dd3ce8b" dest-branch="ubuntu20.04" clone-depth="1"/>
   <project name="ubuntu22.04" revision="f0905dfa5af74dedae903f37f36783a578335ede" dest-branch="ubuntu22.04" clone-depth="1"/>
 </manifest>
