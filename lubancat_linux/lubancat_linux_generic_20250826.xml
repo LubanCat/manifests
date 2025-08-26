@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="remote.xml"/>
+  
+  <project name="debian11" revision="15236ceb435543cfc9cf3c06882ac1347a312c8b" dest-branch="debian11" clone-depth="1"/>
+  <project name="debian12" revision="8287fe6431c4b35b72e1fae74ebf28224990b77c" dest-branch="debian12" clone-depth="1"/>
+  <project name="device_rockchip" path="device/rockchip" revision="9a5722b7e21469503cdc284f12616136213dce3b" dest-branch="main" clone-depth="1">
+    <linkfile src="common/scripts/build.sh" dest="build.sh"/>
+    <linkfile src="common/Makefile" dest="Makefile"/>
+    <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
+  </project>
+  <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" clone-depth="1"/>
+  <project name="gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="2e89382ca3f8c34086272509ae4d7a5c340ffafc" clone-depth="1"/>
+  <project name="kernel" path="kernel-5.10" revision="2d36fb3454177e085064f894cbe013550efa1dd9" dest-branch="lbc-develop-5.10" clone-depth="1"/>
+  <project name="kernel" path="kernel-6.1" revision="20efd7c69d12aad07105e60bb6bb50ebb7102581" dest-branch="lbc-develop-6.1" clone-depth="1"/>
+  <project name="lubancat-bin" revision="896857623caf65f9ae040fd01cdce81933b2c7d3" dest-branch="main" clone-depth="1"/>
+  <project name="rkbin" revision="refs/tags/lbc-stan-rkr5" clone-depth="1"/>
+  <project name="tools" revision="refs/tags/lbc-stan-rkr5" clone-depth="1"/>
+  <project name="u-boot" revision="refs/tags/lbc-stan-rkr5" clone-depth="1"/>
+  <project name="ubuntu20.04" revision="f86b12b9cdec6139ac5eb37db15ba8546dd3ce8b" dest-branch="ubuntu20.04" clone-depth="1"/>
+  <project name="ubuntu22.04" revision="f0905dfa5af74dedae903f37f36783a578335ede" dest-branch="ubuntu22.04" clone-depth="1"/>
+</manifest>
