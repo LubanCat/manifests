@@ -19,7 +19,7 @@
   <project name="external/rkwifibt" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
   <project name="external/rkwifibt-app" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
   <project name="external/gstreamer-rockchip" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/libmali" revision="refs/tags/bifrost-g52-linux-6.1-stan-rkr5" clone-depth="1"/>
+  <!-- <project name="external/libmali" revision="refs/tags/bifrost-g52-linux-6.1-stan-rkr5" clone-depth="1"/> -->
   <project name="external/linux-rga" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
   <project name="external/recovery" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
   <project name="external/rk_ethercat_release" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
