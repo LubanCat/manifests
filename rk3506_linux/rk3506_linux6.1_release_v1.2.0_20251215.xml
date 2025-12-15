@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux/"/>
+  
+  <default remote="origin" sync-j="4"/>
+  
+  <project name="app/lvgl_demo" revision="f6876395374d97d51a807e03f085e0158b43dd6b"/>
+  <project name="app/rkadk" revision="f9d84ca40ade1e7d72eb1a6d37a10d03c6e805ae">
+    <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rkadk"/>
+  </project>
+  <project name="buildroot" revision="47836e81e2175dbd76ac4b155f484ad67cae8ca4">
+    <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
+  </project>
+  <project name="device_rockchip" path="device/rockchip" revision="318504462cb9ac0a61eb7a298af61d7ad1b058fc">
+    <linkfile src="common/scripts/build.sh" dest="build.sh"/>
+    <linkfile src="common/Makefile" dest="Makefile"/>
+    <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
+  </project>
+  <project name="external/alsa-config" revision="5529257039c41955724c1069796f5cb7b2015c77"/>
+  <project name="external/common_algorithm" revision="e402fcb07c4cd6bd06ccdf41b486d57f22e55e54">
+    <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/common_algorithm"/>
+  </project>
+  <project name="external/ethercat_igh" revision="92bf0a1a179a5724897c59b89159103f2d48dc42"/>
+  <project name="external/linux-rga" revision="dd95fc46431a278b6fb0bd96437095db258f37a7">
+    <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rga/librga"/>
+  </project>
+  <project name="external/recovery" revision="7edb5d5a73d8e9dacbb52ba0b547175c222f4f8a"/>
+  <project name="external/rk_pcba_test" revision="9ca36b2bf70f2f164b1891f1ac1ce2bf8eb9325c"/>
+  <project name="external/rkscript" revision="f7632db2f1f54a3ed1e46ae855304b8c103d60bc"/>
+  <project name="external/rktoolkit" revision="bc1d85d6d2a39c67ed2d619f6faf1a996d542722"/>
+  <project name="external/rkupdate" revision="e9cd4fe07733f807057fd7a6bd5e8d42a59624a7"/>
+  <project name="external/rkwifibt" revision="057ac22fa29758e9dbfeb2be6628e8431fd353c3"/>
+  <project name="external/rkwifibt-app" revision="0673a0b73af5b2027ea7e3631fcd610f45941cee"/>
+  <project name="external/rockchip-test" revision="eb2093cb6f891cf073ab0b4af08b4189f6a12b8a"/>
+  <project name="external/rockit" revision="770833a8ef12d3f03f69ba6237e6d605e4b3ebc1">
+    <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rockit"/>
+  </project>
+  <project name="external/security/bin" revision="418c55997bc2db3b251ac5dd6e012f69559f021f"/>
+  <project name="external/security/librkcrypto" revision="5a42a784f52f1cabf6c12e3bfd1818dcf7dab592"/>
+  <project name="external/security/rk_tee_user" revision="e01afe5c877d9a86e9f83aae846f5cf04365989d"/>
+  <project name="gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="2e89382ca3f8c34086272509ae4d7a5c340ffafc"/>
+  <project name="gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux" path="prebuilts/gcc/linux-x86/arm/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux" revision="9bbfea5b9d8650964f2c1f5874f575f44ab0cea5"/>
+  <project name="hal/applications" revision="c5927d3070ebc810b2920f9162bbdada74e63acb"/>
+  <project name="hal/board" revision="280329613bb62f83b064f446fc9c8c205991e111"/>
+  <project name="hal/hal" path="hal" revision="5b49120e0c5d9fcd9e0f28f7daa30bb2afbf4f6d">
+    <linkfile src="." dest="rtos/bsp/rockchip/common/hal"/>
+  </project>
+  <project name="hal/middleware" revision="6194c06052347d92f3c57064a2e5e9b919b2d5f6"/>
+  <project name="hal/test" revision="7be2d772743e35ce5f044a5a17bfee9af0baad3a"/>
+  <project name="kernel-rk3506" path="kernel-6.1" revision="653a2c76e269628867632c7ce98fe2d75f3b13bb">
+    <linkfile src="." dest="kernel"/>
+  </project>
+  <project name="rkbin" revision="90dec21c9a11f8f826b157c2aa56af458e401d3b"/>
+  <project name="rtos/rt-thread" path="rtos" revision="a346505f17c8988f7e578d685c6ae178129c2f03"/>
+  <project name="rtos/rtthread-apps" path="rtos/applications/rtthread-apps" revision="525c38360aa48b77535294d6e58d6b0cdf776539"/>
+  <project name="tools" revision="c27464a38afb984e5928e90371b57cd89291f288"/>
+  <project name="u-boot" revision="b14196eade471bbc000c368f8555f2a2a1ecc17d"/>
+</manifest>
