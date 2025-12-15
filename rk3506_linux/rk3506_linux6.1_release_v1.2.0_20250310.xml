@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux/"/>
+  
+  <default remote="origin" sync-j="4"/>
+  
+  <project name="app/lvgl_demo" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="app/rkadk" revision="refs/tags/linux-6.1-stan-rkr4.3">
+    <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rkadk"/>
+  </project>
+  <project name="buildroot" revision="refs/tags/linux-6.1-stan-rkr4.3">
+    <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
+  </project>
+  <project name="device_rockchip" path="device/rockchip" revision="318504462cb9ac0a61eb7a298af61d7ad1b058fc">
+    <linkfile src="common/scripts/build.sh" dest="build.sh"/>
+    <linkfile src="common/Makefile" dest="Makefile"/>
+    <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
+  </project>
+  <project name="external/alsa-config" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="external/common_algorithm" revision="refs/tags/linux-6.1-stan-rkr5.2">
+    <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/common_algorithm"/>
+  </project>
+  <project name="external/ethercat_igh" revision="master"/>
+  <project name="external/linux-rga" revision="refs/tags/linux-6.1-stan-rkr4.3">
+    <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rga/librga"/>
+  </project>
+  <project name="external/recovery" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="external/rk_pcba_test" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="external/rkscript" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="external/rktoolkit" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="external/rkupdate" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="external/rkwifibt" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="external/rkwifibt-app" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="external/rockchip-test" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="external/rockit" revision="refs/tags/linux-6.1-stan-rkr4.3.1">
+    <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rockit"/>
+  </project>
+  <project name="external/security/bin" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="external/security/librkcrypto" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="external/security/rk_tee_user" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="2e89382ca3f8c34086272509ae4d7a5c340ffafc"/>
+  <project name="gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux" path="prebuilts/gcc/linux-x86/arm/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux" revision="9bbfea5b9d8650964f2c1f5874f575f44ab0cea5"/>
+  <project name="hal/applications" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="hal/board" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="hal/hal" path="hal" revision="refs/tags/linux-6.1-stan-rkr4.3">
+    <linkfile src="." dest="rtos/bsp/rockchip/common/hal"/>
+  </project>
+  <project name="hal/middleware" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="hal/test" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="kernel-rk3506" path="kernel-6.1" revision="653a2c76e269628867632c7ce98fe2d75f3b13bb">
+    <linkfile src="." dest="kernel"/>
+  </project>
+  <project name="rkbin" revision="90dec21c9a11f8f826b157c2aa56af458e401d3b"/>
+  <project name="rtos/rt-thread" path="rtos" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="rtos/rtthread-apps" path="rtos/applications/rtthread-apps" revision="refs/tags/linux-6.1-stan-rkr4.3"/>
+  <project name="tools" revision="c27464a38afb984e5928e90371b57cd89291f288"/>
+  <project name="u-boot" revision="b14196eade471bbc000c368f8555f2a2a1ecc17d"/>
+</manifest>
