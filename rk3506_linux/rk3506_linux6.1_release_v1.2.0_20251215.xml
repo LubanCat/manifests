@@ -8,10 +8,8 @@
   <project name="app/rkadk" revision="f9d84ca40ade1e7d72eb1a6d37a10d03c6e805ae">
     <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rkadk"/>
   </project>
-  <project name="buildroot" revision="47836e81e2175dbd76ac4b155f484ad67cae8ca4">
-    <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
-  </project>
-  <project name="device_rockchip" path="device/rockchip" revision="318504462cb9ac0a61eb7a298af61d7ad1b058fc">
+  <project name="buildroot" revision="7201374aa9746ce2351b576ff3864c2976906a57"/>
+  <project name="device_rockchip" path="device/rockchip" revision="967018bddf435a4b897cd335e1d7b0d9412d412d">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
     <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
@@ -47,12 +45,10 @@
   </project>
   <project name="hal/middleware" revision="6194c06052347d92f3c57064a2e5e9b919b2d5f6"/>
   <project name="hal/test" revision="7be2d772743e35ce5f044a5a17bfee9af0baad3a"/>
-  <project name="kernel-rk3506" path="kernel-6.1" revision="653a2c76e269628867632c7ce98fe2d75f3b13bb">
-    <linkfile src="." dest="kernel"/>
-  </project>
-  <project name="rkbin" revision="90dec21c9a11f8f826b157c2aa56af458e401d3b"/>
+  <project name="kernel-rk3506" path="kernel-6.1" revision="8a4d77c3e27c4c59a6044058a54ef428465bea99"/>
+  <project name="rkbin" revision="74213af1e952c4683d2e35952507133b61394862"/>
   <project name="rtos/rt-thread" path="rtos" revision="a346505f17c8988f7e578d685c6ae178129c2f03"/>
   <project name="rtos/rtthread-apps" path="rtos/applications/rtthread-apps" revision="525c38360aa48b77535294d6e58d6b0cdf776539"/>
   <project name="tools" revision="c27464a38afb984e5928e90371b57cd89291f288"/>
-  <project name="u-boot" revision="b14196eade471bbc000c368f8555f2a2a1ecc17d"/>
+  <project name="u-boot" revision="2f7535f133834b78e38173bee81b3028c5266ed4"/>
 </manifest>
