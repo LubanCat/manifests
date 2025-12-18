@@ -4,12 +4,13 @@
   
   <default remote="origin" sync-j="4"/>
   
+  <project name="app/lubancat_qt_demo" revision="3471f92665dcad7cb271d762229e05232e7b5136"/>
   <project name="app/lvgl_demo" revision="f6876395374d97d51a807e03f085e0158b43dd6b"/>
   <project name="app/rkadk" revision="f9d84ca40ade1e7d72eb1a6d37a10d03c6e805ae">
     <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rkadk"/>
   </project>
-  <project name="buildroot" revision="7201374aa9746ce2351b576ff3864c2976906a57"/>
-  <project name="device_rockchip" path="device/rockchip" revision="967018bddf435a4b897cd335e1d7b0d9412d412d">
+  <project name="buildroot" revision="ba72d9c7815c30aedfc2bce5f48ba5d6b3446d16"/>
+  <project name="device_rockchip" path="device/rockchip" revision="121d8b2ad62f55594bb02613ea65e57cb50f783a">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
     <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
@@ -40,15 +41,15 @@
   <project name="gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux" path="prebuilts/gcc/linux-x86/arm/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux" revision="9bbfea5b9d8650964f2c1f5874f575f44ab0cea5"/>
   <project name="hal/applications" revision="c5927d3070ebc810b2920f9162bbdada74e63acb"/>
   <project name="hal/board" revision="280329613bb62f83b064f446fc9c8c205991e111"/>
-  <project name="hal/hal" path="hal" revision="5b49120e0c5d9fcd9e0f28f7daa30bb2afbf4f6d">
+  <project name="hal/hal" path="hal" revision="91710598408500534f26b99fe458575ac85b3c12">
     <linkfile src="." dest="rtos/bsp/rockchip/common/hal"/>
   </project>
   <project name="hal/middleware" revision="6194c06052347d92f3c57064a2e5e9b919b2d5f6"/>
   <project name="hal/test" revision="7be2d772743e35ce5f044a5a17bfee9af0baad3a"/>
-  <project name="kernel-rk3506" path="kernel-6.1" revision="8a4d77c3e27c4c59a6044058a54ef428465bea99"/>
+  <project name="kernel-rk3506" path="kernel-6.1" revision="95207790150abb4b81e79352190505649dd54dab"/>
   <project name="rkbin" revision="74213af1e952c4683d2e35952507133b61394862"/>
-  <project name="rtos/rt-thread" path="rtos" revision="a346505f17c8988f7e578d685c6ae178129c2f03"/>
+  <project name="rtos/rt-thread" path="rtos" revision="288e04214f64feb6db5fd58b5709bfacbdb9f206"/>
   <project name="rtos/rtthread-apps" path="rtos/applications/rtthread-apps" revision="525c38360aa48b77535294d6e58d6b0cdf776539"/>
   <project name="tools" revision="c27464a38afb984e5928e90371b57cd89291f288"/>
-  <project name="u-boot" revision="2f7535f133834b78e38173bee81b3028c5266ed4"/>
+  <project name="u-boot" revision="cb164be2efa6b831eea0ef7d16df57e42a262196"/>
 </manifest>
