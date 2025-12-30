@@ -4,13 +4,13 @@
   
   <default remote="origin" sync-j="4"/>
   
-  <project name="app/lubancat_qt_demo" revision="3471f92665dcad7cb271d762229e05232e7b5136"/>
-  <project name="app/lvgl_demo" revision="f6876395374d97d51a807e03f085e0158b43dd6b"/>
+  <project name="app/lubancat_qt_demo" revision="34f0978fcb50b8b2ea6783bc3a54bd19228f041a"/>
+  <project name="app/lvgl_demo" revision="b33fcd3ecc487f87070e70976fda29b0fc2c9ae1"/>
   <project name="app/rkadk" revision="f9d84ca40ade1e7d72eb1a6d37a10d03c6e805ae">
     <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rkadk"/>
   </project>
-  <project name="buildroot" revision="ba72d9c7815c30aedfc2bce5f48ba5d6b3446d16"/>
-  <project name="device_rockchip" path="device/rockchip" revision="121d8b2ad62f55594bb02613ea65e57cb50f783a">
+  <project name="buildroot" revision="46d660f5e6f368d3997271e0f3b12c5c4a2cd3b5"/>
+  <project name="device_rockchip" path="device/rockchip" revision="28c6552d7cd84efba1284f345cc0c65069a5be23">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
     <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
