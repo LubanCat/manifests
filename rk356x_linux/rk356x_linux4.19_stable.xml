@@ -12,11 +12,11 @@
     <linkfile src="common/rkflash.sh" dest="rkflash.sh"/>
     <linkfile src="rk356x" dest="device/rockchip/.target_product"/>
   </project>
-  <project name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" upstream="master" dest-branch="master" clone-depth="1"/>
-  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master" dest-branch="master" clone-depth="1"/>
-  <project name="kernel" revision="7c4fafe390fd0acd1af248eb05412956f8c0c183" upstream="stable-4.19-rk356x" dest-branch="stable-4.19-rk356x" clone-depth="1"/>
+  <project name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" dest-branch="master" clone-depth="1"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" dest-branch="master" clone-depth="1"/>
+  <project name="kernel" revision="1841c2ef2e2a8d6c52de33d7fd651fcac1eff2dc" dest-branch="stable-4.19-rk356x" clone-depth="1"/>
   <project name="lubancat-bin" revision="896857623caf65f9ae040fd01cdce81933b2c7d3" dest-branch="main" clone-depth="1"/>
-  <project name="rkbin" revision="refs/tags/lbc-gen-rkr8" clone-depth="1"/>
+  <project name="rkbin" revision="58a39b47f77a26a1e110fa1a1ce80bcfcb0b3505" clone-depth="1"/>
   <project name="tools" revision="210be81d659a6bc4e7a648744ae77837f394be0f" dest-branch="master" clone-depth="1">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
     <linkfile src="windows/RKDevTool/rockdev/rk356x-package-file" dest="tools/windows/RKDevTool/rockdev/package-file"/>
@@ -24,6 +24,6 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh" dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh"/>
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
-  <project name="u-boot" revision="refs/tags/lbc-gen-rkr7.1" clone-depth="1"/>
+  <project name="u-boot" revision="86c5123407e83ff602d11e0343410a93f76a7f56" dest-branch="main" clone-depth="1"/>
   <project name="ubuntu" revision="9172c61eecfb4003f8786fd59a5fd341010cb383" dest-branch="stable-4.19-rk356x" clone-depth="1"/>
 </manifest>
