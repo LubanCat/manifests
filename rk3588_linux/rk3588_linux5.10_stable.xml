@@ -5,7 +5,7 @@
 
   <default remote="origin" sync-j="4"/>
   
-  <project name="debian11" path="debian" revision="0e0210141f384ac2b3c209af5b53e083206e936f" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="debian11" path="debian" revision="70e6152ccdf9813e0cd53f2d5671a6d3122cc300" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
   <project name="device_rockchip" path="device/rockchip" revision="aa605529daab64df339d9592f347a5d656d47f8a" dest-branch="master" clone-depth="1">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
@@ -13,9 +13,9 @@
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" dest-branch="master" clone-depth="1"/>
-  <project name="kernel" revision="7347318edd8b5d96e20c73d4c6be96b91309199c" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="kernel" revision="2ac54e3c04de83d7a8c6d32de407c2260a4f7057" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
   <project name="lubancat-bin" revision="896857623caf65f9ae040fd01cdce81933b2c7d3" dest-branch="rk3588" clone-depth="1"/>
-  <project name="rkbin" revision="58a39b47f77a26a1e110fa1a1ce80bcfcb0b3505" clone-depth="1"/>
+  <project name="rkbin" revision="f358db70f6b7983a777026c5798fc7055e0a2153" clone-depth="1"/>
   <project name="tools" revision="210be81d659a6bc4e7a648744ae77837f394be0f" dest-branch="master" clone-depth="1">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk3588-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
     <linkfile src="windows/RKDevTool/rockdev/rk3588-package-file" dest="tools/windows/RKDevTool/rockdev/package-file"/>
@@ -23,6 +23,6 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-mkupdate.sh" dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh"/>
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
-  <project name="u-boot" revision="86c5123407e83ff602d11e0343410a93f76a7f56" clone-depth="1"/>
-  <project name="ubuntu" revision="4b7bcef59732f6732a146705e44c44456e6a6846" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="u-boot" revision="9b8922d299b2da3de8d96d1693ab7d2eeade5eb0" clone-depth="1"/>
+  <project name="ubuntu" revision="cdfd061d64e71c50f61898ef801b2b6a1f52a845" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
 </manifest>
