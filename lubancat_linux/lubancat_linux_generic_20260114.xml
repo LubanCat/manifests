@@ -12,7 +12,7 @@
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" clone-depth="1"/>
   <project name="gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="2e89382ca3f8c34086272509ae4d7a5c340ffafc" clone-depth="1"/>
   <project name="kernel" path="kernel-5.10" revision="9df97160182da496c093c260c1506e9c49a982a2" dest-branch="lbc-develop-5.10" clone-depth="1"/>
-  <project name="kernel" path="kernel-6.1" revision="ec91e0bc21e69b2e692f1970616ee3f403054271" dest-branch="lbc-develop-6.1" clone-depth="1"/>
+  <project name="kernel" path="kernel-6.1" revision="a135362bfb58c4fde36eafbd7addcaf84552b364" dest-branch="lbc-develop-6.1" clone-depth="1"/>
   <project name="lubancat-bin" revision="896857623caf65f9ae040fd01cdce81933b2c7d3" dest-branch="main" clone-depth="1"/>
   <project name="rkbin" revision="58a39b47f77a26a1e110fa1a1ce80bcfcb0b3505" dest-branch="main" clone-depth="1"/>
   <project name="tools" revision="c27464a38afb984e5928e90371b57cd89291f288" dest-branch="main" clone-depth="1"/>
