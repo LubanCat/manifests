@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="remote.xml"/>
+
+  <include name="lubancat_linux/lubancat_linux_generic_20260114.xml"/>
+  <include name="lubancat_linux_full/buildroot-2024.04-rkr5.xml"/>
+
+  <project name="buildroot" revision="c1d63a45444c16875855838c2bb01f699051f74a" clone-depth="1">
+    <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
+  </project>
+  <project name="external/firmware" revision="93649896c8b31b00ff0c997188c4af58c09786b7" clone-depth="1"/>
+  <project name="external/libmali" revision="a4376c0315fb91bd805f106ff86a39dcdf12fd4a" clone-depth="1"/>
+
+</manifest>
