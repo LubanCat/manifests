@@ -46,7 +46,10 @@
   </project>
   <project name="hal/middleware" revision="6194c06052347d92f3c57064a2e5e9b919b2d5f6"/>
   <project name="hal/test" revision="7be2d772743e35ce5f044a5a17bfee9af0baad3a"/>
-  <project name="kernel-rk3506" path="kernel-6.1" revision="95207790150abb4b81e79352190505649dd54dab"/>
+  <project name="kernel-rk3506" path="kernel-6.1" revision="95207790150abb4b81e79352190505649dd54dab">
+    <linkfile src="." dest="kernel"/>
+  </project>
+
   <project name="rkbin" revision="74213af1e952c4683d2e35952507133b61394862"/>
   <project name="rtos/rt-thread" path="rtos" revision="288e04214f64feb6db5fd58b5709bfacbdb9f206"/>
   <project name="rtos/rtthread-apps" path="rtos/applications/rtthread-apps" revision="525c38360aa48b77535294d6e58d6b0cdf776539"/>
