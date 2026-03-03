@@ -3,41 +3,40 @@
   <!-- <project name="buildroot" revision="refs/tags/linux-6.1-stan-rkr5">
     <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
   </project> -->
-  <project name="app/lvgl_demo" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="app/rkpartybox" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="app/rkadk" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="app/rkipc" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="app/ipcweb-backend" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/security/rk_tee_user" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/alsa-config" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/chromium" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/common_algorithm" revision="refs/tags/linux-6.1-stan-rkr5.1" clone-depth="1"/>
-  <project name="external/rk_pcba_test" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/rkscript" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/rktoolkit" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/rkupdate" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/rkwifibt" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/rkwifibt-app" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/gstreamer-rockchip" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <!-- <project name="external/libmali" revision="refs/tags/bifrost-g52-linux-6.1-stan-rkr5" clone-depth="1"/> -->
-  <project name="external/linux-rga" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/recovery" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <!-- <project name="external/rk_ethercat_release" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/> -->
-  <project name="external/rockchip-test" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/rockit" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/security/bin" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/uac_app" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/uvc_app" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/rockit_uvc" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/security/librkcrypto" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/mpp" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/dpdk" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/iva" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/avs" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/minilogger" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/rkfsmk" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/samples" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/camera_engine_rkaiq" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/rknn-toolkit2" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
-  <project name="external/rknpu2" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="app/lvgl_demo" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="app/rkpartybox" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="app/rkadk" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="app/rkipc" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="app/ipcweb-backend" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/security/rk_tee_user" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/alsa-config" remote="internal"  revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/chromium" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/common_algorithm" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5.1" clone-depth="1"/>
+  <project name="external/rk_pcba_test" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/rkscript" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/rktoolkit" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/rkupdate" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/rkwifibt" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/rkwifibt-app" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/gstreamer-rockchip" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <!-- <project name="external/libmali" remote="internal" revision="refs/tags/bifrost-g52-linux-6.1-stan-rkr5" clone-depth="1"/> -->
+  <project name="external/linux-rga" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/recovery" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/rockchip-test" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/rockit" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/security/bin" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/uac_app" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/uvc_app" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/rockit_uvc" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/security/librkcrypto" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/mpp" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/dpdk" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/iva" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/avs" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/minilogger" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/rkfsmk" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/samples" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/camera_engine_rkaiq" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/rknn-toolkit2" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
+  <project name="external/rknpu2" remote="internal" revision="refs/tags/linux-6.1-stan-rkr5" clone-depth="1"/>
 </manifest>
