@@ -10,7 +10,7 @@
   <project name="app/rkadk" remote="internal" revision="f9d84ca40ade1e7d72eb1a6d37a10d03c6e805ae">
     <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rkadk"/>
   </project>
-  <project name="buildroot" revision="46d660f5e6f368d3997271e0f3b12c5c4a2cd3b5"/>
+  <project name="buildroot" revision="b407072576f59dce8e41a3a8e671a4562b92d29f"/>
   <project name="device_rockchip" path="device/rockchip" revision="28c6552d7cd84efba1284f345cc0c65069a5be23">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
@@ -47,7 +47,7 @@
   </project>
   <project name="hal/middleware" remote="internal" revision="6194c06052347d92f3c57064a2e5e9b919b2d5f6"/>
   <project name="hal/test" remote="internal" revision="7be2d772743e35ce5f044a5a17bfee9af0baad3a"/>
-  <project name="kernel-rk3506" path="kernel-6.1" revision="95207790150abb4b81e79352190505649dd54dab">
+  <project name="kernel-rk3506" path="kernel-6.1" revision="7606ed483194429ffac0d2b9cae89e35e4d0ec7b">
     <linkfile src="." dest="kernel"/>
   </project>
   <project name="rkbin" revision="74213af1e952c4683d2e35952507133b61394862"/>
