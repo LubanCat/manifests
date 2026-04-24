@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="remote.xml"/>
+  
+  <project name="debian11" revision="ba1602b633cf4b43705000e5e28a4336b5c74fc2" dest-branch="debian11" clone-depth="1"/>
+  <project name="debian12" revision="54ce86d30a04471d5db082258c37d66798ff417d" dest-branch="debian12" clone-depth="1"/>
+  <project name="device_rockchip" path="device/rockchip" revision="ea5af0b2e5a48cc3d225c42c717923f70b1ac03d" dest-branch="main" clone-depth="1">
+    <linkfile src="common/scripts/build.sh" dest="build.sh"/>
+    <linkfile src="common/Makefile" dest="Makefile"/>
+    <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
+  </project>
+  <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" clone-depth="1"/>
+  <project name="gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="2e89382ca3f8c34086272509ae4d7a5c340ffafc" clone-depth="1"/>
+  <project name="kernel" path="kernel-5.10" revision="2b6e516c0c6407a864430b5cb4d4a01232400d6c" dest-branch="lbc-develop-5.10" clone-depth="1"/>
+  <project name="kernel" path="kernel-6.1" revision="521833e2d28decbd6473d5717f1f96cc4108e208" dest-branch="lbc-develop-6.1" clone-depth="1"/>
+  <project name="rkbin" revision="58a39b47f77a26a1e110fa1a1ce80bcfcb0b3505" dest-branch="main" clone-depth="1"/>
+  <project name="tools" revision="c27464a38afb984e5928e90371b57cd89291f288" dest-branch="main" clone-depth="1"/>
+  <project name="u-boot" revision="8f53f800da2c25d0c6ba414fb45902a01675703a" dest-branch="main" clone-depth="1"/>
+  <project name="ubuntu20.04" revision="bc9d5bc77d4a3160385fd5204658ea03c0994001" dest-branch="ubuntu20.04" clone-depth="1"/>
+  <project name="ubuntu22.04" revision="efa09935ea24792f80e52b8e35f0f9a6a44c14b7" dest-branch="ubuntu22.04" clone-depth="1"/>
+</manifest>
