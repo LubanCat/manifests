@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="remote.xml"/>
+
+  <remote name="internal" fetch="ssh://git@gitlab.ebf.local/rockchip/linux_internal/"/>
+
+  <include name="lubancat_linux/lubancat_linux_generic_20260424.xml"/>
+  <include name="lubancat_linux_full/buildroot-2024.04-rkr5.xml"/>
+
+  <project name="buildroot" revision="0a58c810e41e9359afe1d8873aa01b26d39514f6" clone-depth="1">
+    <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
+  </project>
+  <project name="external/firmware" remote="internal" revision="93649896c8b31b00ff0c997188c4af58c09786b7" clone-depth="1"/>
+  <project name="external/libmali" remote="internal" revision="15f6cfbbf7c573059dd2f62f95306e29daa76e1d" clone-depth="1"/>
+  <project name="external/ethercat_igh" remote="internal" revision="a604f1c8cadf4d095eea562102cc988ad6fa9a5a" clone-depth="1"/>
+
+</manifest>
