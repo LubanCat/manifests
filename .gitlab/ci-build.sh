@@ -12,7 +12,7 @@ DEFCONFIGS=(
 )
 
 # ---- directory setup ----
-SDK_DIR="${CI_PROJECT_DIR}/sdk"
+SDK_DIR="${CI_PROJECT_DIR}/rk3506_sdk"
 CCACHE_DIR="${CCACHE_DIR:-/var/cache/rk-ci/ccache}"
 BUILDROOT_DL_DIR="${BUILDROOT_DL_DIR:-/var/cache/rk-ci/buildroot-dl}"
 MANIFEST_FILE="${MANIFEST_XML:-rk3506_linux_release.xml}"
@@ -41,11 +41,8 @@ echo "=========================================="
 echo "  Step 1: repo init / sync"
 echo "=========================================="
 
-# Ensure local manifests repo has the branch ref for repo tool
-cd "$CI_PROJECT_DIR"
-if ! git show-ref --verify --quiet "refs/heads/${CI_COMMIT_BRANCH}"; then
-    git branch -f "${CI_COMMIT_BRANCH}" HEAD
-fi
+REPO_URL="${REPO_MIRROR_URL:--file:///var/cache/rk-ci/git-repo.git}"
+MANIFEST_URL="git@gitlab.ebf.local:rockchip/linux/manifests.git"
 
 # Clean up leftover from interrupted builds
 rm -rf "$SDK_DIR"
@@ -53,26 +50,15 @@ rm -rf "$SDK_DIR"
 mkdir -p "$SDK_DIR" "$NAS_OUTDIR"
 cd "$SDK_DIR"
 
-# Use local manifests repo (already checked out by GitLab CI)
-MANIFEST_URL="file://${CI_PROJECT_DIR}"
-
-if [ ! -d ".repo" ]; then
-    echo "First run: repo init ..."
-    repo init -u "$MANIFEST_URL" \
-        -b "${CI_COMMIT_BRANCH}" \
-        -m "$MANIFEST_FILE" \
-        --no-repo-verify \
-        --no-clone-bundle
-else
-    echo "Re-initializing repo manifest (branch: ${CI_COMMIT_BRANCH})..."
-    repo init -u "$MANIFEST_URL" \
-        -b "${CI_COMMIT_BRANCH}" \
-        -m "$MANIFEST_FILE" \
-        --no-repo-verify
-fi
+echo "repo init (branch: ${CI_COMMIT_BRANCH}, manifest: ${MANIFEST_FILE})..."
+echo N | repo init -u "$MANIFEST_URL" \
+    -b "${CI_COMMIT_BRANCH}" \
+    -m "$MANIFEST_FILE" \
+    --repo-url="$REPO_URL" \
+    --no-repo-verify
 
 echo "repo sync ..."
-repo sync -c -j$(nproc)
+.repo/repo/repo sync -c -j$(nproc)
 
 # Verify SDK layout
 if [ ! -f "$SDK_DIR/device/rockchip/common/build.sh" ]; then
@@ -91,7 +77,6 @@ if [ "${SDK_PACK}" = "true" ] || [ "${SDK_PACK}" = "1" ]; then
     echo "Packing SDK source (excluding .repo/ and output/)..."
     tar czf "$SDK_ARCHIVE" \
         --exclude='.repo' \
-        --exclude='output' \
         -C "$SDK_DIR" .
     echo "SDK source archive: $SDK_ARCHIVE"
     ls -lh "$SDK_ARCHIVE"
@@ -146,8 +131,8 @@ for i in "${!DEFCONFIGS[@]}"; do
         exit 1
     fi
 
-    # Rename and save to NAS (drop _defconfig, append _update.img)
-    ARTIFACT_NAME="${DEFCONFIG%_defconfig}_update.img"
+    # Rename and save to NAS
+    ARTIFACT_NAME="${DEFCONFIG%_defconfig}_$(date +%Y%m%d)_update.img"
     cp -v "$UPDATE_IMG" "$NAS_OUTDIR/$ARTIFACT_NAME"
     ls -lh "$NAS_OUTDIR/$ARTIFACT_NAME"
 

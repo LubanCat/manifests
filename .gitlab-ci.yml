@@ -8,8 +8,7 @@ variables:
   MANIFEST_XML: "rk3506_linux_release_v1.2.0.xml"
   CCACHE_DIR: "/var/cache/rk-ci/ccache"
   BUILDROOT_DL_DIR: "/var/cache/rk-ci/buildroot-dl"
-  GIT_STRATEGY: fetch
-  GIT_DEPTH: 0
+  GIT_STRATEGY: none
 
 
 build-rk3506:
