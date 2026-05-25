@@ -41,6 +41,12 @@ echo "=========================================="
 echo "  Step 1: repo init / sync"
 echo "=========================================="
 
+# Ensure local manifests repo has the branch ref for repo tool
+cd "$CI_PROJECT_DIR"
+if ! git show-ref --verify --quiet "refs/heads/${CI_COMMIT_BRANCH}"; then
+    git branch -f "${CI_COMMIT_BRANCH}" HEAD
+fi
+
 # Clean up leftover from interrupted builds
 rm -rf "$SDK_DIR"
 

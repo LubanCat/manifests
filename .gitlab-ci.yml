@@ -4,11 +4,13 @@ stages:
   - build
 
 variables:
-  MANIFEST_XML: "rk3506_linux_release.xml"
+  GIT_CLONE_PATH: "/home/gitlab-runner/builds/rk3506_linux"
+  MANIFEST_XML: "rk3506_linux_release_v1.2.0.xml"
   CCACHE_DIR: "/var/cache/rk-ci/ccache"
   BUILDROOT_DL_DIR: "/var/cache/rk-ci/buildroot-dl"
   GIT_STRATEGY: fetch
   GIT_DEPTH: 0
+
 
 build-rk3506:
   stage: build
