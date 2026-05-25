@@ -1,0 +1,165 @@
+#!/bin/bash
+set -eE
+
+# ============================================================
+# CI Build Script for Rockchip RK3506 SDK Build and Pack
+# ============================================================
+
+CHIP="rk3506"
+DEFCONFIGS=(
+    "LubanCat_rk3506b_buildroot_emmc_linux_defconfig"
+    "LubanCat_rk3506g_buildroot_nand_linux_tb_defconfig"
+)
+
+# ---- directory setup ----
+SDK_DIR="${CI_PROJECT_DIR}/sdk"
+CCACHE_DIR="${CCACHE_DIR:-/var/cache/rk-ci/ccache}"
+BUILDROOT_DL_DIR="${BUILDROOT_DL_DIR:-/var/cache/rk-ci/buildroot-dl}"
+MANIFEST_FILE="${MANIFEST_XML:-rk3506_linux_release.xml}"
+
+# NAS output path
+NAS_PATH="${NAS_RK3506_URL}"
+if [ -z "$NAS_PATH" ]; then
+    echo "ERROR: NAS_RK3506_URL variable is not set. Please set it in GitLab CI/CD Variables."
+    exit 1
+fi
+NAS_OUTDIR="${NAS_PATH}/$(date +%Y%m%d)"
+
+export CCACHE_DIR
+export USE_CCACHE=1
+
+# ---- error handler ----
+err_handler() {
+    echo "ERROR: Build failed at line ${BASH_LINENO[0]} in ${BASH_SOURCE[1]}"
+    echo "ERROR: Command: ${BASH_COMMAND}"
+    exit 1
+}
+trap err_handler ERR
+
+# ---- step 1: repo init / sync ----
+echo "=========================================="
+echo "  Step 1: repo init / sync"
+echo "=========================================="
+
+# Clean up leftover from interrupted builds
+rm -rf "$SDK_DIR"
+
+mkdir -p "$SDK_DIR" "$NAS_OUTDIR"
+cd "$SDK_DIR"
+
+# Use local manifests repo (already checked out by GitLab CI)
+MANIFEST_URL="file://${CI_PROJECT_DIR}"
+
+if [ ! -d ".repo" ]; then
+    echo "First run: repo init ..."
+    repo init -u "$MANIFEST_URL" \
+        -b "${CI_COMMIT_BRANCH}" \
+        -m "$MANIFEST_FILE" \
+        --no-repo-verify \
+        --no-clone-bundle
+else
+    echo "Re-initializing repo manifest (branch: ${CI_COMMIT_BRANCH})..."
+    repo init -u "$MANIFEST_URL" \
+        -b "${CI_COMMIT_BRANCH}" \
+        -m "$MANIFEST_FILE" \
+        --no-repo-verify
+fi
+
+echo "repo sync ..."
+repo sync -c -j$(nproc)
+
+# Verify SDK layout
+if [ ! -f "$SDK_DIR/device/rockchip/common/build.sh" ]; then
+    echo "ERROR: SDK layout invalid - device/rockchip/common/build.sh not found"
+    exit 1
+fi
+
+# ---- step 2: pack SDK source ----
+echo ""
+echo "=========================================="
+echo "  Step 2: Pack SDK source"
+echo "=========================================="
+
+if [ "${SDK_PACK}" = "true" ] || [ "${SDK_PACK}" = "1" ]; then
+    SDK_ARCHIVE="$NAS_OUTDIR/sdk-source_$(date +%Y%m%d).tar.gz"
+    echo "Packing SDK source (excluding .repo/ and output/)..."
+    tar czf "$SDK_ARCHIVE" \
+        --exclude='.repo' \
+        --exclude='output' \
+        -C "$SDK_DIR" .
+    echo "SDK source archive: $SDK_ARCHIVE"
+    ls -lh "$SDK_ARCHIVE"
+else
+    echo "PACK SDK source, skipping."
+fi
+
+# ---- step 3: setup caches ----
+echo ""
+echo "=========================================="
+echo "  Step 3: Setup caches"
+echo "=========================================="
+
+mkdir -p "$CCACHE_DIR"
+ccache -z
+
+# Link buildroot download cache
+if [ -d "$BUILDROOT_DL_DIR" ]; then
+    rm -rf "$SDK_DIR/buildroot/dl"
+    ln -sfn "$BUILDROOT_DL_DIR" "$SDK_DIR/buildroot/dl"
+    echo "buildroot dl → $BUILDROOT_DL_DIR"
+fi
+
+echo "ccache stats before build:"
+ccache -s
+
+# ---- step 4: sequential builds ----
+echo "=========================================="
+echo "  Step 4: Building ${#DEFCONFIGS[@]} defconfigs"
+echo "=========================================="
+
+for i in "${!DEFCONFIGS[@]}"; do
+    DEFCONFIG="${DEFCONFIGS[$i]}"
+    BUILD_NUM=$((i + 1))
+    BUILD_COUNT=${#DEFCONFIGS[@]}
+
+    echo ""
+    echo "####################################################"
+    echo "  Build ${BUILD_NUM}/${BUILD_COUNT}: ${DEFCONFIG}"
+    echo "####################################################"
+
+    cd "$SDK_DIR"
+
+    # build_all()
+    echo "--- Running build: ./build.sh chip:${CHIP}:${DEFCONFIG} all ---"
+    </dev/null ./build.sh "chip:${CHIP}:${DEFCONFIG}" all
+
+    # Verify output
+    UPDATE_IMG="$SDK_DIR/output/firmware/update.img"
+    if [ ! -f "$UPDATE_IMG" ]; then
+        echo "ERROR: update.img not generated for $DEFCONFIG"
+        exit 1
+    fi
+
+    # Rename and save to NAS (drop _defconfig, append _update.img)
+    ARTIFACT_NAME="${DEFCONFIG%_defconfig}_update.img"
+    cp -v "$UPDATE_IMG" "$NAS_OUTDIR/$ARTIFACT_NAME"
+    ls -lh "$NAS_OUTDIR/$ARTIFACT_NAME"
+
+    echo "--- Build ${BUILD_NUM}/${BUILD_COUNT} complete: ${ARTIFACT_NAME} ---"
+done
+
+echo "ccache stats after build:"
+ccache -s
+
+# ---- step 5: cleanup SDK_DIR ----
+echo ""
+echo "=========================================="
+echo "  Step 5: Cleanup SDK source"
+echo "=========================================="
+cd "$CI_PROJECT_DIR"
+echo "Removing SDK_DIR: $SDK_DIR"
+rm -rf "$SDK_DIR"
+echo "Cleanup done."
+
+echo ""
+echo "All builds complete."
