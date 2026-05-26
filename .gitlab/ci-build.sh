@@ -124,12 +124,22 @@ for i in "${!DEFCONFIGS[@]}"; do
         exit 1
     fi
 
-    # Rename and save to NAS
-    ARTIFACT_NAME="${DEFCONFIG%_defconfig}_$(date +%Y%m%d)_update.img"
-    cp -v "$UPDATE_IMG" "$NAS_OUTDIR/$ARTIFACT_NAME"
-    ls -lh "$NAS_OUTDIR/$ARTIFACT_NAME"
+    # Compress, checksum, and save to NAS
+    BASE_NAME="${DEFCONFIG%_defconfig}_$(date +%Y%m%d)_update"
 
-    echo "--- Build ${BUILD_NUM}/${BUILD_COUNT} complete: ${ARTIFACT_NAME} ---"
+    echo "--- Compressing $BASE_NAME.img ---"
+    gzip -c "$UPDATE_IMG" > "$NAS_OUTDIR/${BASE_NAME}.img.gz"
+
+    echo "--- Generating MD5 ---"
+    cd "$NAS_OUTDIR"
+    md5sum "${BASE_NAME}.img.gz" > "${BASE_NAME}.img.gz.md5"
+    cd "$SDK_DIR"
+
+    echo "Saved to NAS:"
+    ls -lh "$NAS_OUTDIR/${BASE_NAME}.img.gz" \
+           "$NAS_OUTDIR/${BASE_NAME}.img.gz.md5"
+
+    echo "--- Build ${BUILD_NUM}/${BUILD_COUNT} complete: ${BASE_NAME} ---"
 done
 
 echo "ccache stats after build:"
