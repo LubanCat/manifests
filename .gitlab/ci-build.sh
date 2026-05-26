@@ -41,7 +41,7 @@ echo "=========================================="
 echo "  Step 1: repo init / sync"
 echo "=========================================="
 
-REPO_URL="${REPO_MIRROR_URL:--file:///var/cache/rk-ci/git-repo.git}"
+REPO_URL="${REPO_MIRROR_URL:-file:///var/cache/rk-ci/git-repo.git}"
 MANIFEST_URL="git@gitlab.ebf.local:rockchip/linux/manifests.git"
 
 # Clean up leftover from interrupted builds
