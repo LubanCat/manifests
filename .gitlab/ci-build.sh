@@ -14,7 +14,7 @@ DEFCONFIGS=(
 # ---- directory setup ----
 SDK_DIR="${CI_PROJECT_DIR}/rk3506_sdk"
 CCACHE_DIR="${CCACHE_DIR:-/var/cache/rk-ci/ccache}"
-BUILDROOT_DL_DIR="${BUILDROOT_DL_DIR:-/var/cache/rk-ci/buildroot-dl}"
+BR2_DL_DIR="${BR2_DL_DIR:-/var/cache/rk-ci/buildroot-dl}"
 MANIFEST_FILE="${MANIFEST_XML:-rk3506_linux_release.xml}"
 
 # NAS output path
@@ -87,19 +87,11 @@ fi
 # ---- step 3: setup caches ----
 echo ""
 echo "=========================================="
-echo "  Step 3: Setup caches"
+echo "  Step 3: Setup caches dir"
 echo "=========================================="
 
 mkdir -p "$CCACHE_DIR"
 ccache -z
-
-# Link buildroot download cache
-if [ -d "$BUILDROOT_DL_DIR" ]; then
-    rm -rf "$SDK_DIR/buildroot/dl"
-    ln -sfn "$BUILDROOT_DL_DIR" "$SDK_DIR/buildroot/dl"
-    echo "buildroot dl → $BUILDROOT_DL_DIR"
-fi
-
 echo "ccache stats before build:"
 ccache -s
 
