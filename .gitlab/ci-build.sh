@@ -120,9 +120,10 @@ for i in "${!DEFCONFIGS[@]}"; do
 
     cd "$SDK_DIR"
 
-    # build_all()
+    # build
     echo "--- Running build: ./build.sh chip:${CHIP}:${DEFCONFIG} all ---"
-    </dev/null ./build.sh "chip:${CHIP}:${DEFCONFIG}" all
+    </dev/null ./build.sh "chip:${CHIP}:${DEFCONFIG}"
+    </dev/null ./build.sh all
 
     # Verify output
     UPDATE_IMG="$SDK_DIR/output/firmware/update.img"
