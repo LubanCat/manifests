@@ -5,7 +5,7 @@
   
   <default remote="origin" sync-j="4"/>
   
-  <project name="debian" revision="a0bd330904b6b45cb6c232adcbc86318938d3b85" dest-branch="stable-4.19-rk356x" clone-depth="1"/>
+  <project name="debian" revision="629117e30d424955e62afe2ceeae9368a0ec0ee6" dest-branch="stable-4.19-rk356x" clone-depth="1"/>
   <project name="device_rockchip" path="device/rockchip" revision="aa605529daab64df339d9592f347a5d656d47f8a" dest-branch="master" clone-depth="1">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
@@ -14,7 +14,7 @@
   </project>
   <project name="gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-buildroot-9.3.0-2020.03-x86_64_aarch64-rockchip-linux-gnu" revision="427f5439bf87835ff3b20746acc8aaafba7d4f53" dest-branch="master" clone-depth="1"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" dest-branch="master" clone-depth="1"/>
-  <project name="kernel" revision="e47983915ec0566ef92d81624cc1cb4b7bfbc9b3" dest-branch="stable-4.19-rk356x" clone-depth="1"/>
+  <project name="kernel" revision="a38b22fcc36cb8a0b31fff55c4c12a6a2c53711e" dest-branch="stable-4.19-rk356x" clone-depth="1"/>
   <project name="rkbin" revision="f358db70f6b7983a777026c5798fc7055e0a2153" clone-depth="1"/>
   <project name="tools" revision="210be81d659a6bc4e7a648744ae77837f394be0f" dest-branch="master" clone-depth="1">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
