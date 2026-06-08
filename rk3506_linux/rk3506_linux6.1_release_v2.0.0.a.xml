@@ -17,6 +17,7 @@
   <project name="linux/buildroot" path="buildroot" revision="dev-rkr4.4">
     <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
   </project>
+  <project name="linux/debian12-nogpu" path="debian12" revision="dev-rk3506"/>
   <project name="linux/device/rockchip" path="device/rockchip" revision="dev-rkr4.4">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
