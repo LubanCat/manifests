@@ -5,7 +5,7 @@
   <default remote="origin" sync-j="4"/>
   
   <project name="android/rk/platform/system/rk_tee_user" path="external/security/rk_tee_user" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
-  <project name="android/rk/u-boot" path="u-boot" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
+  <project name="android/rk/u-boot" path="u-boot" revision="dev-rkr4.4"/>
   <project name="linux/app/lubancat_qt_demo" path="app/lubancat_qt_demo" revision="qt_demo"/>
   <project name="linux/app/lvgl_demo" path="app/lvgl_demo" revision="dev-rkr4.4"/>
   <project name="linux/bsp/docs" path="docs" revision="release"/>
@@ -43,7 +43,7 @@
   </project>
   <project name="linux/security/bin" path="external/security/bin" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
   <project name="linux/tools" path="tools" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
-  <project name="rk/kernel-rk3506" path="kernel-6.1" revision="refs/tags/linux-6.1-stan-rkr4.4">
+  <project name="rk/kernel-6.1" path="kernel-6.1" revision="dev-rkr4.4">
     <linkfile src="." dest="kernel"/>
   </project>
   <project name="rk/librkcrypto" path="external/security/librkcrypto" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
