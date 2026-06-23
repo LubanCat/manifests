@@ -5,7 +5,7 @@
   
   <default remote="origin" sync-j="4"/>
   
-  <project name="debian" revision="629117e30d424955e62afe2ceeae9368a0ec0ee6" dest-branch="stable-4.19-rk356x" clone-depth="1"/>
+  <project name="debian" revision="9f4f8ea84e4b0c9e8dbe07b5243ef8cdfe17074c" dest-branch="stable-4.19-rk356x" clone-depth="1"/>
   <project name="device_rockchip" path="device/rockchip" revision="aa605529daab64df339d9592f347a5d656d47f8a" dest-branch="master" clone-depth="1">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
