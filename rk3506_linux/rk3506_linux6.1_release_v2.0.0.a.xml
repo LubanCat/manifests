@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux_internal/"/>
-  
   <default remote="origin" sync-j="4"/>
-  
   <project name="android/rk/platform/system/rk_tee_user" path="external/security/rk_tee_user" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
-  <project name="android/rk/u-boot" path="u-boot" revision="dev-rkr4.4"/>
-  <project name="linux/app/lubancat_qt_demo" path="app/lubancat_qt_demo" revision="qt_demo"/>
-  <project name="linux/app/lvgl_demo" path="app/lvgl_demo" revision="dev-rkr4.4"/>
-  <project name="linux/bsp/docs" path="docs" revision="release"/>
+  <project name="android/rk/u-boot" path="u-boot" revision="dev-rkr4.4" groups="lbc"/>
+  <project name="linux/app/lubancat_qt_demo" path="app/lubancat_qt_demo" revision="qt_demo" groups="lbc"/>
+  <project name="linux/app/lvgl_demo" path="app/lvgl_demo" revision="dev-rkr4.4" groups="lbc"/>
+  <project name="linux/bsp/docs" path="docs" revision="refs/tags/linux-6.12-stan-rkb0"/>
   <project name="linux/bsp/docs" path="docs/cn" revision="refs/tags/linux-6.1-stan-rkr4.4-cn"/>
-  <project name="linux/bsp/internal_doc" path="docs/cn/Socs" revision="rk3506-cn"/>
+  <project name="linux/bsp/internal_doc" path="docs/cn/Socs" revision="rk3506-cn" groups="lbc"/>
   <project name="linux/bsp/rkadk" path="app/rkadk" revision="refs/tags/linux-6.1-stan-rkr4.4">
     <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rkadk"/>
   </project>
-  <project name="linux/buildroot" path="buildroot" revision="dev-rkr4.4">
+  <project name="linux/buildroot" path="buildroot" revision="dev-rkr4.4" groups="lbc">
     <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
   </project>
-  <project name="linux/debian12-nogpu" path="debian12" revision="dev-rkr7"/>
-  <project name="linux/device/rockchip" path="device/rockchip" revision="dev-rkr4.4">
+  <project name="linux/debian12-nogpu" path="debian12" revision="dev-rkr7" groups="lbc"/>
+  <project name="linux/device/rockchip" path="device/rockchip" revision="dev-rkr4.4" groups="lbc">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
     <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
@@ -27,7 +25,7 @@
   <project name="linux/external/common_algorithm" path="external/common_algorithm" revision="refs/tags/linux-6.1-stan-rkr4.4">
     <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/common_algorithm"/>
   </project>
-  <project name="linux/external/ethercat_igh" path="external/ethercat_igh" revision="master"/>
+  <project name="linux/external/ethercat_igh" path="external/ethercat_igh" revision="refs/tags/linux-6.12-stan-rkb0"/>
   <project name="linux/external/rk_pcba_test" path="external/rk_pcba_test" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
   <project name="linux/external/rktoolkit" path="external/rktoolkit" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
   <project name="linux/external/rkupdate" path="external/rkupdate" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
@@ -43,13 +41,13 @@
   </project>
   <project name="linux/security/bin" path="external/security/bin" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
   <project name="linux/tools" path="tools" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
-  <project name="rk/kernel-6.1" path="kernel-6.1" revision="dev-rkr4.4">
+  <project name="rk/kernel-6.1" path="kernel-6.1" revision="dev-rkr4.4" groups="lbc">
     <linkfile src="." dest="kernel"/>
   </project>
   <project name="rk/librkcrypto" path="external/security/librkcrypto" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
   <project name="rk/mcu/hal/applications" path="hal/applications" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
   <project name="rk/mcu/hal/board" path="hal/board" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
-  <project name="rk/mcu/hal/hal" path="hal" revision="dev-rkr4.4">
+  <project name="rk/mcu/hal/hal" path="hal" revision="dev-rkr4.4" groups="lbc">
     <linkfile src="." dest="rtos/bsp/rockchip/common/hal"/>
   </project>
   <project name="rk/mcu/hal/middleware" path="hal/middleware" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
@@ -57,6 +55,6 @@
   <project name="rk/prebuilts/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
   <project name="rk/prebuilts/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux" path="prebuilts/gcc/linux-x86/arm/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
   <project name="rk/rkbin" path="rkbin" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
-  <project name="rtos/rt-thread/rt-thread" path="rtos" revision="dev-rkr4.4"/>
+  <project name="rtos/rt-thread/rt-thread" path="rtos" revision="dev-rkr4.4" groups="lbc"/>
   <project name="rtos/rt-thread/rtthread-apps" path="rtos/applications/rtthread-apps" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
 </manifest>
