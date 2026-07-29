@@ -20,7 +20,7 @@ pack-generic:
     # 创建工作目录
     - mkdir LubanCat_SDK && cd LubanCat_SDK && LubanCat_SDK_DIR=$(pwd)
     # 拉取manifests仓库
-    - repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo -u https://github.com/LubanCat/manifests.git -b linux -m ${XML_FILE}
+    - repo init --repo-url https://gitee.com/LubanCat/git-repo.git -u https://github.com/LubanCat/manifests.git -b linux -m ${XML_FILE}
     # 获取真正的xml文件路径及目录
     - XML_FILE_PATH=$(realpath .repo/manifests/${XML_FILE})
     - XML_FILE_DIR=$(dirname ${XML_FILE_PATH})
@@ -69,7 +69,7 @@ pack-gen_full:
     # 创建工作目录
     - mkdir LubanCat_SDK && cd LubanCat_SDK && LubanCat_SDK_DIR=$(pwd)
     # 拉取manifests仓库
-    - repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo -u https://github.com/LubanCat/manifests.git -b linux -m ${XML_FILE}
+    - repo init --repo-url https://gitee.com/LubanCat/git-repo.git -u https://github.com/LubanCat/manifests.git -b linux -m ${XML_FILE}
     # 获取真正的xml文件路径及目录
     - XML_FILE_PATH=$(realpath .repo/manifests/${XML_FILE})
     - XML_FILE_DIR=$(dirname ${XML_FILE_PATH})
@@ -118,7 +118,7 @@ pack-rk3588:
     # 创建工作目录
     - mkdir LubanCat_SDK && cd LubanCat_SDK && LubanCat_SDK_DIR=$(pwd)
     # 拉取manifests仓库
-    - repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo -u https://github.com/LubanCat/manifests.git -b linux -m ${XML_FILE}
+    - repo init --repo-url https://gitee.com/LubanCat/git-repo.git -u https://github.com/LubanCat/manifests.git -b linux -m ${XML_FILE}
     # 获取真正的xml文件路径及目录
     - XML_FILE_PATH=$(realpath .repo/manifests/${XML_FILE})
     - XML_FILE_DIR=$(dirname ${XML_FILE_PATH})
@@ -167,7 +167,7 @@ pack-rk356x:
     # 创建工作目录
     - mkdir LubanCat_SDK && cd LubanCat_SDK && LubanCat_SDK_DIR=$(pwd)
     # 拉取manifests仓库
-    - repo init --repo-url https://mirrors.tuna.tsinghua.edu.cn/git/git-repo -u https://github.com/LubanCat/manifests.git -b linux -m ${XML_FILE}
+    - repo init --repo-url https://gitee.com/LubanCat/git-repo.git -u https://github.com/LubanCat/manifests.git -b linux -m ${XML_FILE}
     # 获取真正的xml文件路径及目录
     - XML_FILE_PATH=$(realpath .repo/manifests/${XML_FILE})
     - XML_FILE_DIR=$(dirname ${XML_FILE_PATH})
