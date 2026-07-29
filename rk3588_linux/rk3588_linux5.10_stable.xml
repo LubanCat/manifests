@@ -5,7 +5,7 @@
 
   <default remote="origin" sync-j="4"/>
   
-  <project name="debian11" path="debian" revision="958806ee3b5ea0779ca859ee4e9607642725f656" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="debian11" path="debian" revision="b967bdd422849993bea42c1594d9344d822e0e65" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
   <project name="device_rockchip" path="device/rockchip" revision="aa605529daab64df339d9592f347a5d656d47f8a" dest-branch="master" clone-depth="1">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
@@ -13,7 +13,7 @@
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" dest-branch="master" clone-depth="1"/>
-  <project name="kernel" revision="86449ee5ca1d46cead8345bd22600bcfaf270a2d" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="kernel" revision="ca43ccfcb96ca8d650ab5f26bd92b5f3a22d09b6" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
   <project name="rkbin" revision="f358db70f6b7983a777026c5798fc7055e0a2153" clone-depth="1"/>
   <project name="tools" revision="210be81d659a6bc4e7a648744ae77837f394be0f" dest-branch="master" clone-depth="1">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk3588-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
@@ -23,5 +23,5 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
   <project name="u-boot" revision="9b8922d299b2da3de8d96d1693ab7d2eeade5eb0" clone-depth="1"/>
-  <project name="ubuntu" revision="e8339c32098e42c62df06b22da8276d49782b11e" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="ubuntu" revision="c40d7e89787b993680ce1b94cd41df01d3a3b8a6" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
 </manifest>
