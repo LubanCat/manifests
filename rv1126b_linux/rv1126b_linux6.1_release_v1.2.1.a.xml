@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux_internal/"/>
+  <default remote="origin" sync-j="4"/>
+  <project name="android/rk/platform/system/rk_tee_user" path="external/security/rk_tee_user" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="android/rk/u-boot" path="u-boot" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/app/lvgl_demo" path="app/lvgl_demo" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/app/rkai" path="app/rkai" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/app/web-new/mini_ipcweb-backend" path="app/ipcweb-backend" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/bsp/docs" path="docs" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/bsp/internal_doc" path="docs/cn/RV1126B" revision="rv1126b-cn"/>
+  <project name="linux/bsp/rkadk" path="app/rkadk" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/buildroot" path="buildroot" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/debian" path="debian" revision="refs/tags/rv1126b-linux-6.1-stan-rkr7.1"/>
+  <project name="linux/device/rockchip" path="device/rockchip" revision="refs/tags/rv1126b-linux-6.1-stan-rkr7.1">
+    <linkfile src="common/scripts/build.sh" dest="build.sh"/>
+    <linkfile src="common/Makefile" dest="Makefile"/>
+    <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
+  </project>
+  <project name="linux/external/alsa-config" path="external/alsa-config" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/external/camera_engine_rkaiq" path="external/camera_engine_rkaiq" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/external/common_algorithm" path="external/common_algorithm" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/external/minilogger" path="external/minilogger" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/external/rktoolkit" path="external/rktoolkit" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/external/rkwifibt" path="external/rkwifibt" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/external/rkwifibt-app" path="external/rkwifibt-app" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/external/uvc_app" path="external/uvc_app" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/gstreamer-rockchip" path="external/gstreamer-rockchip" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/ipc/app/rkipc" path="app/rkipc" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/ipc/media/avs" path="external/avs" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/ipc/media/iva" path="external/iva" revision="refs/tags/rv1126b-linux-6.1-stan-rkr7.1"/>
+  <project name="linux/ipc/media/samples-ng" path="external/samples" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/ipc_drv_ko" path="external/ipc_drv_ko" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/linux-rga" path="external/linux-rga" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/recovery" path="external/recovery" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/rkfsmk" path="external/rkfsmk" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/rockchip-test" path="external/rockchip-test" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/rockit" path="external/rockit" revision="refs/tags/rv1126b-linux-6.1-stan-rkr7.1"/>
+  <project name="linux/security/bin" path="external/security/bin" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="linux/tools" path="tools" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rk/kernel-6.1-android" path="kernel-6.1" revision="refs/tags/linux-6.1-stan-rkr7.1">
+    <linkfile src="." dest="kernel"/>
+  </project>
+  <project name="rk/librkcrypto" path="external/security/librkcrypto" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rk/mcu/hal/applications" path="hal/applications" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rk/mcu/hal/hal" path="hal" revision="refs/tags/linux-6.1-stan-rkr7.1">
+    <linkfile src="." dest="rtos/bsp/rockchip/common/hal"/>
+  </project>
+  <project name="rk/mcu/hal/middleware" path="hal/middleware" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rk/mpp" path="external/mpp" revision="refs/tags/linux-6.1-stan-rkr7.2"/>
+  <project name="rk/mpp" path="external/ipc_drv_ko/kmpp/kmpp" revision="refs/tags/kmpp-linux-6.1-stan-rkr7.1"/>
+  <project name="rk/prebuilts/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rk/prebuilts/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rk/prebuilts/xpack-riscv-none-embed-gcc-10.2.0-1.2-linux-x64" path="prebuilts/gcc/linux-x86/riscv/xpack-riscv-none-embed-gcc-10.2.0-1.2" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rk/rkbin" path="rkbin" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rk/rknn-llm" path="external/rknn-llm" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rk/rknn-toolkit2" path="external/rknn-toolkit2" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rk/rknpu2" path="external/rknpu2" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rtos/rt-thread/rt-thread" path="rtos" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+  <project name="rtos/rt-thread/rtthread-apps" path="rtos/applications/rtthread-apps" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
+</manifest>
