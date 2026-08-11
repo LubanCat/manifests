@@ -54,7 +54,7 @@
   <project name="rk/mcu/hal/test" path="hal/test" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
   <project name="rk/prebuilts/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
   <project name="rk/prebuilts/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux" path="prebuilts/gcc/linux-x86/arm/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
-  <project name="rk/rkbin" path="rkbin" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
+  <project name="rk/rkbin" path="rkbin" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
   <project name="rtos/rt-thread/rt-thread" path="rtos" revision="dev-rkr4.4" groups="lbc"/>
   <project name="rtos/rt-thread/rtthread-apps" path="rtos/applications/rtthread-apps" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
 </manifest>
