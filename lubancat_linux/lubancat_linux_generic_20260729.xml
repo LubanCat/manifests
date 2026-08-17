@@ -15,7 +15,7 @@
   <project name="kernel" path="kernel-6.1" revision="c9df0f900d445bb911149632e27b591958939e1b" dest-branch="lbc-develop-6.1" clone-depth="1"/>
   <project name="rkbin" revision="58a39b47f77a26a1e110fa1a1ce80bcfcb0b3505" dest-branch="main" clone-depth="1"/>
   <project name="tools" revision="c27464a38afb984e5928e90371b57cd89291f288" dest-branch="main" clone-depth="1"/>
-  <project name="u-boot" revision="8f53f800da2c25d0c6ba414fb45902a01675703a" dest-branch="main" clone-depth="1"/>
+  <project name="u-boot" revision="5f951428320f94d4a5b5e3da7672a186af131325" dest-branch="main" clone-depth="1"/>
   <project name="ubuntu20.04" revision="9f9e0d2a3f89112fab840e3c769b65da6b564312" dest-branch="ubuntu20.04" clone-depth="1"/>
   <project name="ubuntu22.04" revision="9dc4217595fb711751fcd20283f9b3df4a9d718c" dest-branch="ubuntu22.04" clone-depth="1"/>
 </manifest>
