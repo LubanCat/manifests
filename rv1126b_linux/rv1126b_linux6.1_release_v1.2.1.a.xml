@@ -12,6 +12,7 @@
   <project name="linux/bsp/rkadk" path="app/rkadk" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
   <project name="linux/buildroot" path="buildroot" revision="dev-rkr7.1" groups="lbc"/>
   <project name="linux/debian12-nogpu" path="debian12" revision="dev-rkr7.1" groups="lbc"/>
+  <project name="linux/ubuntu22.04-nogpu" path="ubuntu22.04" revision="dev-rkr7.1" groups="lbc"/>
   <project name="linux/device/rockchip" path="device/rockchip" revision="dev-rv1126b-rkr7.1" groups="lbc">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
