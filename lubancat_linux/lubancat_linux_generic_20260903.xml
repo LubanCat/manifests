@@ -3,7 +3,7 @@
   <include name="remote.xml"/>
   
   <project name="debian11" revision="4ac7fced01309643a19b852439caaaa3be20b76a" dest-branch="debian11" clone-depth="1"/>
-  <project name="debian12" revision="f09444f8a9972c50bc95d6152a4aeeda43f2ef5c" dest-branch="debian12" clone-depth="1"/>
+  <project name="debian12" revision="8d1fc893b448b623337ee565f4d6bd1f80d70df3" dest-branch="debian12" clone-depth="1"/>
   <project name="device_rockchip" path="device/rockchip" revision="1f1392c6e7f43d4654b24d2fcfefed5811e61a7a" dest-branch="main" clone-depth="1">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
