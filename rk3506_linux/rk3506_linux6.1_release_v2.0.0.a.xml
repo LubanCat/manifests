@@ -3,7 +3,7 @@
   <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux_internal/"/>
   <default remote="origin" sync-j="4"/>
   <project name="android/rk/platform/system/rk_tee_user" path="external/security/rk_tee_user" revision="refs/tags/linux-6.1-stan-rkr4.4"/>
-  <project name="android/rk/u-boot" path="u-boot" revision="dev-rkr4.4" groups="lbc"/>
+  <project name="android/rk/u-boot-next-dev" path="u-boot" revision="dev-rkr4.4" groups="lbc"/>
   <project name="linux/app/lubancat_qt_demo" path="app/lubancat_qt_demo" revision="qt_demo" groups="lbc"/>
   <project name="linux/app/lvgl_demo" path="app/lvgl_demo" revision="dev-rkr4.4" groups="lbc"/>
   <project name="linux/bsp/docs" path="docs" revision="refs/tags/linux-6.12-stan-rkb0"/>
@@ -12,7 +12,7 @@
   <project name="linux/bsp/rkadk" path="app/rkadk" revision="refs/tags/linux-6.1-stan-rkr4.4">
     <linkfile src="." dest="rtos/bsp/rockchip/common/drivers/rkadk"/>
   </project>
-  <project name="linux/buildroot" path="buildroot" revision="dev-rkr4.4" groups="lbc">
+  <project name="linux/buildroot-2024.02" path="buildroot" revision="dev-rkr4.4" groups="lbc">
     <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
   </project>
   <project name="linux/debian12-nogpu" path="debian12" revision="dev-rkr7" groups="lbc"/>
