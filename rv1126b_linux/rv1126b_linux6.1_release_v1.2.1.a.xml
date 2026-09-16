@@ -3,14 +3,14 @@
   <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux_internal/"/>
   <default remote="origin" sync-j="4"/>
   <project name="android/rk/platform/system/rk_tee_user" path="external/security/rk_tee_user" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
-  <project name="android/rk/u-boot" path="u-boot" revision="dev-rkr7.1" groups="lbc"/>
+  <project name="android/rk/u-boot-next-dev" path="u-boot" revision="dev-rkr7.1" groups="lbc"/>
   <project name="linux/app/lvgl_demo" path="app/lvgl_demo" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
   <project name="linux/app/rkai" path="app/rkai" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
   <project name="linux/app/web-new/mini_ipcweb-backend" path="app/ipcweb-backend" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
   <project name="linux/bsp/docs" path="docs" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
   <project name="linux/bsp/internal_doc" path="docs/cn/RV1126B" revision="68f7e91ff11ec7a15cc7a3672df18a6fad598d3b"/>
   <project name="linux/bsp/rkadk" path="app/rkadk" revision="refs/tags/linux-6.1-stan-rkr7.1"/>
-  <project name="linux/buildroot" path="buildroot" revision="dev-rkr7.1" groups="lbc"/>
+  <project name="linux/buildroot-2024.02" path="buildroot" revision="dev-rkr7.1" groups="lbc"/>
   <project name="linux/debian12-nogpu" path="debian12" revision="dev-rkr7.1" groups="lbc"/>
   <project name="linux/ubuntu22.04-nogpu" path="ubuntu22.04" revision="dev-rkr7.1" groups="lbc"/>
   <project name="linux/device/rockchip" path="device/rockchip" revision="dev-rv1126b-rkr7.1" groups="lbc">
