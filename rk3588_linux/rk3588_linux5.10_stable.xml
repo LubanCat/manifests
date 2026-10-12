@@ -5,7 +5,7 @@
 
   <default remote="origin" sync-j="4"/>
   
-  <project name="debian11" path="debian" revision="b967bdd422849993bea42c1594d9344d822e0e65" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="debian11" path="debian" revision="619b479f290b5d0ab50119e4393e873953cfd11d" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
   <project name="device_rockchip" path="device/rockchip" revision="aa605529daab64df339d9592f347a5d656d47f8a" dest-branch="master" clone-depth="1">
     <linkfile src="common/mkfirmware.sh" dest="mkfirmware.sh"/>
     <linkfile src="common/build.sh" dest="build.sh"/>
@@ -13,7 +13,7 @@
     <linkfile src="rk3588" dest="device/rockchip/.target_product"/>
   </project>
   <project name="gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="adbb295a970c4b39dc487c95226fe84d2c460072" dest-branch="master" clone-depth="1"/>
-  <project name="kernel" revision="ca43ccfcb96ca8d650ab5f26bd92b5f3a22d09b6" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="kernel" revision="c4626d73d396934a3bdf054f81cb77431090ce23" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
   <project name="rkbin" revision="f358db70f6b7983a777026c5798fc7055e0a2153" clone-depth="1"/>
   <project name="tools" revision="210be81d659a6bc4e7a648744ae77837f394be0f" dest-branch="master" clone-depth="1">
     <linkfile src="windows/RKDevTool/RKDevTool_Release/rk3588-config.cfg" dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg"/>
@@ -22,6 +22,6 @@
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-mkupdate.sh" dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh"/>
     <linkfile src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file" dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file"/>
   </project>
-  <project name="u-boot" revision="9b8922d299b2da3de8d96d1693ab7d2eeade5eb0" clone-depth="1"/>
-  <project name="ubuntu" revision="c40d7e89787b993680ce1b94cd41df01d3a3b8a6" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
+  <project name="u-boot" revision="de81c3d4af9f538a7af525c077a8c677de69eb3c" clone-depth="1"/>
+  <project name="ubuntu" revision="db5f0ea9d64fc5ae7ef37d59d2f2934a27a03808" dest-branch="stable-5.10-rk3588" clone-depth="1"/>
 </manifest>
