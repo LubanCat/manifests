@@ -9,7 +9,7 @@
   <project name="linux/app/web-new/ipcweb-backend" path="app/ipcweb-backend" revision="refs/tags/linux-6.12-stan-rkr1"/>
   <project name="linux/bsp/docs" path="docs" revision="refs/tags/linux-6.12-stan-rkr1"/>
   <project name="linux/bsp/rkadk" path="app/rkadk" revision="refs/tags/linux-6.12-stan-rkr1"/>
-  <project name="linux/buildroot" path="buildroot" revision="dev6.12-rkr1" groups="lbc"/>
+  <project name="linux/buildroot-2026.02" path="buildroot" revision="dev6.12-rkr1" groups="lbc"/>
   <project name="linux/debian13" path="debian13" revision="dev6.12-rkr1" groups="lbc"/>
   <project name="linux/device/rockchip" path="device/rockchip" revision="dev6.12-rkr1" groups="lbc">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
