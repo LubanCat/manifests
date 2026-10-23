@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="origin" fetch="ssh://git@gitlab.ebf.local/rockchip/linux_internal/"/>
-  
   <default remote="origin" sync-j="4"/>
-  
   <project name="android/rk/platform/system/rk_tee_user" path="external/security/rk_tee_user" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="android/rk/u-boot" path="u-boot" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/app/lvgl_demo" path="app/lvgl_demo" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/app/rkai" path="app/rkai" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/app/web-new/ipcweb-backend" path="app/ipcweb-backend" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
-  <project name="linux/bsp/docs" path="docs" revision="refs/tags/linux-6.12-stan-rkr1.1">
-    <linkfile src="LICENSE" dest="Copyright_Statement.md"/>
-  </project>
+  <project name="linux/bsp/docs" path="docs" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/bsp/rkadk" path="app/rkadk" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
-  <project name="linux/buildroot" path="buildroot" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
-  <project name="linux/debian" path="debian" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
+  <project name="linux/buildroot-2026.02" path="buildroot" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
+  <project name="linux/debian13" path="debian13" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/device/rockchip" path="device/rockchip" revision="refs/tags/linux-6.12-stan-rkr1.1">
     <linkfile src="common/scripts/build.sh" dest="build.sh"/>
     <linkfile src="common/Makefile" dest="Makefile"/>
@@ -25,6 +21,7 @@
   <project name="linux/external/chromium" path="external/chromium" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/external/common_algorithm" path="external/common_algorithm" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/external/ethercat_igh" path="external/ethercat_igh" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
+  <project name="linux/external/firmware" path="external/firmware" revision="master" groups="lbc"/>
   <project name="linux/external/minilogger" path="external/minilogger" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/external/rk_pcba_test" path="external/rk_pcba_test" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/external/rktoolkit" path="external/rktoolkit" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
@@ -36,7 +33,7 @@
   <project name="linux/ipc/media/avs" path="external/avs" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/ipc/media/iva" path="external/iva" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/ipc/media/samples-ng" path="external/samples" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
-  <project name="linux/libmali" path="external/libmali" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
+  <project name="linux/libmali-next" path="external/libmali" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/linux-rga" path="external/linux-rga" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/recovery" path="external/recovery" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/release-docs-cn" path="docs/cn/Release" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
@@ -45,7 +42,7 @@
   <project name="linux/rockit" path="external/rockit" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/security/bin" path="external/security/bin" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
   <project name="linux/tools" path="tools" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
-  <project name="rk/kernel-stable" path="kernel-6.12" revision="refs/tags/linux-6.12-stan-rkr1.1">
+  <project name="rk/kernel-6.12" path="kernel-6.12" revision="refs/tags/linux-6.12-stan-rkr1.1-sync">
     <linkfile src="." dest="kernel"/>
   </project>
   <project name="rk/librkcrypto" path="external/security/librkcrypto" revision="refs/tags/linux-6.12-stan-rkr1.1"/>
